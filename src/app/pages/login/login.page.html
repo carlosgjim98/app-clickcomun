@@ -1,3 +1,5 @@
+
+
 <ion-header class="ion-no-border" *ngIf="!showError">
   <ion-toolbar>
     <ion-buttons slot="start">
@@ -21,12 +23,31 @@
   >
 </app-error-view>
 
+
+
 <ion-content *ngIf="!showError"  class="ion-padding ion-text-center">
   <div class="logo ion-text-center">
-    <img src="assets/imgs/logo.png" alt="">
+    <div class="logo-text">
+      <p>WoWeLike</p>
+    </div>
+   
   </div>
-    <form *ngIf="form" [formGroup]="form" (ngSubmit)="submitForm()">
-      <p class="title">{{'LOGIN.TITLE' | translate }}</p>
+  
+  <div class="inline-text">
+    <p><span class="highlight">Habla</span> todo lo que quieras</p>
+    <p><span class="highlight">Escucha</span> lo que te gusta</p>
+    <p><span class="highlight">Comparte</span> con quien desees</p>
+  </div>
+  
+ 
+  <div id="socialLinks">
+    <ion-button id="facebook" expand="block" type="button" (click)="loginFacebook()"><ion-icon src="assets/icons/facebook-f-brands-solid.svg"></ion-icon></ion-button>
+    <ion-button id="google" expand="block" type="button" (click)="loginGoogle()"><ion-icon src="assets/icons/google-brands-solid.svg"></ion-icon></ion-button>
+    <ion-button *ngIf="platform.is('ios')" id="apple" (click)="loginApple()"><ion-icon style="margin-bottom: 4px;" name="logo-apple"></ion-icon></ion-button> 
+  </div>
+   
+  <form *ngIf="form" [formGroup]="form" (ngSubmit)="submitForm()">
+    <p class="or-email">- o mediante email -</p>
       <ion-item>
         <ion-input clearInput type="text" placeholder="{{'LOGIN.USER' | translate }}" formControlName="email">
           <ion-icon slot="start" name="person-outline"></ion-icon>
@@ -40,14 +61,16 @@
         </ion-input>
       </ion-item>
 
-      <ion-button expand="block" type="submit" [disabled]="!form.valid" color="tertiary">{{'LOGIN.LOGIN' | translate }}</ion-button>
-      <ion-button expand="block" type="button" routerLink="/register">{{'LOGIN.SIGNUP' | translate }}</ion-button>
-      <p class="title ion-text-center" routerLink="/forgot-password">{{'LOGIN.FORGOT_PASSWORD' | translate }}</p>
+      <ion-button expand="block" type="submit" [disabled]="!form.valid" class="access-button">
+        Acceder
+      </ion-button>
+      
+      <div class="additional-options">
+        <p class="forgot-password">¿Has olvidado tu contraseña?</p>
+        <p class="register">¿No tienes cuenta? <a href="/register">Regístrate aquí</a></p>
+      </div>
+      
     </form>
 
-    <div id="socialLinks">
-      <ion-button id="facebook" expand="block" type="button" (click)="loginFacebook()"><ion-icon name="logo-facebook"></ion-icon></ion-button>
-      <ion-button id="google" expand="block" type="button" (click)="loginGoogle()"><ion-icon src="assets/icons/icon-google.svg"></ion-icon></ion-button>
-      <ion-button *ngIf="platform.is('ios')" id="apple" (click)="loginApple()"><ion-icon style="margin-bottom: 4px;" name="logo-apple"></ion-icon></ion-button> 
-    </div>
+    
 </ion-content>

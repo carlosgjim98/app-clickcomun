@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 29 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="Grupo_190" transform="matrix(1,0,0,1,0.003,1.77636e-15)">
+        <g id="retry-failed">
+            <g id="Grupo_1901" serif:id="Grupo_190">
+                <g id="Trazado_293" transform="matrix(1,0,0,1,-26.01,-27.01)">
+                    <path d="M51.406,50L54.994,46.412L53.585,45L50,48.588L46.409,45L45,46.409L48.588,50L45,53.585L46.409,54.994L50,51.406L53.588,54.994L54.997,53.585L51.406,50Z" style="fill:rgb(252,252,252);fill-rule:nonzero;"/>
+                </g>
+                <g id="Trazado_294" transform="matrix(1,0,0,1,-2.25,-4.5)">
+                    <path d="M19.241,4.5C12.669,4.519 7.266,9.921 7.247,16.493L7.247,22.693L3.647,19.093L2.247,20.493L8.247,26.493L14.247,20.493L12.847,19.093L9.247,22.693L9.247,16.493C9.247,16.46 9.247,16.426 9.247,16.393C9.247,10.91 13.758,6.398 19.241,6.398C24.725,6.398 29.237,10.91 29.237,16.393C29.237,16.426 29.236,16.46 29.236,16.493L29.236,19.493L31.236,19.493L31.236,16.493C31.217,9.92 25.814,4.518 19.241,4.5Z" style="fill:rgb(252,252,252);fill-rule:nonzero;"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

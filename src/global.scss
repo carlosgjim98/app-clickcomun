@@ -24,8 +24,16 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+@import url('https://fonts.googleapis.com/css2?family=Bellota:wght@700&display=swap');
 
-
+@font-face {
+    font-family: 'Bellota';
+    src: url('/assets/fonts/Bellota-Bold.woff2') format('woff2'),
+         url('/assets/fonts/Bellota-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
 /**
  * Ionic Dark Mode
  * -----------------------------------------------------

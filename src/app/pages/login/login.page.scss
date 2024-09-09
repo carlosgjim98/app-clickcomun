@@ -1,79 +1,189 @@
-ion-content{
+
+ion-content {
     //background-size: cover;
     //--background:url('/assets/imgs/base-background.jpg');
-
-    .title{
-        margin-top:16px;
-        margin-bottom: 32px;
+    
+  
+    .title {
+      margin-top: 16px;
+      margin-bottom: 32px;
     }
-    ion-button{
-        text-transform: none;
+  
+    ion-button {
+      text-transform: none;
+    } 
+  
+     .access-button {
+        --background: #E33941; 
+        --color:white; 
+        --border-radius: 25px; 
+        --box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); 
+        padding: 10px 20px; 
+        font-size: 16px; 
+      }
+    
+      .additional-options {
+        text-align: center;
+        margin-top: 20px;
+      }
+      
+      .forgot-password {
+        color:#F8F8F8; 
+        margin-bottom: 10px;
+      }
+      
+      .register {
+        color:#F8F8F8;
+      }
+      
+      .register-link {
+        color: #FF2251;
+        text-decoration: none; 
+      }
+      
+    .logo {
+      margin: 0 auto;
+      z-index: 2;
+      margin-top: 10vh;
+      img {
+        width: 130px;
+        height: 130px;
+      }
     }
-    .logo{
-        margin:0 auto;
-        z-index: 2;
-        margin-top:10vh;
-        img{
-            width: 130px;
-            height: 130px; 
-        }
-        
+
+    .inline-text {
+      text-align: left; /* Alinea el texto a la izquierda */
+      margin: 0 89px 0 10pt; /* Margen derecho de 89px y margen izquierdo de 30pt */
+      padding: 0; /* Elimina padding por defecto */
+   
+    }
+    
+    .inline-text p {
+      display: inline-block;
+      margin-right: 2px; /* Espacio entre frases, ajustado a un valor positivo pequeño */
+      letter-spacing: normal; /* Ajusta el espaciado entre letras a su valor normal */
+      font-family: "Helvetica Neue", sans-serif;
+      font-weight: bold; 
+      font-size: 12pt; /* Tamaño del resto de las frases */
+      color: #FFFFFF;  /* Color del resto de las frases */
+      line-height: 0;
+      transform: translateY(-60px); 
+    }
+    
+    .highlight {
+      font-family: "Helvetica Neue", sans-serif;
+      font-weight: bold; /* Texto en negrita */
+      font-size: 18pt;   /* Tamaño de las palabras destacadas */
+      color: #E62F2C;    /* Color de las palabras destacadas */
     }
 
-    #socialLinks{
-        display: flex;
-        justify-content: space-evenly;
-        margin: 2vh 8vw 2vh 8vw;
-        //width: 85vw;
-
-        ion-icon{
-            font-size: 32px;
-        }
-        #facebook{
-            --color: white;
-            --background: #3b5998;
-            --background-activated: #4567b0;
-            --background-focused: #3b5998;
-
-            --border-radius: 50%;
-            height: 64px;
-            width: 64px;
-            margin : 0;
-            
-            
-        }
-        #google{
-            --background: white;
-            --background-activated: rgb(235, 235, 235);
-            --background-focused: white;
-            --border-radius: 50%;
-            border-radius: 50%;
-            box-shadow: 0px 0px 10px 3px #0000000a;
-            height: 64px;
-            width: 64px;
-            margin : 0;
-
-
-        }
-
-        .fa-google {
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            -webkit-text-fill-color: transparent;
-          }
-
-        #apple{
-            --background: #868686;
-            --background-activated: #909090;
-            --background-focused: #868686;
-            --color: white;
-            --border-radius: 50%;
-            height: 64px;
-            width: 64px;
-            margin : 0;
-
-        }
-    }
+    .logo-text {
+    font-family: 'Bellota', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 50pt;
+    text-align: left;
+    margin-left: 16px; /* Ajusta el margen izquierdo según sea necesario */
+    margin-top: 10vh; /* Ajusta la distancia desde la parte superior */
 }
 
+    
+    
+    #socialLinks {
+      display: flex;
+      justify-content: space-evenly;
+      margin: 2vh 8vw 2vh 8vw;
+      //width: 85vw;
+      line-height: 0;
+      transform: translateY(-30px); 
+  
+      ion-icon {
+        font-size: 32px;
+      }
+  
+      #facebook {
+        --color: white;
+        --background: #E33941;
+        --background-activated: #E33941;
+        --background-focused: #E33941;
+        --border-radius: 50%;
+        height: 64px;
+        width: 64px;
+        margin: 0;
+      }
+  
+      #google {
+        --background: #E33941;
+        --background-activated: white;
+        --background-focused: #E33941;
+        --border-radius: 50%;
+        border-radius: 50%;
+        box-shadow: 0px 0px 10px 3px #0000000a;
+        height: 64px;
+        width: 64px;
+        margin: 0;
+      }
+  
+      .fa-google {
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+      }
+  
+      #apple {
+        --background: #E33941;
+        --background-activated: #E33941;
+        --background-focused: #E33941;
+        --color: white;
+        --border-radius: 50%;
+        height: 64px;
+        width: 64px;
+        margin: 0;
+      }
+  
+      #top-texts {
+        background-color: #f0f0f0;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+      }
+    }
+    
+  }
+  ion-item {
+    --background: #43434B; /* Cambia el color de fondo de los inputs */
+    --border-radius: 20px; /* Añade bordes redondeados */
+    margin-bottom: 10px;
+  }
+  
+  ion-input {
+    --padding-start: 20px; /* Añade padding al inicio del input */
+    color: white; /* Cambia el color del texto */
+  }
+  
+  ion-input ion-icon {
+    color: white; /* Cambia el color del ícono */
+  }
+  
+  .or-email {
+    color: #ffffff;
+    font-size: 14px;
+    margin: 20px 0;
+  }
+  
+  .additional-options {
+    margin-top: 20px;
+  }
+  
+  .forgot-password,
+  .register {
+    color: #F8F8F8;
+    margin-top: 10px;
+  }
+  
+  .register-link {
+    color: #FF2251;
+    text-decoration: none; 
+  }
+  

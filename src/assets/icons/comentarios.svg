@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 17 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="Trazado_82" transform="matrix(1,0,0,1,0.664,-0.917)">
+        <rect x="9.5" y="8.5" width="3" height="1" style="fill:rgb(252,252,252);fill-rule:nonzero;"/>
+    </g>
+    <g id="Trazado_83" transform="matrix(1,0,0,1,-0.119,-0.917)">
+        <rect x="5.5" y="8.5" width="3" height="1" style="fill:rgb(252,252,252);fill-rule:nonzero;"/>
+    </g>
+    <g id="Trazado_84" transform="matrix(1,0,0,1,-1,-0.917)">
+        <rect x="3" y="8.5" width="1.5" height="1" style="fill:rgb(252,252,252);fill-rule:nonzero;"/>
+    </g>
+    <g id="Trazado_85" transform="matrix(1,0,0,1,1.154,-1.25)">
+        <rect x="11" y="6.5" width="2" height="1" style="fill:rgb(252,252,252);fill-rule:nonzero;"/>
+    </g>
+    <g id="Trazado_86" transform="matrix(1,0,0,1,0.128,-1.25)">
+        <rect x="6.5" y="6.5" width="3.5" height="1" style="fill:rgb(252,252,252);fill-rule:nonzero;"/>
+    </g>
+    <g id="Trazado_87" transform="matrix(1,0,0,1,-1,-1.25)">
+        <rect x="3" y="6.5" width="2.5" height="1" style="fill:rgb(252,252,252);fill-rule:nonzero;"/>
+    </g>
+    <g id="Trazado_88" transform="matrix(1,0,0,1,-1,-2)">
+        <path d="M10.078,17L9.078,16.423L11.386,12.385C11.386,12.385 14.848,12.385 14.848,12.385C15.48,12.385 16,11.865 16,11.233C16,11.232 16,11.232 16,11.231L16,4.308C16,4.307 16,4.307 16,4.306C16,3.674 15.48,3.154 14.848,3.154C14.847,3.154 14.847,3.154 14.846,3.154L3.308,3.154C3.307,3.154 3.307,3.154 3.306,3.154C2.674,3.154 2.154,3.674 2.154,4.306C2.154,4.307 2.154,4.307 2.154,4.308L2.154,11.231C2.154,11.232 2.154,11.232 2.154,11.233C2.154,11.865 2.674,12.385 3.306,12.385C3.307,12.385 3.307,12.385 3.308,12.385L8.5,12.385L8.5,13.539L3.308,13.539C2.042,13.539 1,12.497 1,11.231C1,11.231 1,4.307 1,4.307C1,3.041 2.041,2 3.307,2C3.307,2 3.308,2 3.308,2L14.846,2C14.846,2 14.847,2 14.847,2C16.113,2 17.154,3.041 17.154,4.307C17.154,4.307 17.154,11.231 17.154,11.231C17.154,12.497 16.112,13.539 14.846,13.539L12.057,13.539L10.078,17Z" style="fill:rgb(252,252,252);fill-rule:nonzero;"/>
+    </g>
+</svg>

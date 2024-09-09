@@ -66,15 +66,39 @@
   src: url('/assets/fonts/DMSans-Thin.ttf');
 }
 
+
+@font-face {
+  font-family: 'HelveticaNeuerBold.otf';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/HelveticaNeuerBold.otf');
+}
+
+@font-face {
+  font-family: 'HelveticaNeuerLight.otf';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/HelveticaNeuerLight.otf');
+}
+
+@font-face {
+  font-family: 'HelveticaNeuerMedium.otf';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/HelveticaNeuerMedium.otf');
+}
+
+
+
 /** Ionic CSS Variables **/
 :root {
   /** primary **/
-  --ion-color-primary: #0054e9 !important;
+  --ion-color-primary: #E30613 !important;
   --ion-color-primary-rgb: 56, 128, 255 !important;
   --ion-color-primary-contrast: #ffffff !important;
   --ion-color-primary-contrast-rgb: 255, 255, 255 !important;
-  --ion-color-primary-shade: #3171e01f !important;
-  --ion-color-primary-tint: #4c8eff34 !important;
+  --ion-color-primary-shade:#c80511 !important;
+  --ion-color-primary-tint: #e61f2b !important;
 
   /** secondary **/
   --ion-color-secondary: #3dc2ff !important;
@@ -195,12 +219,12 @@
 
   body {
   /** primary **/
-  --ion-color-primary: #0054e9 !important;
+  --ion-color-primary: #E33941!important;
   --ion-color-primary-rgb: 56, 128, 255 !important;
   --ion-color-primary-contrast: #ffffff !important;
   --ion-color-primary-contrast-rgb: 255, 255, 255 !important;
-  --ion-color-primary-shade: #3171e01f !important;
-  --ion-color-primary-tint: #4c8eff34 !important;
+  --ion-color-primary-shade: #c83239 !important;
+  --ion-color-primary-tint: #e64d54!important;
 
   /** secondary **/
   --ion-color-secondary: #3dc2ff !important;
@@ -275,7 +299,7 @@
    */
 
   .ios body {
-    --ion-background-color: #000000;
+    --ion-background-color: #262B32;
     --ion-background-color-rgb: 0,0,0;
 
     --ion-text-color: #ffffff;
@@ -319,7 +343,7 @@
    */
 
   .md body {
-    --ion-background-color: #121212;
+    --ion-background-color: #262B32;
     --ion-background-color-rgb: 18,18,18;
 
     --ion-text-color: #ffffff;

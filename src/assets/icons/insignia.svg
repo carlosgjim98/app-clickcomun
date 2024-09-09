@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 27 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="Trazado_254" transform="matrix(1,0,0,1,-5.109,-5.313)">
+        <path d="M29.529,12.639L23.017,12.639C22.124,12.639 21.389,13.374 21.389,14.267L21.389,26.477C21.392,27.368 22.126,28.1 23.017,28.1L29.529,28.1C30.422,28.1 31.157,27.365 31.157,26.472L31.157,14.267C31.157,13.374 30.422,12.639 29.529,12.639ZM29.529,14.267L29.529,24.849L23.017,24.849L23.017,14.267L29.529,14.267Z" style="fill:rgb(252,252,252);fill-rule:nonzero;"/>
+    </g>
+    <g id="Trazado_255" transform="matrix(1,0,0,1,-1.944,-3.889)">
+        <path d="M23.108,3.889L3.572,3.889C2.679,3.889 1.944,4.624 1.944,5.517L1.944,18.541C1.944,19.434 2.679,20.169 3.572,20.169L10.084,20.169L10.084,21.8L7.9,21.8C7.385,21.742 6.909,22.103 6.826,22.614C6.909,23.125 7.385,23.486 7.9,23.428L16.528,23.428L16.528,23.128L16.6,23.128L16.6,18.541L3.572,18.541L3.572,5.517L23.108,5.517L23.108,9.587L24.736,9.587L24.736,5.517C24.736,4.624 24.001,3.889 23.108,3.889Z" style="fill:rgb(252,252,252);fill-rule:nonzero;"/>
+    </g>
+</svg>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 27 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-miterlimit:10;">
+    <g id="Icon_ion-arrow-undo-circle-outline" transform="matrix(-3.82857e-16,1,-1,-3.82857e-16,21.0629,5.02494)">
+        <g id="Trazado_370" transform="matrix(1,0,0,1,3.341,4.008)">
+            <path d="M4.019,6.671L4.019,5.186C6.288,5.186 7.379,5.722 8.336,6.724C8.398,6.786 8.482,6.821 8.57,6.821C8.751,6.821 8.901,6.671 8.901,6.49C8.901,6.483 8.9,6.476 8.9,6.469C8.688,4.025 7.547,1.813 4.019,1.813L4.019,0.33C4.018,0.149 3.869,0.001 3.688,0.001C3.604,0.001 3.522,0.033 3.461,0.091L0.1,3.261C0.035,3.323 -0.003,3.409 -0.003,3.499C-0.003,3.588 0.035,3.674 0.1,3.736L3.459,6.908C3.521,6.967 3.603,7 3.688,7C3.869,7 4.018,6.852 4.019,6.671Z" style="fill:rgb(252,252,252);fill-rule:nonzero;"/>
+        </g>
+        <path id="Trazado_371" d="M8.019,0C3.62,0 0,3.62 0,8.019C0,12.418 3.62,16.038 8.019,16.038C12.418,16.038 16.038,12.418 16.038,8.019C16.037,3.62 12.418,0.001 8.019,0Z" style="fill:none;fill-rule:nonzero;stroke:rgb(252,252,252);stroke-width:1px;"/>
+    </g>
+</svg>
