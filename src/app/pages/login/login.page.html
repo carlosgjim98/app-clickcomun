@@ -67,10 +67,81 @@
       
       <div class="additional-options">
         <p class="forgot-password">¿Has olvidado tu contraseña?</p>
-        <p class="register">¿No tienes cuenta? <a href="/register">Regístrate aquí</a></p>
-      </div>
+        <p class="register">¿No tienes cuenta? <a id="open-modal" class="register-link">Regístrate aquí</a></p>
+     </div>
+      
       
     </form>
-
     
+    
+    <ion-content class="ion-padding">
+      
+      <ion-modal trigger="open-modal" [initialBreakpoint]="1" [breakpoints]="[0, 1]">
+        <ng-template>
+          <div class="header">
+            
+          </div>
+          
+          <div class="modal-content">
+            
+            <form>
+              <div class="form-header">
+                <ion-icon name="arrow-back-outline"></ion-icon>
+                <h2>Crea una cuenta</h2>
+              </div>
+              
+              <div class="upload-image">
+                <label for="uploadImage">
+                  <div class="icon-container">
+                    <ion-icon src="assets/icons/image-reference.svg"></ion-icon>
+                  </div>
+                  <span>Subir<br>imagen</span> 
+                </label>
+                <input type="file" id="uploadImage" />
+              </div>
+              
+              <div class="form-container">
+                <div class="input-field">
+                  <div class="label-container">
+                    <label class="input-label">Nickname</label>
+                  </div>
+                   <ion-icon src="assets/icons/user.svg"></ion-icon>
+                  <div class="divider"></div> 
+                  <input type="text" value="Carlosgonzalez3" />
+                </div>
+              
+                <div class="input-field">
+                  <div class="label-container">
+                    <label class="input-label">Email</label>
+                  </div>
+                  <ion-icon name="mail-outline"></ion-icon>
+                  <div class="divider"></div> 
+                  <input type="email" value="prueba@prueba.com" />
+                </div>
+              
+                <div class="input-field">
+                  <div class="label-container">
+                    <label class="input-label">Contraseña</label>
+                  </div>
+                  <ion-icon src="assets/icons/password.svg"></ion-icon>
+                  <div class="divider"></div> 
+                  <input type="password"  value="******" />
+                  <div class="password-info">Utiliza al menos 5 caracteres</div>
+                </div>
+              
+                <div class="privacy-policy">
+                  <ion-checkbox></ion-checkbox>
+                  <label>
+                    He leído y acepto la 
+                    <span class="bold-text">política de privacidad</span>
+                  </label>
+                </div>
+                <ion-button class="continue-button" expand="block">Continuar</ion-button>
+              </div>
+              
+            </form>
+          </div>
+        </ng-template>
+      </ion-modal>
+      
 </ion-content>

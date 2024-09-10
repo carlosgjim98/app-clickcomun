@@ -99,6 +99,7 @@ ion-content {
   
       ion-icon {
         font-size: 32px;
+        color:white;
       }
   
       #facebook {
@@ -165,7 +166,33 @@ ion-content {
   ion-input ion-icon {
     color: white; /* Cambia el color del ícono */
   }
+  ion-button {
+    --background: #3E3E3E;
+    color: white;
+    width: 100%;
+  }
   
+  ion-checkbox {
+    --background: white;
+    --border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  
+
+  h2 {
+  display: inline-block; /* Mantiene los elementos en línea */
+  vertical-align: middle; /* Alinea verticalmente al centro */
+  margin: 5; /* Remueve márgenes por defecto */
+}
+
+/* Estilo específico para el icono */
+ion-icon {
+  font-size: 24px; /* Ajusta el tamaño del icono */
+  margin-right: 8px; /* Espacio entre el ícono y el texto */
+}
+
+
   .or-email {
     color: #ffffff;
     font-size: 14px;
@@ -182,8 +209,215 @@ ion-content {
     margin-top: 10px;
   }
   
-  .register-link {
-    color: #FF2251;
-    text-decoration: none; 
+  .register a {
+    color: #FF2251; 
+    text-decoration: underline; /* Subrayar el enlace */
   }
   
+  .modal-content {
+    width: fill; /* Ajusta esto según lo necesites, puede ser 70vw o más */
+    height: fill; /* Ajusta esto también según la altura que prefieras */
+    max-width: 450px; /* Este valor es opcional para limitar el tamaño en pantallas más grandes */
+    margin: auto;
+    padding: 20px;
+    border-radius: 15px; 
+    background-color: #E33941; 
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+ 
+  
+  input[type="file"] {
+    display: none; 
+  }
+  
+  .input-field {
+    display: flex; /* Usa flexbox para alinear el ícono y el campo de entrada en línea */
+    align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
+    background-color: #43434B; 
+    padding: 20px; 
+    margin-bottom: 25px; 
+    border-radius: 40px; 
+    width: 100%; 
+    position: relative; 
+    height: 60px ;
+  }
+  
+  .label-container {
+    position: absolute; /* Posiciona el texto de manera absoluta dentro del contenedor */
+    top: 7%; /* Ajusta esta posición según sea necesario para colocar el texto correctamente */
+    left: 70px; /* Ajusta la distancia desde el borde izquierdo */
+  }
+  
+  .input-label {
+    color: #8b8b8b; 
+    font-family: "Helvetica Neue", sans-serif; 
+    font-weight: lighter; 
+    font-size: 14px;
+    background-color: #43434B; 
+    padding: 0 5px; /* Espacio alrededor del texto para que se vea bien sobre el fondo */
+  }
+  
+  .input-field ion-icon {
+    color: rgb(255, 255, 255); 
+    font-size: 35px; 
+    margin-right: 10px; /* Espacio entre el icono y el input */
+
+  }
+  
+  .input-field input {
+    border: none; 
+    background: transparent; 
+    color: rgb(253, 253, 255); 
+    width: 100%; 
+    padding-left: 10px; 
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-top: 12px;
+    margin-right: 38px;
+  }
+  
+  .divider {
+    width: 1px; 
+    height: 30px; 
+    background-color: #8b8b8b; 
+    margin-right: 10px; 
+  }
+  .password-info {
+    position: absolute; 
+    right: 150px; 
+    top: 64px; 
+    font-size: 10px; 
+    color: #ffffff; 
+    white-space: nowrap; 
+    font-style: "Helvetica Neue", sans-serif; 
+    font-weight: lighter;
+    
+  }
+  .privacy-policy {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    color: white;
+  }
+  .privacy-policy ion-checkbox {
+    --background: transparent; 
+    --border-radius: 8px; 
+    --border-color: #ffffff; 
+    --border-width: 2px; 
+    --size: 20px; /* Tamaño del checkbox */
+    margin-left:18px; /* Espacio entre el checkbox y el texto */
+    margin-top: 15px;
+  }
+  .privacy-policy ion-checkbox[checked] {
+    --background: #ffffff; 
+    --border-color: #ffffff; 
+    
+  }
+  .privacy-policy ion-checkbox[checked] .checkbox-inner {
+    background-color: #ffffff; /* Color de fondo del interior del checkbox cuando está seleccionado */
+    border-radius: 8px; /* Bordes suavizados */
+  }
+  .privacy-policy ion-checkbox[checked] .checkbox-inner::after {
+    color: #FF2251; /* Color del ícono de check cuando está seleccionado */
+    font-size: 16px; /* Tamaño del ícono de check */
+}
+  
+  .privacy-policy label {
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  .bold-text {
+    font-weight: bold; /* Hace el texto en negrita */
+  }
+
+  
+  .upload-image {
+    display: flex;
+    align-items: center;
+    justify-content: left; 
+
+  }
+  
+  .upload-image label {
+    display: flex;
+    align-items: center; 
+    cursor: pointer; 
+    font-size: 18px;
+    color: #ffffff;
+    font-family: 'Helvetica Neue', sans-serif; 
+    font-weight: bold; 
+    
+  }
+
+  .upload-image span {
+    display: block; /* Hace que el texto se ajuste en líneas separadas */
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin-left: 12px;
+    margin-top: 20px;
+  }
+  
+  .icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px; /* Tamaño del círculo */
+    height: 125px; /* Debe ser igual al width para ser un círculo perfecto */
+    border-radius: 50%; /* Hace el contenedor circular */
+    background-color: #faa1a1; 
+    margin-right: 7px; /* Espacio entre el ícono y el texto */
+    margin-top: 35px; 
+  }
+  
+  .icon-container ion-icon {
+    font-size: 60px; 
+    color: #ffffff; 
+    margin-left: 9px;
+  }
+  .form-container {
+    padding-top: 50px; /* Desplazar el contenido hacia abajo */
+  }
+  
+  .continue-button {
+    --background: #3E3E3E; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    width: 100%; /* Ancho completo */
+    height: 60px; /* Ajusta la altura para que coincida con la altura de las celdas */
+    margin-top: 20px; /* Espacio superior */
+    --border-radius: 40px; /* Bordes redondeados para que coincida con las celdas */
+    font-size: 16px; /* Tamaño de fuente para que coincida con el texto de las celdas */
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    padding: 0; /* Quitar padding para que el tamaño sea consistente */
+}
+
+  input[type="text"], input[type="email"], input[type="password"] {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 14px;
+  }
+
+  ion-modal {
+    --height: 90%; /* Ajusta la altura al 90% */
+    
+  }
+  .form-header {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el icono y el texto */
+  }
+  
+  .form-header ion-icon {
+    font-size: 24px; 
+    color: #ffffff; 
+    margin-right: 10px; 
+    
+    margin-top: 0px;
+  }
+  
+  .form-header h2 {
+    margin: 0; 
+    font-size: 24px; 
+    color: #ffffff; 
+  }
