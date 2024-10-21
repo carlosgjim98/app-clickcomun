@@ -1,0 +1,28 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar mode="md">
+    <ion-buttons slot="end">
+      <ion-icon src="assets/icons/alert-circle-outline.svg" class="alert-icon"></ion-icon>
+    </ion-buttons>
+    <ion-buttons slot="start">
+      <ion-icon src="assets/icons/arrow-back-outline.svg" class="arrow-icon" (click)="goBack()"></ion-icon>
+    </ion-buttons>
+    <ion-title>Verificación estándar adulto</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  
+  <div class="verification-text">
+    <h1>Verificación mediante escaneo de Documento de Identidad.</h1>
+    <p>Fotografía tu documento de identidad de forma clara y legible</p>
+  </div>
+
+  <div class="dni-verification">
+    <div class="square-with-line"></div>
+    <button class="camera-button">
+      <ion-icon src="assets/icons/camera.svg" class="camera-icon"></ion-icon>
+    </button>
+</div>
+
+  
+</ion-content>

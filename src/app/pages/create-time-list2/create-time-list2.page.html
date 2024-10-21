@@ -1,0 +1,98 @@
+<ion-content [fullscreen]="true" class="ion-padding ion-text-center">
+
+
+  
+  <div class="header-container">
+    <h1 class="title">WoWeLike</h1>
+    <div class="subtitle">
+      <p>Elige los temas que prefieres</p>
+      <p>escuchar y crea</p>
+      <p>tu primera Time-Lists</p>
+    </div>
+  </div>
+
+  <!-- Círculo de fondo SVG -->
+  <div class="svg-background"></div>
+
+  <!-- Contenedor del formulario -->
+  <div class="form-container">
+    <div class="input-group">
+      <p class="selection-text title">Nombre de la Time List</p>
+      <ion-item lines="none" class="input-item">
+        <ion-input placeholder="Timelist01"></ion-input>
+      </ion-item>
+ 
+      <ion-icon name="collapse-all" src="assets/icons/collapse-all.svg" class="collapse-icon"></ion-icon>
+      <p class="selection-text description">Selecciona al menos una categoría para esta Time List</p>
+    </div>
+
+    <!-- Categorías iniciales -->
+    <div class="categories">
+      <ion-chip color="danger">
+        <ion-label>+ Arte</ion-label>
+      </ion-chip>
+      <ion-chip>
+        <ion-label>+ Arquitectura</ion-label>
+      </ion-chip>
+      <ion-chip>
+        <ion-label>+ Ciencia</ion-label>
+      </ion-chip>
+      <ion-chip>
+        <ion-label>+ Cine</ion-label>
+      </ion-chip>
+      <ion-chip>
+        <ion-label>+ Comedia</ion-label>
+      </ion-chip>
+      <ion-chip>
+        <ion-label>+ Comunicación</ion-label>
+      </ion-chip>
+      <ion-chip>
+        <ion-label>+ Educación</ion-label>
+      </ion-chip>
+      <ion-chip>
+        <ion-label>+ Entretenimiento</ion-label>
+      </ion-chip>
+    </div>
+
+    <!-- Botón para mostrar más categorías -->
+    <div class="ver-mas-container" (click)="toggleCategorias()">
+      <span class="ver-mas-text">{{ verMas ? 'Ocultar' : 'Ver más' }}</span>
+      <ion-icon [name]="verMas ? 'caret-up' : 'caret-down'" class="arrow-icon"></ion-icon>
+    </div>
+
+    <!-- Contenedor para los elementos adicionales que se mostrarán/ocultarán -->
+    <div class="categorias" *ngIf="verMas">
+      <ion-chip>
+        <ion-label>+ Historia</ion-label>
+      </ion-chip>
+      <ion-chip>
+        <ion-label>+ Música</ion-label>
+      </ion-chip>
+      <ion-chip>
+        <ion-label>+ Medio ambiente</ion-label>
+      </ion-chip>
+      <ion-chip>
+        <ion-label>+ Noticias</ion-label>
+      </ion-chip>
+      <ion-chip>
+        <ion-label>+ Política</ion-label>
+      </ion-chip>
+      <ion-chip>
+        <ion-label>+ Tecnología</ion-label>
+      </ion-chip>
+      <ion-chip>
+        <ion-label>+ Viajes</ion-label>
+      </ion-chip>
+      <ion-chip>
+        <ion-label>+ Alimentación y cocina</ion-label>
+      </ion-chip>
+      <!-- Añade más chips según sea necesario -->
+    </div>
+
+    <!-- Botón Continuar -->
+    <ion-button expand="block" color="danger" class="continue-button" style="border-radius: var(--app-border-radius); padding: var(--ion-padding);" routerLink="/connect-contacts">
+     
+      Continuar
+    </ion-button>
+  </div>
+</ion-content>

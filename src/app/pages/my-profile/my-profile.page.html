@@ -1,0 +1,209 @@
+<ion-content [fullscreen]="true" class="ion-padding ion-text-center">
+  <ion-header collapse="condense" style="border-radius: var(--app-border-radius);">
+    <ion-toolbar>
+
+      <!-- Container for Titles -->
+      
+      <div class="title-container">
+        <ion-avatar class="profile-photo">
+        <img alt="user avatar" src="assets/imgs/Elipse 47-2@3x.png" class="avatar" />
+      </ion-avatar>
+        <ion-title class="saludo">¡Buenos días!</ion-title>
+        <div class="name-container">
+          <ion-title class="nombre" >Jane Doe</ion-title>
+          <ion-icon src="assets/icons/checkmark--filled.svg" class="checkmark-icon"></ion-icon>
+        </div>
+        <ion-title class="info">
+          <span class="number">20</span> contactos / 
+          <span class="number">625</span> fans / 
+          <span class="number">35</span> insignias
+        </ion-title>
+      </div>
+      
+
+      <!-- Action Buttons -->
+      <ion-buttons slot="end">
+        <ion-toggle [ngClass]="toggleState ? 'day' : 'night'" [(ngModel)]="toggleState" class="custom-toggle">
+        </ion-toggle>
+        
+        <ion-icon [routerLink]="['/settings']" src="assets/icons/operations-record.svg" class="operations-record"></ion-icon> <!-- Configuración -->
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  
+  <!-- Custom Buttons -->
+  <div class="button-container">
+    <ion-button class="home-button"  >
+      <ion-icon src="assets/icons/home.svg"></ion-icon> 
+    </ion-button>
+    
+    <ion-button [routerLink]="['/audiochat']"class="audiochat-button" >
+      Audiochat
+    </ion-button>
+
+  </div>
+
+  <div class="novedades-section">
+    <h2 class="novedades-title">Novedades</h2>
+    <div class="novedades-buttons">
+      <ion-button class="novedades-button" color="transparent">
+        Los + escuchados
+        de mi zona
+      </ion-button>
+      <ion-button class="novedades-button" color="transparent">
+       Escuchar favoritos
+      </ion-button>
+      <ion-button class="novedades-button" color="transparent">
+         Lo mejor de… Nacional
+      </ion-button>
+    </div>
+  </div>
+  <ion-item class="search-bar">
+    <ion-input  placeholder="Buscar listas, audios y más…" class="search-text" [routerLink]="['/search-timelist']">
+      <ion-icon slot="start" src="assets/icons/search-outline.svg" class="search-icon"></ion-icon>
+      
+    </ion-input>
+  </ion-item>
+
+  <div class="actions-section">
+    <h2 class="actions-title">Acciones</h2>
+    <div class="actions-buttons">
+      <div class="action-button-container" [routerLink]="['/create-time-list']">
+        <ion-button class="action-button" fill="clear" >
+          <ion-icon src="assets/icons/new-list.svg" class="playlist-icon"></ion-icon>
+        </ion-button>
+        <p>Editar preferencias</p>
+      </div>
+      <div class="action-button-container">
+        <ion-button class="suscribe-button" fill="clear" >
+          <ion-icon src="assets/icons/edit.svg" class="edit-icon"></ion-icon>
+        </ion-button>
+        <p>Suscríbete</p>
+      </div>
+      <div class="action-button-container">
+        <ion-button class="insignia-button" fill="clear">
+          <ion-icon src="assets/icons/playlist.svg" class="playlist-icon"></ion-icon>
+        </ion-button>
+        <p>Conseguir Insignias</p>
+        
+      </div>
+    </div>
+  </div>
+  <div class ="actions-section" >
+    <h2 class="actions-title">Actividad</h2>
+  
+  <ion-list >
+    <ion-item  >
+      <ion-icon src="assets/icons/play--filled--alt.svg" class="play-icon"></ion-icon> 
+      <ion-label >
+        Nuevo audio
+        <ion-note color="medium">Ertttf</ion-note>
+      </ion-label > 
+      <ion-icon slot="end" src="assets/icons/share.svg" class="share-icon"></ion-icon>
+      <ion-icon slot="end" src="assets/icons/warning.svg" class="warning-icon"></ion-icon>
+    </ion-item>
+    <ion-item>
+      <ion-icon src="assets/icons/new-playlist.svg" class="playlist-icon"></ion-icon> 
+      <ion-label>
+        Nueva playlist
+        <ion-note color="medium">El arte sin...</ion-note>
+      </ion-label>
+      <ion-icon slot="end" src="assets/icons/share.svg" class="share-icon"></ion-icon>
+      <ion-icon slot="end" src="assets/icons/warning.svg" class="warning-icon"></ion-icon>
+    </ion-item>
+    <ion-item>
+      <ion-icon src="assets/icons/user.svg"></ion-icon>
+      <ion-label>
+        Nuevo grupo
+        <ion-note color="medium">Amigos moteros</ion-note>
+      </ion-label>
+      <ion-icon slot="end" src="assets/icons/share.svg" class="share-icon"></ion-icon>
+      <ion-icon slot="end" src="assets/icons/warning.svg" class="warning-icon"></ion-icon>
+    </ion-item>
+    <ion-item>
+      <ion-icon src="assets/icons/new-playlist.svg" class="playlist-icon"></ion-icon> 
+      <ion-label>
+        Nueva playlist
+        <ion-note color="medium">Más por...</ion-note>
+      </ion-label>
+      <ion-icon slot="end" src="assets/icons/share.svg" class="share-icon"></ion-icon>
+      <ion-icon slot="end" src="assets/icons/warning.svg" class="warning-icon"></ion-icon>
+    </ion-item>
+  </ion-list>
+
+</div>
+
+<div class="actions-section">
+  <h2 class="actions-title">Nuevos usuarios</h2>
+  
+  <div class="user-list">
+
+    <div class="user-item">
+    <img alt="user avatar" src="assets/imgs/Elipse 47-7@3x.png" class="avatar" />
+    <p class="user-name">Ertttf</p>
+   </div>
+   <div class="user-item">
+    <img alt="user avatar" src="assets/imgs/Elipse 47-9@3x.png" class="avatar" />
+    <p class="user-name">User_2344</p>
+   </div>
+   <div class="user-item">
+    <img alt="user avatar" src="assets/imgs/Elipse 47-4@3x.png" class="avatar" />
+    <p class="user-name">Finx_T</p>
+   </div>
+   <div class="user-item">
+    <img alt="user avatar" src="assets/imgs/Elipse 47-3@3x.png" class="avatar" />
+    <p class="user-name">Justo</p>
+   </div>
+   <div class="user-item">
+    <img alt="user avatar" src="assets/imgs/Elipse 47-2@3x.png" class="avatar" />
+    <p class="user-name">Audimusic</p>
+   </div>
+   <div class="user-item">
+    <img alt="user avatar" src="assets/imgs/Elipse 47-8@3x.png" class="avatar" />
+    <p class="user-name">User_3344</p>
+   </div>
+   <div class="user-item">
+    <img alt="user avatar" src="assets/imgs/Elipse 47-5@3x.png" class="avatar" />
+    <p class="user-name">Finx_T</p>
+   </div>
+    
+  </div>
+</div>
+
+<div class="mic-button-container" [class.open-mic]="isMenuOpen">
+  
+  
+  <div class="button-menu" id="buttonMenu">
+    <ion-button class="menu-btn" >
+      <ion-icon src="assets/icons/trash-can.svg" class="menu-icon"></ion-icon> 
+    </ion-button>
+    <ion-button class="menu-btn">
+      <ion-icon src="assets/icons/edit.svg" class="menu-icon"></ion-icon> 
+    </ion-button>
+    <ion-button class="menu-btn"  >
+      <ion-icon src="assets/icons/play--filled--alt.svg" class="menu-icon"></ion-icon> 
+    </ion-button>
+    <ion-button class="menu-btn"  >
+      <ion-icon src="assets/icons/cloud--upload.svg" class="menu-icon"></ion-icon> 
+    </ion-button>
+   
+  </div>
+  
+  <ion-button class="mic-button" id="micButton" (click)="toggleMenu()">
+    <div class="mic-content">
+      <ion-icon src="assets/icons/microphone.svg" class="mic-icon"></ion-icon>
+      <span *ngIf="isMenuOpen" class="record-text">Grabando</span>
+    </div>
+    
+   
+  </ion-button>
+
+ 
+</div>
+
+
+
+
+
+</ion-content>
+

@@ -1,0 +1,189 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar mode="md">
+    <ion-buttons slot="start">
+      <ion-icon src="assets/icons/arrow-back-outline.svg" class="arrow-icon" [routerLink]="['/insignia']"></ion-icon>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-icon src="assets/icons/alert-circle-outline.svg" class="alert-icon" [routerLink]="['/insignia']"></ion-icon>
+    </ion-buttons>
+    <ion-title>Insignias</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="section">
+    <h2>Suscriptor</h2>
+  
+    <ion-card class="card">
+      <ion-card-content>
+        <!-- Nivel I -->
+        <div class="icon-row">
+          <div class="stars">
+          <ion-icon src="assets/icons/61star-filled.svg"></ion-icon>
+        </div>
+          <div class="text-content">
+            <h3>Suscriptor I</h3>
+            <p>Requisitos: Ingreso mensual.</p>
+            <p>Ventajas: Personalización,</p>
+            <p>3 JPG / 1 GIF imagen de audio,</p>
+            <p>1 minuto extra por cada audio,</p>
+            <p>Reducción de un 50% la publicidad</p>
+          </div>
+        </div>
+  
+        <!-- Nivel II -->
+        <div class="icon-row">
+          <div class="stars">
+          <ion-icon src="assets/icons/61star-filled.svg"></ion-icon>
+          <ion-icon src="assets/icons/61star-filled.svg"></ion-icon>
+        </div>
+          <div class="">
+            <h3>Suscriptor II</h3>
+            <p>Requisitos: Ingreso mensual + Social I.</p>
+            <p>Ventajas: Personalización,</p>
+            <p>3 JPG / 2 GIF imagen de audio,</p>
+            <p>3 minutos extra por cada audio,</p>
+            <p>Reducción de un 100% la publicidad</p>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+  
+  <!-- Sección Fundador -->
+  <div class="section">
+    <h2>Fundador</h2>
+  
+    <ion-card class="card">
+      <ion-card-content>
+        <!-- Nivel I -->
+        <div class="icon-row">
+          <ion-icon class="microphone" src="assets/icons/fundador-nivel-1.svg" style="margin-left: 5px;"></ion-icon>
+          <div class="text-content" style="margin-left: 30px;">
+            <h3>Fundador nivel I</h3>
+            <p>Requisitos: 1°s en descarga + Amistad I o Comunicador I.</p>
+            <p>Ventajas: Personalización. 1 JPG / 1 GIF imagen de audio.</p>
+          </div>
+        </div>
+  
+        <!-- Nivel II -->
+        <div class="icon-row">
+          <ion-icon class="microphone" src="assets/icons/fundador-nivel-2.svg"></ion-icon>
+          <div class="text-content">
+            <h3>Fundador nivel II</h3>
+            <p>Requisitos: 1°s en descarga + Social I.</p>
+            <p>Ventajas: Personalización,</p>
+            <p>3 JPG / 1 GIF imagen de audio,</p>
+            <p>3 minutos extra por cada audio.</p>
+          </div>
+        </div>
+  
+        <!-- Nivel III -->
+        <div class="icon-row">
+          <ion-icon class="microphone" src="assets/icons/fundador-nivel-3.svg"></ion-icon>
+          <div class="text-content">
+            <h3>Fundador nivel III</h3>
+            <p>Requisitos: 1°s en descarga + Social I.</p>
+            <p>Ventajas: Personalización.</p>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+  
+  <div class="section">
+    <h2>Amistad</h2>
+  
+    <ion-card class="card">
+      <ion-card-content>
+        <!-- Nivel I -->
+        <div class="icon-row">
+          <ion-icon class="level-icon" src="assets/icons/amistad-nivel-1.svg"></ion-icon>
+          <div class="text-content">
+            <h3>Amistad nivel I</h3>
+            <p>Requisitos: Tener 10 contactos o más, seguir a 10 personas o más y compartir 3 audios o más.</p>
+            <p>Ventajas: 1 JPG imagen de audio.</p>
+          </div>
+        </div>
+  
+        <!-- Nivel II -->
+        <div class="icon-row">
+          <ion-icon class="level-icon" src="assets/icons/amistad-nivel-2.svg"></ion-icon>
+          <div class="text-content">
+            <h3>Amistad nivel II</h3>
+            <p>Requisitos: Tener 20 contactos o más, seguir a 25 personas o más y compartir 8 audios o más.</p>
+            <p>Ventajas: 1 JPG imagen de audio, 1 minuto extra por cada audio.</p>
+          </div>
+        </div>
+  
+        <!-- Nivel III -->
+        <div class="icon-row">
+          <ion-icon class="level-icon" src="assets/icons/amistad-nivel-3.svg"></ion-icon>
+          <div class="text-content">
+            <h3>Amistad nivel III</h3>
+            <p>Requisitos: Tener 30 contactos o más, seguir a 50 personas o más y compartir 20 audios o más.</p>
+            <p>Ventajas: 1 JPG/1 GIF imagen de audio, 50 segundos extra por cada audio.</p>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+  
+  <div class="section">
+    <h2>Comunicador</h2>
+  
+    <ion-card class="card">
+      <ion-card-content>
+        <!-- Nivel I -->
+        <div class="icon-row">
+          <ion-icon class="level-icon" src="assets/icons/comunicador-nivel-1.svg"></ion-icon>
+          <div class="text-content">
+            <h3>Comunicador nivel I</h3>
+            <p>Requisitos: Subir 10 audios y que cada uno de ellos sea escuchado por 10 contactos diferentes.</p>
+            <p>Ventajas: 1 JPG imagen de audio.</p>
+          </div>
+        </div>
+  
+        <!-- Nivel II -->
+        <div class="icon-row">
+          <ion-icon class="level-icon" src="assets/icons/comunicador-nivel-2.svg"></ion-icon>
+          <div class="text-content">
+            <h3>Comunicador nivel II</h3>
+            <p>Requisitos: Tener 20 contactos o más, seguir a 25 personas o más y compartir 8 audios o más.</p>
+            <p>Ventajas: Personalización. 1 JPG imagen de audio.</p>
+          </div>
+        </div>
+  
+        <!-- Nivel III -->
+        <div class="icon-row">
+          <ion-icon class="level-icon" src="assets/icons/comunicador-nivel-3.svg"></ion-icon>
+          <div class="text-content">
+            <h3>Comunicador nivel III</h3>
+            <p>Requisitos: Subir 25 audios y que cada uno de ellos sea escuchado por 25 contactos diferentes.</p>
+            <p>Ventajas: 1 JPG/1 GIF imagen de audio, 50 segundos extra por cada audio.</p>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+  
+  <!-- Sección Medio de comunicación separada -->
+  <div class="section">
+  
+    <ion-card class="card">
+      <ion-card-content>
+        <div class="icon-row">
+          <ion-icon class="level-icon" src="assets/icons/medio-de-comunicacion.svg"></ion-icon>
+          <div class="text-content">
+            <h3>Medio de comunicación</h3>
+            <p>Texto explicativo. Disfruta de 2:00 extra de duración de audios.</p>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+  
+  
+  
+  
+</ion-content>

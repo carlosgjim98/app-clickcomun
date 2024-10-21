@@ -1,0 +1,288 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar mode="md">
+    <ion-buttons slot="start">
+      <ion-icon src="assets/icons/arrow-back-outline.svg" class="arrow-icon" [routerLink]="['/time-list']"></ion-icon>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-icon src="assets/icons/operations-record.svg" class="settings-icon" [routerLink]="['/time-list']"></ion-icon>
+    </ion-buttons>
+    <ion-title>Mis audios</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <div class="title-container">
+    <ion-avatar class="profile-photo" [routerLink]="['/my-timelists']">
+      <img alt="user avatar" src="assets/imgs/Elipse 47-2@3x.png" class="avatar" />
+    </ion-avatar>
+  
+    <div class="text-container">
+      <div class="name-container">
+        <div class="name-row" [routerLink]="['/my-timelists']">
+          <span class="nombre">Jane Doe</span>
+          <ion-icon src="assets/icons/checkmark--filled.svg" class="checkmark-icon"></ion-icon>
+        </div>
+        <a href="http://www.janedoe.com" class="website">www.janedoe.com</a>
+      </div>
+  
+      <div class="info-container">
+        <span class="number">20</span> contactos /
+        <span class="number">625</span> fans /
+        <span class="number">35</span> insignias
+      </div>
+    </div>
+  
+    <div class="trophy-container" [routerLink]="['/insignia']">
+      <ion-icon src="assets/icons/estrellas.svg" class="stars-icon"></ion-icon>
+      <ion-icon src="assets/icons/trophy.svg" class="trophy-icon"></ion-icon>
+    </div>
+  </div>
+
+  <div class="options-container">
+   
+    <button class="option-button"  [routerLink]="['/my-timelists']" >Mis Time-Lists</button>
+    <button class="option-button" style="background-color: #E33941;">Mis audios</button>
+    <button class="option-button"  [routerLink]="['/groups']">Grupos</button>
+</div>
+
+<ion-item class="search-bar">
+  <ion-input  placeholder="Buscar listas, audios y más…" class="search-text" [routerLink]="['/search-timelist']">
+    <ion-icon slot="start" src="assets/icons/search-outline.svg" class="search-icon"></ion-icon>
+    
+  </ion-input>
+</ion-item>
+
+
+  <ion-list>
+
+    <ion-item>
+      <ion-button shape="round" class="play-button" [routerLink]="['/play-audio']">
+        <ion-icon slot="icon-only"src="assets/icons/play--filled--alt.svg" class="play-icon2"></ion-icon>
+      </ion-button>
+  
+      <ion-label>
+        <h2 [routerLink]="['/play-audio']">Audio_000 </h2 >
+        <p>2:57m | 125 Escuchas</p>
+        <!-- Mueve el botón de la papelera aquí para que esté en la misma columna -->
+        <div class="icon-container">
+          <ion-icon class="trash-icon" src="assets/icons/trash-can.svg" style="color: white;" ></ion-icon >
+            <a id="open-modal" (click)="setOpen(true)"><ion-icon class="edit-icon"src="assets/icons/edit00.svg"></ion-icon></a>
+            <ion-icon class="share-icon" src="assets/icons/share.svg" ></ion-icon >
+              
+          </div>
+            
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-button shape="round" class="play-button" [routerLink]="['/play-audio']">
+        <ion-icon slot="icon-only"src="assets/icons/play--filled--alt.svg" class="play-icon2"></ion-icon>
+      </ion-button>
+  
+      <ion-label>
+       <h2 [routerLink]="['/play-audio']">Audio_000 </h2 >
+        <p>2:57m | 125 Escuchas</p>
+        <!-- Mueve el botón de la papelera aquí para que esté en la misma columna -->
+        <div class="icon-container">
+          <ion-icon class="trash-icon" src="assets/icons/trash-can.svg" style="color: white;" ></ion-icon >
+            <a id="open-modal" (click)="setOpen(true)"><ion-icon class="edit-icon"src="assets/icons/edit00.svg"></ion-icon></a>
+            <ion-icon class="share-icon" src="assets/icons/share.svg" ></ion-icon >
+              
+          </div>
+            
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-button shape="round" class="play-button" [routerLink]="['/play-audio']">
+        <ion-icon slot="icon-only"src="assets/icons/play--filled--alt.svg" class="play-icon2"></ion-icon>
+      </ion-button>
+  
+      <ion-label>
+       <h2 [routerLink]="['/play-audio']">Audio_000 </h2 >
+        <p>2:57m | 125 Escuchas</p>
+        <!-- Mueve el botón de la papelera aquí para que esté en la misma columna -->
+        <div class="icon-container">
+          <ion-icon class="trash-icon" src="assets/icons/trash-can.svg" style="color: white;" ></ion-icon >
+            <a id="open-modal" (click)="setOpen(true)"><ion-icon class="edit-icon"src="assets/icons/edit00.svg"></ion-icon></a>
+            <ion-icon class="share-icon" src="assets/icons/share.svg" ></ion-icon >
+              
+          </div>
+            
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-button shape="round" class="play-button" [routerLink]="['/play-audio']">
+        <ion-icon slot="icon-only"src="assets/icons/play--filled--alt.svg" class="play-icon2"></ion-icon>
+      </ion-button>
+  
+      <ion-label>
+       <h2 [routerLink]="['/play-audio']">Audio_000 </h2 >
+        <p>2:57m | 125 Escuchas</p>
+        <!-- Mueve el botón de la papelera aquí para que esté en la misma columna -->
+        <div class="icon-container">
+          <ion-icon class="trash-icon" src="assets/icons/trash-can.svg" style="color: white;" ></ion-icon >
+            <a id="open-modal" (click)="setOpen(true)"><ion-icon class="edit-icon"src="assets/icons/edit00.svg"></ion-icon></a>
+            <ion-icon class="share-icon" src="assets/icons/share.svg" ></ion-icon >
+              
+          </div>
+            
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-button shape="round" class="play-button" [routerLink]="['/play-audio']">
+        <ion-icon slot="icon-only"src="assets/icons/play--filled--alt.svg" class="play-icon2"></ion-icon>
+      </ion-button>
+  
+      <ion-label>
+       <h2 [routerLink]="['/play-audio']">Audio_000 </h2 >
+        <p>2:57m | 125 Escuchas</p>
+        <!-- Mueve el botón de la papelera aquí para que esté en la misma columna -->
+        <div class="icon-container">
+          <ion-icon class="trash-icon" src="assets/icons/trash-can.svg" style="color: white;" ></ion-icon >
+            <a id="open-modal" (click)="setOpen(true)"><ion-icon class="edit-icon"src="assets/icons/edit00.svg"></ion-icon></a>
+            <ion-icon class="share-icon" src="assets/icons/share.svg" ></ion-icon >
+              
+          </div>
+            
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-button shape="round" class="play-button" [routerLink]="['/play-audio']">
+        <ion-icon slot="icon-only"src="assets/icons/play--filled--alt.svg" class="play-icon2"></ion-icon>
+      </ion-button>
+  
+      <ion-label>
+       <h2 [routerLink]="['/play-audio']">Audio_000 </h2 >
+        <p>2:57m | 125 Escuchas</p>
+        <!-- Mueve el botón de la papelera aquí para que esté en la misma columna -->
+        <div class="icon-container">
+          <ion-icon class="trash-icon" src="assets/icons/trash-can.svg" style="color: white;" ></ion-icon >
+            <a id="open-modal" (click)="setOpen(true)"><ion-icon class="edit-icon"src="assets/icons/edit00.svg"></ion-icon></a>
+            <ion-icon class="share-icon" src="assets/icons/share.svg" ></ion-icon >
+              
+          </div>
+            
+      </ion-label>
+     
+      
+    </ion-item>
+
+
+  </ion-list>
+  
+  <div class="mic-button-container" [class.open-mic]="isMenuOpen">
+  
+  
+    <div class="button-menu" id="buttonMenu">
+      <ion-button class="menu-btn" >
+        <ion-icon src="assets/icons/trash-can.svg" class="menu-icon"></ion-icon> 
+      </ion-button>
+      <ion-button class="menu-btn">
+        <ion-icon src="assets/icons/edit.svg" class="menu-icon"></ion-icon> 
+      </ion-button>
+      <ion-button class="menu-btn"  >
+        <ion-icon src="assets/icons/play--filled--alt.svg" class="menu-icon"></ion-icon> 
+      </ion-button>
+      <ion-button class="menu-btn"  >
+        <ion-icon src="assets/icons/cloud--upload.svg" class="menu-icon"></ion-icon> 
+      </ion-button>
+     
+    </div>
+    
+    <ion-button class="mic-button" id="micButton" (click)="toggleMenu()">
+      <div class="mic-content">
+        <ion-icon src="assets/icons/microphone.svg" class="mic-icon"></ion-icon>
+        <span *ngIf="isMenuOpen" class="record-text">Grabando</span>
+      </div>
+      
+     
+    </ion-button>
+  </div>
+
+
+  <ion-modal [isOpen]="isModalOpen" (ionModalDidDismiss)="setOpen(false)"  [initialBreakpoint]="1" [breakpoints]="[0, 1]" >
+    <ng-template>
+      <div class="modal-content">
+        <form>
+          <div class="form-header">
+            <ion-icon src="assets/icons/close-outline.svg" class="close-icon" (click)="setOpen(false)"></ion-icon>
+          </div>
+
+          <div class="upload-image">
+            <label for="uploadImage">
+              <div class="icon-container2">
+                <ion-icon src="assets/icons/add-image.svg"></ion-icon>
+              </div>
+              <span>Subir<br>imagen</span> 
+            </label>
+          </div>
+
+          <img alt="ondas" src="assets/imgs/Onda.png" class="wave-img" />
+
+          <ion-list lines="none">
+            <ion-item>
+              <div class="item-content">
+                <ion-icon src="/assets/icons/microphone.svg"></ion-icon>
+                <ion-label>Nombre del audio</ion-label>
+                <ion-text>62389468932_000</ion-text>
+              </div>
+              <ion-icon name="checkmark-circle" class="checkmark-icon" style="color: #E33941;" slot="end"></ion-icon>
+            </ion-item>
+
+            <ion-item>
+              <div class="item-content">
+                <ion-icon src="assets/icons/edit00.svg"></ion-icon>
+                <ion-label>Descripción</ion-label>
+                <ion-text>Audio sobre las últimas noticias de la semana en la isla de Tenerife</ion-text>
+                <ion-text class="char-count">37/144</ion-text>
+              </div>
+              <ion-icon name="checkmark-circle" class="checkmark-icon" style="color: #E33941;" slot="end"></ion-icon>
+            </ion-item>
+
+            <ion-item>
+              <div class="item-content">
+                <ion-icon src="assets/icons/collapse-all.svg"></ion-icon>
+                <ion-label>Categoría</ion-label>
+                <ion-text>Noticias</ion-text>
+              </div>
+              <ion-icon name="checkmark-circle" class="checkmark-icon" style="color: #E33941;" slot="end"></ion-icon>
+            </ion-item>
+
+            <ion-item>
+              <div class="item-content">
+                <ion-icon src="assets/icons/location.svg"></ion-icon>
+                <ion-label>Georeferencia</ion-label>
+                <ion-text>España, Canarias, Tenerife</ion-text>
+              </div>
+              <ion-icon name="checkmark-circle" class="checkmark-icon" style="color: #E33941;" slot="end"></ion-icon>
+            </ion-item>
+
+            <ion-item class="estado">
+              <ion-label class="estado">Marcar como estado</ion-label>
+              <div class="action-icons" slot="end" style="margin-top: 30px;">
+                <ion-icon name="checkmark-circle" class="action-icon" style="color: #E33941;"></ion-icon>
+                <ion-icon src="assets/icons/retry-failed.svg" class="action-icon2"></ion-icon>
+                <ion-icon name="play-outline" class="action-icon2"></ion-icon>
+              </div>
+            </ion-item>
+          </ion-list>
+
+          <div class="button-container">
+            <ion-button class="save-button" (click)="setOpen(false)">
+              Guardar 
+            </ion-button>
+          </div>
+        </form>
+      </div>
+    </ng-template>
+  </ion-modal>
+
+
+
+  
+</ion-content>

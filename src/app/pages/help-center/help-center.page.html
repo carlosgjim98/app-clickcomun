@@ -1,0 +1,39 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar mode="md">
+    <ion-buttons slot="start">
+      <ion-icon src="assets/icons/arrow-back-outline.svg" class="arrow-icon" (click)="goBack()"></ion-icon>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-icon src="assets/icons/close-outline.svg" class="alert-icon"  [routerLink]="['/my-profile']" ></ion-icon>
+    </ion-buttons>
+    <ion-title>Centro de ayuda</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <div class="help-list">
+    
+    <div class="help-item" >
+        <span>FAQ</span>
+        <ion-icon src="assets/icons/play--filled--alt.svg" class="arrow-icon" style="color: red;"></ion-icon>
+    </div>
+    <div class="help-item">
+        <span>Informar sobre un error</span>
+        <ion-icon src="assets/icons/play--filled--alt.svg" class="arrow-icon" style="color: red;"></ion-icon>
+    </div>
+    <div class="help-item">
+        <span>Ayuda</span>
+        <ion-icon src="assets/icons/play--filled--alt.svg" class="arrow-icon" style="color: red;"></ion-icon>
+    </div>
+    <div class="help-item">
+        <span>Términos de uso</span>
+        <ion-icon src="assets/icons/play--filled--alt.svg" class="arrow-icon" style="color: red;"></ion-icon>
+    </div>
+    
+  </div>
+    
+
+
+</ion-content>

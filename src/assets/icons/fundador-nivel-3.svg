@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="38.149" height="46.163" viewBox="0 0 38.149 46.163">
+  <g id="Grupo_273" data-name="Grupo 273" transform="translate(1.075 1.13)">
+    <g id="micro_fundador" data-name="micro fundador" transform="translate(8.998 17.027)">
+      <path id="Trazado_146" data-name="Trazado 146" d="M26.5,21v3a7,7,0,0,1-14,0V21h-2v3a9,9,0,0,0,8,8.942V35h-4v2h10V35h-4v-2.06A9,9,0,0,0,28.5,24V21Z" transform="translate(-10.5 -8.998)" fill="#fff"/>
+      <path id="Trazado_147" data-name="Trazado 147" d="M21.5,23a5,5,0,0,0,5-5V8a5,5,0,1,0-10,0V18A5,5,0,0,0,21.5,23Z" transform="translate(-12.499 -3)" fill="#fff"/>
+    </g>
+    <g id="estrellas">
+      <g id="star-filled" transform="translate(0 3.514)">
+        <path id="Trazado_93" data-name="Trazado 93" d="M7.527,3.125,5.819,6.587,2,7.139l2.764,2.7-.653,3.8,3.417-1.795,3.417,1.795-.653-3.8,2.764-2.692L9.236,6.587Z" transform="translate(-2 -3.125)" fill="#e33941" stroke="#e33941" stroke-width="1"/>
+      </g>
+      <g id="star-filled-2" data-name="star-filled" transform="translate(12.973)">
+        <path id="Trazado_93-2" data-name="Trazado 93" d="M7.527,3.125,5.819,6.587,2,7.139l2.764,2.7-.653,3.8,3.417-1.795,3.417,1.795-.653-3.8,2.764-2.692L9.236,6.587Z" transform="translate(-2 -3.125)" fill="rgba(227,57,65,0.99)" stroke="#e62f2c" stroke-width="1"/>
+      </g>
+      <g id="star-filled-3" data-name="star-filled" transform="translate(24.945 3.514)">
+        <path id="Trazado_93-3" data-name="Trazado 93" d="M7.527,3.125,5.819,6.587,2,7.139l2.764,2.7-.653,3.8,3.417-1.795,3.417,1.795-.653-3.8,2.764-2.692L9.236,6.587Z" transform="translate(-2 -3.125)" fill="#e33941" stroke="#e33941" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

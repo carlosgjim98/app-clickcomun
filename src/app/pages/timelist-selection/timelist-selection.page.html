@@ -1,0 +1,113 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar mode="md">
+    <ion-buttons slot="start">
+      <ion-icon src="assets/icons/arrow-back-outline.svg" class="arrow-icon" [routerLink]="['/time-list']"></ion-icon>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-icon src="assets/icons/operations-record.svg" class="settings-icon" [routerLink]="['/time-list']"></ion-icon>
+    </ion-buttons>
+    <ion-title>Time-List</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="time-list-page">
+    <div class="image-container">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="assets/imgs/ciudad@3x.png" alt="Imagen ciudad" class="left-image" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/imgs/imagen-taza@3x.png" alt="Imagen de taza" class="center-image" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/imgs/puesta-de-sol@3x.png" alt="Imagen playa" class="right-image" />
+          </div>
+        </div>
+      </div>
+
+      <div class="overlay-icons">
+        <ion-icon src="assets/icons/play--filled-red.svg" class="play-icon"></ion-icon>
+        <ion-icon src="assets/icons/shuffle.svg" class="shuffle-icon"></ion-icon>
+      </div>
+    </div>
+
+    <div class="time-list-info">
+      <h2>{{ currentTimeList.title }}</h2>
+      <div class="action-buttons">
+        <button class="btn-seguir">Seguir</button>
+        <ion-icon src="assets/icons/share.svg" class="info-icon"></ion-icon>
+        <ion-icon src="assets/icons/ellipsis-vertical.svg" class="info-icon"></ion-icon>
+      </div>
+    </div>
+
+    <div class="tags">
+      <span class="tag">Top</span>
+      <span class="tag">Novedades</span>
+    </div>
+
+    <!-- Iteración sobre los audio items -->
+    <!-- Iteración sobre los audio items -->
+    <div *ngFor="let audioItem of currentTimeList.audioItems" class="audio-item">
+      <div class="left-section">
+          <button class="play-button" >
+            <ion-icon  src="{{ audioItem.icon }}"  class="audio-icon"></ion-icon>
+          </button>
+      </div>
+      <div class="info-section">
+        <h3>{{ audioItem.title }}</h3> <!-- Título del audio -->
+        <p>{{ audioItem.author }} | {{ audioItem.listens }} Escuchas</p> <!-- Autor y número de escuchas -->
+        <div class="audio-stats">
+          <span>{{ audioItem.duration }}</span> <!-- Duración -->
+          <ion-icon src="assets/icons/favorite--filled.svg" class="stat-icon" 
+          [ngClass]="{'favorite-active': audioItem.isFavorite}" 
+          (click)="toggleFavorite(audioItem)"></ion-icon>
+          <span>{{ audioItem.favorites }}</span> <!-- Favoritos -->
+          <ion-icon src="assets/icons/comentarios.svg" class="stat-icon"></ion-icon>
+          <span>{{ audioItem.comments }}</span> <!-- Comentarios -->
+          <div class="share-icons">
+            <ion-icon src="assets/icons/share.svg" class="share-icon"></ion-icon>
+            <ion-icon src="assets/icons/alert-circle-outline.svg" class="share-icon"></ion-icon>
+          </div>
+        </div>
+        <div class="indicator-bar">
+          <span class="progress"></span> <!-- Barra de progreso -->
+        </div>
+      </div>
+      
+    </div>
+
+    
+
+  
+
+
+
+
+
+    <div class="mic-button-container" [class.open-mic]="isMenuOpen">
+      <div class="button-menu" id="buttonMenu">
+        <ion-button class="menu-btn">
+          <ion-icon src="assets/icons/trash-can.svg" class="menu-icon"></ion-icon>
+        </ion-button>
+        <ion-button class="menu-btn">
+          <ion-icon src="assets/icons/edit.svg" class="menu-icon"></ion-icon>
+        </ion-button>
+        <ion-button class="menu-btn">
+          <ion-icon src="assets/icons/play--filled--alt.svg" class="menu-icon"></ion-icon>
+        </ion-button>
+        <ion-button class="menu-btn">
+          <ion-icon src="assets/icons/cloud--upload.svg" class="menu-icon"></ion-icon>
+        </ion-button>
+      </div>
+
+      <ion-button class="mic-button" id="micButton" (click)="toggleMenu()">
+        <div class="mic-content">
+          <ion-icon src="assets/icons/microphone.svg" class="mic-icon"></ion-icon>
+          <span *ngIf="isMenuOpen" class="record-text">Grabando</span>
+        </div>
+      </ion-button>
+    </div>
+  </div>
+</ion-content>

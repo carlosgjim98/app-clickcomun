@@ -1,0 +1,69 @@
+.verification-text{
+
+    margin-top: 0px;
+    padding: 30px;
+}
+
+.verification-text h1{
+
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.verification-text p{
+    font-size: 16px;
+    font-weight: lighter;
+
+    
+}
+
+.dni-verification {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+}
+
+.square-with-line {
+    position: relative;
+    width: 250px; /* Ajusta según el tamaño deseado */
+    height: 250px; /* Debe ser igual al ancho para que sea un cuadrado */
+    border: 4px solid rgba(255, 255, 255, 0.2); /* Borde tenue */
+    
+}
+
+.square-with-line::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    left: -10%; /* Hacer que sobresalga */
+    width: 120%; /* Ajusta para sobresalir a los lados */
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2); /* Línea que cruza el cuadrado */
+    transform: translateY(-50%); /* Centrar la línea exactamente en el medio */
+    
+}
+
+.camera-button {
+    position: absolute;
+    bottom: 100px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #E33941; /* Color rojo del botón */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    margin-top: -10px;
+  
+}
+
+.camera-icon {
+    width: 50px;
+    height: 50px;
+    
+}

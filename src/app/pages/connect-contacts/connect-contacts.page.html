@@ -1,0 +1,136 @@
+<ion-content [fullscreen]="true" class="ion-padding ion-text-center">
+ 
+  
+
+ 
+  <div class="header-container">
+    <h1 class="title">WoWeLike</h1>
+    <div class="subtitle">
+      <p>Conecta con</p>
+      <p>Tus contactos</p>
+    </div>
+  </div>
+
+  <!-- Círculo de fondo SVG -->
+  <div class="svg-background"></div>
+
+  <!-- Lista de usuarios -->
+  <ion-list lines="none">
+    <app-list-users *ngFor="let user of users" [user]="user"></app-list-users> <!-- componente -->
+    <ion-item lines="none">
+      <ion-avatar aria-hidden="true" slot="start">
+        <img alt="user avatar" src="assets/imgs/Elipse 47@3x.png" />
+      </ion-avatar>
+      
+      <div class="user-info">
+        <h2>Antirr84</h2>
+        <p>45 audios | 256 seguidores</p>
+      </div>
+      <ion-button  slot="end"  > 
+      <ion-icon name="user-follow" src="assets/icons/user-follow.svg" class="collapse-icon"></ion-icon>
+    </ion-button>
+     
+    </ion-item>
+    
+
+   
+    <ion-item>
+      <ion-avatar aria-hidden="true" slot="start">
+        <img alt="user avatar" src="assets/imgs/Elipse 47-1@3x.png" />
+      </ion-avatar>
+      <div class="user-info">
+        <h2>User_00</h2>
+        <p>32 audios | 198 seguidores</p>
+      </div>
+      <ion-button  slot="end">
+        <ion-icon name="user-follow" src="assets/icons/user-follow.svg" class="collapse-icon"></ion-icon>
+      </ion-button>
+    </ion-item>
+
+   
+    <ion-item>
+      <ion-avatar aria-hidden="true" slot="start">
+        <img alt="user avatar" src="assets/imgs/Elipse 47-2@3x.png" />
+      </ion-avatar>
+      <div class="user-info">
+        <h2>User_00</h2>
+        <p>50 audios | 310 seguidores</p>
+      </div>
+      <ion-button  slot="end">
+        <ion-icon name="user-follow" src="assets/icons/user-follow.svg" class="collapse-icon"></ion-icon>
+      </ion-button>
+    </ion-item>
+    
+    <ion-item>
+      <ion-avatar aria-hidden="true" slot="start">
+        <img alt="user avatar" src="assets/imgs/Elipse 47-3@3x.png" />
+      </ion-avatar>
+      <div class="user-info">
+        <h2>User_00</h2>
+        <p>50 audios | 310 seguidores</p>
+      </div>
+      <ion-button slot="end"> <ion-icon name="user-follow" src="assets/icons/user-follow.svg" class="collapse-icon"></ion-icon>
+      </ion-button>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar aria-hidden="true" slot="start">
+        <img alt="user avatar" src="assets/imgs/Elipse 47-4@3x.png" />
+      </ion-avatar>
+      <div class="user-info">
+        <h2>User_00</h2>
+        <p>50 audios | 310 seguidores</p>
+      </div>
+      <ion-button  slot="end">
+        <ion-icon name="user-follow" src="assets/icons/user-follow.svg" class="collapse-icon"></ion-icon>
+      </ion-button>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar aria-hidden="true" slot="start">
+        <img alt="user avatar" src="assets/imgs/Elipse 47-5@3x.png" />
+      </ion-avatar>
+      <div class="user-info">
+        <h2>User_00</h2>
+        <p>50 audios | 310 seguidores</p>
+      </div>
+      <ion-button  slot="end">
+        <ion-icon name="user-follow" src="assets/icons/user-follow.svg" class="collapse-icon"></ion-icon>
+      </ion-button>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar aria-hidden="true" slot="start">
+        <img alt="user avatar" src="assets/imgs/Elipse 47-6@3x.png" />
+      </ion-avatar>
+      <div class="user-info">
+        <h2>User_00</h2>
+        <p>50 audios | 310 seguidores</p>
+      </div>
+      <ion-button  slot="end">
+        <ion-icon name="user-follow" src="assets/icons/user-follow.svg" class="collapse-icon"></ion-icon>
+      </ion-button>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar aria-hidden="true" slot="start">
+        <img alt="user avatar" src="assets/imgs/Elipse 47-7@3x.png" />
+      </ion-avatar>
+      <div class="user-info">
+        <h2>User_00</h2>
+        <p>50 audios | 310 seguidores</p>
+      </div>
+      <ion-button  slot="end">
+        <ion-icon name="user-follow" src="assets/icons/user-follow.svg" class="collapse-icon"></ion-icon>
+      </ion-button>
+    </ion-item>
+
+   
+  </ion-list>
+
+  <div class="button-container">
+    <ion-button class="saltar-button" expand="block" routerLink="/tabs/social">Saltar</ion-button>
+    <ion-button class="continue-button" expand="block" routerLink="/tabs/social">Continuar</ion-button>
+  </div>
+
+</ion-content>

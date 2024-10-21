@@ -1,0 +1,51 @@
+
+
+<ion-content [fullscreen]="true" class="ion-padding ion-text-center">
+  
+
+  <div class="header-container">
+    <h1 class="title">WoWeLike</h1>
+    <div class="subtitle">
+      <p>Busca contactos</p>
+      
+    </div>
+    
+  </div>
+
+  <!-- Círculo de fondo SVG -->
+  <div class="svg-background"></div>
+
+  <div class="add-container">
+    <h2>Busca por teléfono o email</h2>
+    <ion-item class="add-item" >
+      <ion-input placeholder="Teléfono/Email" clear-input="true" class="add-label"></ion-input>
+    </ion-item>
+  </div>
+  <ion-list lines="none">
+ 
+  <ion-item>
+    <ion-avatar slot="start" >
+      <img alt="user avatar" src="assets/imgs/Elipse 47-4@3x.png" class="item-avatar" />
+    </ion-avatar>
+    <ion-label>
+      <h2>Antirr84</h2>
+      <p>45 audios | 256 seguidores</p>
+    </ion-label>
+    <div class="button-container"> 
+    
+    </div>
+  </ion-item>
+
+</ion-list>
+
+<div class="button-container">
+  <ion-button class="add-button">Agregar contacto</ion-button>
+  <ion-button class="follow-button">Seguir</ion-button>
+</div>
+
+
+<div class="continue-button">
+<ion-button class="continue" [routerLink]="['/contacts']"> Continuar</ion-button>
+</div>
+    
+</ion-content>

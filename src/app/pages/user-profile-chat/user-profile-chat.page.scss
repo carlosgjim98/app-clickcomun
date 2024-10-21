@@ -1,0 +1,141 @@
+.title-container {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #ffffff; /* Texto blanco */
+    gap: 15px; /* Espacio entre el avatar y el contenedor de texto */
+  }
+  
+  .profile-photo {
+    flex-shrink: 0; /* Mantiene el tamaño constante del avatar */
+    width: 70px;
+    height: 70px;
+  }
+  
+  .avatar {
+    border-radius: 50%;
+    object-fit: cover; /* Ajusta la imagen dentro del avatar */
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(137deg, #1999D1, #7D32E3); /* Degradado entre dos colores */
+    padding: 5px; /* Grosor del borde */
+  }
+  
+  .text-container {
+    display: flex;
+    flex-direction: column; /* Alinea todos los elementos verticalmente */
+    gap: 4px; /* Espacio entre cada sección */
+    flex: 1; /* Ocupa el espacio restante */
+  }
+  
+  .name-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2px; /* Espacio entre el nombre y la URL */
+  }
+  
+  .name-row {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Espacio entre el nombre y el icono de verificación */
+  }
+  
+  .nombre {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .checkmark-icon {
+    width: 16px;
+    height: 16px;
+    color: #E33941; /* Color rojo para el icono de verificación */
+  }
+  
+  .state {
+    font-size: 14px;
+    color: #ffffff; /* Color gris claro para la URL */
+    text-decoration: none; /* Sin subrayado */
+  }
+  
+  
+  .number {
+    font-weight: bold;
+  }
+  
+  .trophy-container {
+    position: relative; /* Para permitir la posición absoluta de los íconos */
+    margin-right: 40px; /* Ajusta según sea necesario */
+  }
+  
+  .stars-icon {
+    position: absolute; /* Posiciona el ícono de estrellas */
+    top: -30px; /* Ajusta la posición vertical */
+    left: 40%; /* Centra horizontalmente */
+    transform: translateX(-50%); /* Ajusta el centrado */
+    width: 50px; /* Tamaño del ícono */
+    height: 50px; /* Tamaño del ícono */
+    
+  }
+
+  .audio-button{
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    --background: #43434B;
+    font-size: 12px ;
+    height:20px ;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 20px;
+
+  }
+
+  ion-item{
+
+    --background:#43434B;
+  }
+
+  .comment-item {
+    background-color: #43434B; 
+    border-radius: 20px;
+    bottom: 0;
+    margin: 20px;
+    position: fixed;
+    width: 90%;
+    margin-bottom: 60px;
+    
+  }
+  
+  .comment-label {
+    color: #ffffff; /* Color del texto */
+    font-size: 14px;
+  }
+  
+  .avatar-comment{
+
+    width: 50px;
+    height: 50px;
+  }
+  
+  ion-button {
+    --background: transparent;
+    --color: #ffffff; /* Color del icono */
+    
+  }
+  
+  .mic-icon{
+    width: 34px;
+    height: 34px;
+    margin-right: -10px;
+  }
+
+  ion-icon.recording {
+    color: #ff4d4d;
+  }
+  
+
+ 
+  

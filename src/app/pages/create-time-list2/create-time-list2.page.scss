@@ -1,0 +1,142 @@
+
+
+
+.title {
+  font-family: 'Bellota', sans-serif;
+  font-weight: bold;
+  font-size:6svh;
+  margin-top: -5px;
+  text-align: center;
+}
+
+.subtitle {
+  font-family: 'Bellota', sans-serif;
+  font-weight: light;
+  color: #e4e4e4;
+   text-align: center; 
+   line-height: 0.5;
+   font-size:2.5svh;
+}
+  
+ .header-container {
+      text-align: center; 
+      margin-top: 60px;
+  }
+
+.selection-text{
+  font-family: 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    color: #ADADAD;
+    margin-top: 60px;
+    text-align: left;
+    margin-left: 20px;
+
+
+}
+.input-item {
+    --background: transparent;
+    --border-color: transparent;
+    --border-style: none;
+    --border-width: 0px;
+    --inner-border-width: 0px;
+    
+  }
+  
+  .input-item ion-label {
+    margin-bottom: 87px; /* Ajusta el margen inferior de la etiqueta */
+  }
+  
+  .input-item ion-input {
+    --background: transparent;
+    --border-color: transparent;
+    --placeholder-color: #e4e4e4;
+    color: #ffffff;
+    font-size: 16px;
+    margin-left: 15px;
+    margin-top: -30px;
+  }
+  
+    
+    .collapse-icon {
+      width: 20px;
+      height: 20px;
+      color: #ffffff; /* Cambia el color del ícono */
+      margin-right: 300px;
+      margin-bottom: 20px;
+
+    }
+    
+  
+  
+  .description {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    color: #E4E4E4; 
+    margin-top: -0px; /* Ajusta el valor para desplazar el texto hacia arriba */
+  }
+  .categories {
+    display:flex;
+    flex-wrap: wrap; /* Permite que los chips se ajusten a la línea siguiente si es necesario */
+    gap: 2px; /* Espacio entre los chips */
+    justify-content: center; 
+    align-items: center; 
+
+  }
+  
+  ion-chip {
+    font-size: 16px; /* Ajusta el tamaño de la fuente dentro del chip */
+    padding: 11px; /* Ajusta el padding para hacer el chip más grande */
+    border-radius: 19px; /* Ajusta el borde redondeado si es necesario */
+   min-width: 70px; 
+   
+  }
+
+  
+
+  .continue-button{
+
+    margin-top: 100px;
+  }
+
+  
+  .ver-mas-container {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el texto y el ícono */
+    justify-content: flex-end; /* Alinea los elementos al margen derecho del contenedor */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .ver-mas-text {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 14px; /* Tamaño del texto */
+    color: #ffffff; /* Color del texto */
+    margin-right: 5px; /* Espacio entre el texto y el ícono */
+  }
+  
+  .arrow-icon {
+    width: 20px; /* Tamaño del ícono */
+    height: 20px;
+    margin-left: 5px; /* Espacio entre el texto y el ícono */
+    color:#E62F2C;
+  }
+  
+   
+
+    
+
+
+  .svg-background {
+    width: 500px; /* Ajusta el tamaño según sea necesario */
+    height: 500px;
+    background-image: url('/assets/icons/background.svg'); /* Ruta al archivo background.svg */
+    background-size: cover; /* Asegura que el SVG cubra todo el área del div */
+    background-position: center; /* Centra la imagen */
+    position: absolute;
+    top: -280px; /* Ajusta la posición según lo necesites */
+    left: 50%; /* Centra horizontalmente */
+    transform: translateX(-50%);
+    z-index: -1; /* Asegúrate de que esté detrás del contenido */
+  }
+  

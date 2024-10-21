@@ -1,0 +1,124 @@
+.title {
+  font-family: 'Bellota', sans-serif;
+  font-weight: bold;
+  font-size:6svh;
+  margin-top: -5px;
+  text-align: center;
+}
+
+.subtitle p{
+  font-family: 'Bellota', sans-serif;
+  font-weight: light;
+  color: #e4e4e4;
+   text-align: center; 
+   line-height: 0.5;
+   font-size:2.5svh;
+}
+  
+ .header-container {
+      text-align: center; 
+      margin-top: 60px;
+  }
+
+
+
+ion-list {
+    margin: 0;
+    padding: 0;
+    background: transparent !important;
+    
+    
+  }
+  
+  ion-item {
+    --background: transparent !important;
+    margin: 8px 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-style: Regular;
+   
+    
+  }
+
+  ion-button{
+
+  width: 42px;
+  height: 29px;
+  --background: #43434B; 
+  --color: #fff;
+  --border-radius: 20px; 
+  
+  }
+ ion-item ion-avatar {
+    width: 59px; 
+    height: 59px;
+  }
+  
+  
+
+ 
+
+  h2 {
+    font-size: 14px;
+    font-weight: bold;
+    
+  }
+  
+
+  p {
+    font-size: 12px;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-style: Regular;
+   
+  }
+  
+  .button-container {
+    display: flex; 
+    justify-content: space-between; 
+    width: 100%; 
+    margin: 50px auto; 
+}
+  .saltar-button, .continue-button {
+    flex: 1; 
+    margin: 0; 
+    height: auto; 
+    
+    font-size: 16px; 
+    padding: 0 12px; 
+    font-family: 'Helvetica', 'Arial', sans-serif; 
+    font-weight: bold; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    --color: #ffffff; 
+    min-width: 100px; 
+    max-width: 200px; 
+    
+}
+
+.continue-button {
+    --background: #E33941; 
+    
+    
+}
+
+
+.saltar-button {
+    --background: #43434B; 
+}
+
+.svg-background {
+  width: 500px; /* Ajusta el tamaño según sea necesario */
+  height: 500px;
+  background-image: url('/assets/icons/background.svg'); /* Ruta al archivo background.svg */
+  background-size: cover; /* Asegura que el SVG cubra todo el área del div */
+  background-position: center; /* Centra la imagen */
+  position: absolute;
+  top: -280px; /* Ajusta la posición según lo necesites */
+  left: 50%; /* Centra horizontalmente */
+  transform: translateX(-50%);
+  z-index: -1; /* Asegúrate de que esté detrás del contenido */
+}
+
+.header-container{
+  margin-top: 40px;
+}

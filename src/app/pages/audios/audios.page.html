@@ -1,0 +1,193 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar mode="md">
+    <ion-buttons slot="start">
+      <ion-icon src="assets/icons/arrow-back-outline.svg" class="arrow-icon" [routerLink]="['/following']"></ion-icon>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-icon src="assets/icons/share.svg" class="settings-icon" ></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+
+
+  <div class="title-container">
+    <ion-avatar class="profile-photo" [routerLink]="['/my-timelists']">
+      <img alt="user avatar" src="assets/imgs/Elipse 47-2@3x.png" class="avatar" />
+    </ion-avatar>
+  
+    <div class="text-container">
+      <div class="name-container">
+        <div class="name-row" [routerLink]="['/my-timelists']">
+          <span class="nombre">Jane Doe</span>
+          <ion-icon src="assets/icons/checkmark--filled.svg" class="checkmark-icon"></ion-icon>
+        </div>
+        <a href="http://www.janedoe.com" class="website">www.janedoe.com</a>
+      </div>
+    </div>
+  
+      
+  
+    <div class="trophy-container" [routerLink]="['/insignia']">
+      <ion-icon src="assets/icons/estrellas.svg" class="stars-icon"></ion-icon>
+      <ion-icon src="assets/icons/trophy.svg" class="trophy-icon"></ion-icon>
+    </div>
+  </div>
+
+  <ion-button class="audio-button"> Audios</ion-button>
+
+  <div  class="audio-item">
+    <div class="left-section">
+      <ion-button shape="round" class="play-button" >
+        <ion-icon slot="icon-only"src="assets/icons/pause-outline.svg" class="play-icon2"></ion-icon>
+      </ion-button>
+    </div>
+    <div class="info-section">
+      <h3>El arte de la resolución | Saltando obstáculos en tu día a día</h3> <!-- Título del audio -->
+      <p>Antirr84 | 520 Escuchas</p> <!-- Autor y número de escuchas -->
+      <div class="audio-stats">
+        <span>3:22</span> <!-- Duración -->
+        <ion-icon src="assets/icons/favorite.svg" class="stat-icon"></ion-icon>
+        <span>25</span> <!-- Favoritos -->
+        <ion-icon src="assets/icons/comentarios.svg" class="stat-icon"></ion-icon>
+        <span>12</span> <!-- Comentarios -->
+        <div class="share-icons">
+          <ion-icon src="assets/icons/share.svg" class="share-icon"></ion-icon>
+          <ion-icon src="assets/icons/alert-circle-outline.svg" class="share-icon"></ion-icon>
+        </div>
+      </div>
+      <div class="indicator-bar">
+        <span class="progress"></span> <!-- Barra de progreso -->
+      </div>
+    </div>
+  </div>
+
+  <div  class="audio-item">
+    <div class="left-section">
+      <ion-button shape="round" class="play-button" >
+        <ion-icon slot="icon-only"src="assets/icons/play--filled--alt.svg" class="play-icon2"></ion-icon>
+      </ion-button>
+    </div>
+    <div class="info-section">
+      <h3>El arte de la resolución | Saltando obstáculos en tu día a día</h3> <!-- Título del audio -->
+      <p>Antirr84 | 520 Escuchas</p> <!-- Autor y número de escuchas -->
+      <div class="audio-stats">
+        <span>3:22</span> <!-- Duración -->
+        <ion-icon src="assets/icons/favorite.svg" class="stat-icon"></ion-icon>
+        <span>25</span> <!-- Favoritos -->
+        <ion-icon src="assets/icons/comentarios.svg" class="stat-icon"></ion-icon>
+        <span>12</span> <!-- Comentarios -->
+        <div class="share-icons">
+          <ion-icon src="assets/icons/share.svg" class="share-icon"></ion-icon>
+          <ion-icon src="assets/icons/alert-circle-outline.svg" class="share-icon"></ion-icon>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <div  class="audio-item">
+    <div class="left-section">
+      <ion-button shape="round" class="play-button" >
+        <ion-icon slot="icon-only"src="assets/icons/play--filled--alt.svg" class="play-icon2"></ion-icon>
+      </ion-button>
+    </div>
+    <div class="info-section">
+      <h3>El arte de la resolución | Saltando obstáculos en tu día a día</h3> <!-- Título del audio -->
+      <p>Antirr84 | 520 Escuchas</p> <!-- Autor y número de escuchas -->
+      <div class="audio-stats">
+        <span>3:22</span> <!-- Duración -->
+        <ion-icon src="assets/icons/favorite.svg" class="stat-icon"></ion-icon>
+        <span>25</span> <!-- Favoritos -->
+        <ion-icon src="assets/icons/comentarios.svg" class="stat-icon"></ion-icon>
+        <span>12</span> <!-- Comentarios -->
+        <div class="share-icons">
+          <ion-icon src="assets/icons/share.svg" class="share-icon"></ion-icon>
+          <ion-icon src="assets/icons/alert-circle-outline.svg" class="share-icon"></ion-icon>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <div  class="audio-item">
+    <div class="left-section">
+      <ion-button shape="round" class="play-button" >
+        <ion-icon slot="icon-only"src="assets/icons/play--filled--alt.svg" class="play-icon2"></ion-icon>
+      </ion-button>
+    </div>
+    <div class="info-section">
+      <h3>El arte de la resolución | Saltando obstáculos en tu día a día</h3> <!-- Título del audio -->
+      <p>Antirr84 | 520 Escuchas</p> <!-- Autor y número de escuchas -->
+      <div class="audio-stats">
+        <span>3:22</span> <!-- Duración -->
+        <ion-icon src="assets/icons/favorite.svg" class="stat-icon"></ion-icon>
+        <span>25</span> <!-- Favoritos -->
+        <ion-icon src="assets/icons/comentarios.svg" class="stat-icon"></ion-icon>
+        <span>12</span> <!-- Comentarios -->
+        <div class="share-icons">
+          <ion-icon src="assets/icons/share.svg" class="share-icon"></ion-icon>
+          <ion-icon src="assets/icons/alert-circle-outline.svg" class="share-icon"></ion-icon>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <div  class="audio-item">
+    <div class="left-section">
+      <ion-button shape="round" class="play-button" >
+        <ion-icon slot="icon-only"src="assets/icons/play--filled--alt.svg" class="play-icon2"></ion-icon>
+      </ion-button>
+    </div>
+    <div class="info-section">
+      <h3>El arte de la resolución | Saltando obstáculos en tu día a día</h3> <!-- Título del audio -->
+      <p>Antirr84 | 520 Escuchas</p> <!-- Autor y número de escuchas -->
+      <div class="audio-stats">
+        <span>3:22</span> <!-- Duración -->
+        <ion-icon src="assets/icons/favorite.svg" class="stat-icon"></ion-icon>
+        <span>25</span> <!-- Favoritos -->
+        <ion-icon src="assets/icons/comentarios.svg" class="stat-icon"></ion-icon>
+        <span>12</span> <!-- Comentarios -->
+        <div class="share-icons">
+          <ion-icon src="assets/icons/share.svg" class="share-icon"></ion-icon>
+          <ion-icon src="assets/icons/alert-circle-outline.svg" class="share-icon"></ion-icon>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="mic-button-container" [class.open-mic]="isMenuOpen">
+    <div class="button-menu" id="buttonMenu">
+      <ion-button class="menu-btn">
+        <ion-icon src="assets/icons/trash-can.svg" class="menu-icon"></ion-icon>
+      </ion-button>
+      <ion-button class="menu-btn">
+        <ion-icon src="assets/icons/edit.svg" class="menu-icon"></ion-icon>
+      </ion-button>
+      <ion-button class="menu-btn">
+        <ion-icon src="assets/icons/play--filled--alt.svg" class="menu-icon"></ion-icon>
+      </ion-button>
+      <ion-button class="menu-btn">
+        <ion-icon src="assets/icons/cloud--upload.svg" class="menu-icon"></ion-icon>
+      </ion-button>
+    </div>
+
+    <ion-button class="mic-button" id="micButton" (click)="toggleMenu()">
+      <div class="mic-content">
+        <ion-icon src="assets/icons/microphone.svg" class="mic-icon"></ion-icon>
+        <span *ngIf="isMenuOpen" class="record-text">Grabando</span>
+      </div>
+    </ion-button>
+  </div>
+
+  
+  
+
+
+
+  
+</ion-content>

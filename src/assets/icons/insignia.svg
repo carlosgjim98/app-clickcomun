@@ -1,10 +1,25 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 27 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-    <g id="Trazado_254" transform="matrix(1,0,0,1,-5.109,-5.313)">
-        <path d="M29.529,12.639L23.017,12.639C22.124,12.639 21.389,13.374 21.389,14.267L21.389,26.477C21.392,27.368 22.126,28.1 23.017,28.1L29.529,28.1C30.422,28.1 31.157,27.365 31.157,26.472L31.157,14.267C31.157,13.374 30.422,12.639 29.529,12.639ZM29.529,14.267L29.529,24.849L23.017,24.849L23.017,14.267L29.529,14.267Z" style="fill:rgb(252,252,252);fill-rule:nonzero;"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="48.651" height="39.874" viewBox="0 0 48.651 39.874">
+  <g id="insignia" transform="translate(-287.349 -106.563)">
+    <g id="devices-solid" transform="translate(301.724 123.645)">
+      <path id="Trazado_254" data-name="Trazado 254" d="M29.529,12.639H23.017a1.628,1.628,0,0,0-1.628,1.628v12.21A1.628,1.628,0,0,0,23.017,28.1h6.512a1.628,1.628,0,0,0,1.628-1.628V14.267A1.628,1.628,0,0,0,29.529,12.639Zm0,1.628V24.849H23.017V14.267Z" transform="translate(-5.109 -5.313)" fill="#fcfcfc"/>
+      <path id="Trazado_255" data-name="Trazado 255" d="M23.108,3.889H3.572A1.628,1.628,0,0,0,1.944,5.517V18.541a1.628,1.628,0,0,0,1.628,1.628h6.512V21.8H7.9a.977.977,0,0,0-1.074.814.977.977,0,0,0,1.074.814h8.628v-.3H16.6V18.541H3.572V5.517H23.108v4.07h1.628V5.517A1.628,1.628,0,0,0,23.108,3.889Z" transform="translate(-1.944 -3.889)" fill="#fcfcfc"/>
     </g>
-    <g id="Trazado_255" transform="matrix(1,0,0,1,-1.944,-3.889)">
-        <path d="M23.108,3.889L3.572,3.889C2.679,3.889 1.944,4.624 1.944,5.517L1.944,18.541C1.944,19.434 2.679,20.169 3.572,20.169L10.084,20.169L10.084,21.8L7.9,21.8C7.385,21.742 6.909,22.103 6.826,22.614C6.909,23.125 7.385,23.486 7.9,23.428L16.528,23.428L16.528,23.128L16.6,23.128L16.6,18.541L3.572,18.541L3.572,5.517L23.108,5.517L23.108,9.587L24.736,9.587L24.736,5.517C24.736,4.624 24.001,3.889 23.108,3.889Z" style="fill:rgb(252,252,252);fill-rule:nonzero;"/>
+    <g id="estrellas" transform="translate(287.349 106.563)">
+      <g id="star-filled" transform="translate(0 7.965)">
+        <path id="Trazado_93" data-name="Trazado 93" d="M6.628,3.125,5.2,6.024,2,6.486,4.314,8.743l-.547,3.185,2.861-1.5,2.861,1.5L8.941,8.743l2.314-2.254-3.2-.465Z" transform="translate(-2 -3.125)" fill="#e33941"/>
+      </g>
+      <g id="star-filled-2" data-name="star-filled" transform="translate(9.255 2.942)">
+        <path id="Trazado_93-2" data-name="Trazado 93" d="M6.628,3.125,5.2,6.024,2,6.486,4.314,8.743l-.547,3.185,2.861-1.5,2.861,1.5L8.941,8.743l2.314-2.254-3.2-.465Z" transform="translate(-2 -3.125)" fill="#e33941"/>
+      </g>
+      <g id="star-filled-3" data-name="star-filled" transform="translate(20.117 0)">
+        <path id="Trazado_93-3" data-name="Trazado 93" d="M6.628,3.125,5.2,6.024,2,6.486,4.314,8.743l-.547,3.185,2.861-1.5,2.861,1.5L8.941,8.743l2.314-2.254-3.2-.465Z" transform="translate(-2 -3.125)" fill="#e33941"/>
+      </g>
+      <g id="star" transform="translate(39.396 7.965)">
+        <path id="Trazado_94" data-name="Trazado 94" d="M6.628,4.546,7.5,6.3l.145.314.314.047,1.937.28L8.514,8.293l-.236.229.057.314.33,1.927L6.933,9.856l-.3-.129-.292.154-1.732.9L4.917,8.85l.057-.314-.233-.242L3.352,6.926l1.937-.28L5.6,6.6l.145-.314.88-1.739m0-1.421L5.2,6.024,2,6.486,4.314,8.743l-.547,3.185,2.861-1.5,2.861,1.5L8.941,8.743l2.314-2.254-3.2-.465Z" transform="translate(-2 -3.125)" fill="#e33941"/>
+      </g>
+      <g id="star-2" data-name="star" transform="translate(30.164 2.942)">
+        <path id="Trazado_94-2" data-name="Trazado 94" d="M6.628,4.546,7.5,6.3l.145.314.314.047,1.937.28L8.514,8.293l-.236.229.057.314.33,1.927L6.933,9.856l-.3-.129-.292.154-1.732.9L4.917,8.85l.057-.314-.233-.242L3.352,6.926l1.937-.28L5.6,6.6l.145-.314.88-1.739m0-1.421L5.2,6.024,2,6.486,4.314,8.743l-.547,3.185,2.861-1.5,2.861,1.5L8.941,8.743l2.314-2.254-3.2-.465Z" transform="translate(-2 -3.125)" fill="#e33941"/>
+      </g>
     </g>
+  </g>
 </svg>

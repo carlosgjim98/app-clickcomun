@@ -1,6 +1,6 @@
 
 
-<ion-header class="ion-no-border" *ngIf="!showError">
+<!--<ion-header class="ion-no-border" *ngIf="!showError">
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-back-button text="" icon="arrow-back-outline"></ion-back-button>
@@ -12,7 +12,7 @@
       <ion-icon *ngIf="this.translate.currentLang == 'fr'" src="assets/icons/frances.svg"></ion-icon>
     </ion-buttons>
   </ion-toolbar>
-</ion-header>
+</ion-header>-->
 
 <app-error-view 
   *ngIf="showError" 
@@ -66,7 +66,9 @@
       </ion-button>
       
       <div class="additional-options">
-        <p class="forgot-password">¿Has olvidado tu contraseña?</p>
+        <p class="forgot-password">
+          <a [routerLink]="['/forgot-password']">¿Has olvidado tu contraseña?</a>
+        </p>
         <p class="register">¿No tienes cuenta? <a id="open-modal" class="register-link">Regístrate aquí</a></p>
      </div>
       
@@ -133,10 +135,10 @@
                   <ion-checkbox></ion-checkbox>
                   <label>
                     He leído y acepto la 
-                    <span class="bold-text">política de privacidad</span>
+                    <span class="bold-text" routerLink="/terms" (click)="closeModal()">política de privacidad</span>
                   </label>
                 </div>
-                <ion-button class="continue-button" expand="block">Continuar</ion-button>
+                <ion-button class="continue-button" expand="block" routerLink="/pin">Continuar</ion-button>
               </div>
               
             </form>

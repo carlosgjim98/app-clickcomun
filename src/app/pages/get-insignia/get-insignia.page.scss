@@ -1,0 +1,93 @@
+
+  
+  .section {
+    margin: 20px;
+  
+    h2 {
+      color: #fff;
+      font-size: 18px;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    .text-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Centra verticalmente el texto */
+        margin-left: 20px;
+      }
+      
+  
+    .card {
+      background-color: #43434B;
+      border-radius: 10px;
+      margin-left: 0;
+      color: white;
+  
+      ion-card-content {
+        padding: 15px;
+  
+        h3 {
+          font-size:14px;
+         margin-top: 20px;
+          font-weight: bold;
+        }
+  
+        p {
+          margin: 0;
+          font-size: 14px;
+        }
+  
+        .icon-row {
+            display: flex;
+            align-items: center;
+            
+          
+            ion-icon {
+              font-size: 1.2rem;
+              
+              color: #E33941;
+            }
+          }
+      }
+    }
+  }
+  
+  .icon-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .stars {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px; /* Separación entre estrellas y micrófono */
+  }
+  
+  .stars ion-icon {
+    color: red; /* Color para las estrellas */
+    font-size: 1px; /* Ajusta el tamaño de las estrellas */
+    margin-right: 2px; /* Separación entre estrellas */
+  }
+  
+  .microphone {
+    height: 50px;
+    width: 50px;
+    color: white;
+  }
+  
+  .level-icon{
+
+    height: 90px;
+    width: 90px;
+  }
+  .stars{
+    margin: 10px;
+    ion-icon{
+        height: 15px;
+        width: 15px;
+        margin-bottom: 60px;
+    }
+
+  }

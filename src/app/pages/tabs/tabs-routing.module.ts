@@ -8,41 +8,39 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
-        path: 'home',
-        loadChildren: () => import('../home/home.module').then(m => m.HomePageModule)
+        path: 'social',
+        loadChildren: () => import('../my-profile/my-profile.module').then(m => m.MyProfilePageModule)
       },
       {
-        path: 'profile',
-        loadChildren: () => import('../profile/profile.module').then(m => m.ProfilePageModule)
+        path: 'time-list',
+        loadChildren: () => import('../time-list/time-list.module').then(m => m.TimeListPageModule)
       },
       {
-        path: 'chats',
-        loadChildren: () => import('../chats/chats.module').then(m => m.ChatsPageModule)
+        path: 'contactos',
+        loadChildren: () => import('../contacts/contacts.module').then(m => m.ContactsPageModule)
       },
       {
-        path: 'calendar',
-        loadChildren: () => import('../calendar/calendar.module').then(m => m.CalendarPageModule)
+        path: 'audiochat',
+        loadChildren: () => import('../audiochat/audiochat.module').then(m => m.AudiochatPageModule)
       },
 
-      {
-        path: 'test-plugins',
-        loadChildren: () => import('../test-plugins/test-plugins.module').then(m => m.TestPluginsPageModule)
-      },
+      
       {
         path: '',
-        redirectTo: '/tabs/home',
+        redirectTo: '/tabs/social',
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/home',
+    redirectTo: '/tabs/social',
     pathMatch: 'full'
   }
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule],
 })
-export class TabsPageRoutingModule {}
+export class TabsRoutingModule {}

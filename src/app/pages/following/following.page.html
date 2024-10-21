@@ -1,0 +1,169 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar mode="md">
+    <ion-buttons slot="start">
+      <ion-icon src="assets/icons/arrow-back-outline.svg" class="arrow-icon" [routerLink]="['/tabs/social']"></ion-icon>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-icon src="assets/icons/operations-record.svg" class="settings-icon" [routerLink]="['/tabs/social']"></ion-icon>
+    </ion-buttons>
+    <ion-title>Siguiendo</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <div class="title-container">
+    <ion-avatar class="profile-photo" [routerLink]="['/my-timelists']">
+      <img alt="user avatar" src="assets/imgs/Elipse 47-2@3x.png" class="avatar" />
+    </ion-avatar>
+  
+    <div class="text-container">
+      <div class="name-container">
+        <div class="name-row" [routerLink]="['/my-timelists']">
+          <span class="nombre">Jane Doe</span>
+          <ion-icon src="assets/icons/checkmark--filled.svg" class="checkmark-icon"></ion-icon>
+        </div>
+        <a href="http://www.janedoe.com" class="website">www.janedoe.com</a>
+      </div>
+  
+      <div class="info-container">
+        <span class="number">20</span> contactos /
+        <span class="number">625</span> fans /
+        <span class="number">35</span> insignias
+      </div>
+    </div>
+  
+    <div class="trophy-container" [routerLink]="['/insignia']">
+      <ion-icon src="assets/icons/estrellas.svg" class="stars-icon"></ion-icon>
+      <ion-icon src="assets/icons/trophy.svg" class="trophy-icon"></ion-icon>
+    </div>
+  </div>
+
+  <div class="options-container">
+    <button class="option-button"  [routerLink]="['/groups']">Grupos</button>
+    <button class="option-button" [routerLink]="['/contacts']">Contactos</button>
+    <button class="option-button" [routerLink]="['/fans']" >Fans</button>
+    <button class="option-button"  style="background-color: #E33941;"[routerLink]="['/following']" >Siguiendo</button>
+    
+</div>
+
+<ion-item class="search-bar" [routerLink]="['/search-contact']">
+  <ion-input  placeholder="Buscar contactos o grupos..." class="search-text" >
+    <ion-icon slot="start" src="assets/icons/search-outline.svg" class="search-icon"></ion-icon>
+    
+  </ion-input>
+</ion-item>
+
+<ion-list lines="none">
+<ion-item-group>
+ 
+
+  <ion-item>
+    <ion-avatar slot="start" [routerLink]="['/following-user']">
+      <img alt="user avatar" src="assets/imgs/Elipse 47-4@3x.png" class="item-avatar" />
+    </ion-avatar>
+    <ion-label>
+      <h2>Antirr84</h2>
+      <p>45 audios | 256 seguidores</p>
+    </ion-label>
+    <div class="button-container"> 
+      <ion-button fill="clear" slot="end">
+        <ion-icon slot="start" src="assets/icons/close-outline.svg"style="color: white;" class="close-icon"></ion-icon>
+      </ion-button>
+    </div>
+  </ion-item>
+
+  <ion-item>
+    <ion-avatar slot="start">
+      <img alt="user avatar" src="assets/imgs/Elipse 47-6@3x.png" class="item-avatar" />
+    </ion-avatar>
+    <ion-label>
+     <h2>User_00</h2>
+      <p>45 audios | 256 seguidores</p>
+    </ion-label>
+   <div class="button-container"> 
+      <ion-button fill="clear" slot="end">
+        <ion-icon slot="start" src="assets/icons/close-outline.svg"style="color: white;" class="close-icon"></ion-icon>
+      </ion-button>
+    </div>
+  </ion-item>
+
+  <ion-item>
+    <ion-avatar slot="start">
+      <img alt="user avatar" src="assets/imgs/Elipse 47-7@3x.png" class="item-avatar" />
+    </ion-avatar>
+    <ion-label>
+     <h2>User_00</h2>
+      <p>45 audios | 256 seguidores</p>
+    </ion-label>
+   <div class="button-container"> 
+      <ion-button fill="clear" slot="end">
+        <ion-icon slot="start" src="assets/icons/close-outline.svg"style="color: white;" class="close-icon"></ion-icon>
+      </ion-button>
+    </div>
+  </ion-item>
+
+  <ion-item>
+    <ion-avatar slot="start">
+      <img alt="user avatar" src="assets/imgs/Elipse 47-8@3x.png" class="item-avatar" />
+    </ion-avatar>
+    <ion-label>
+     <h2>User_00</h2>
+      <p>45 audios | 256 seguidores</p>
+    </ion-label>
+   <div class="button-container"> 
+      <ion-button fill="clear" slot="end">
+        <ion-icon slot="start" src="assets/icons/close-outline.svg"style="color: white;" class="close-icon"></ion-icon>
+      </ion-button>
+    </div>
+  </ion-item>
+
+  <ion-item>
+    <ion-avatar slot="start">
+      <img alt="user avatar" src="assets/imgs/Elipse 47-9@3x.png" class="item-avatar" />
+    </ion-avatar>
+    <ion-label>
+     <h2>User_00</h2>
+      <p>45 audios | 256 seguidores</p>
+    </ion-label>
+   <div class="button-container"> 
+      <ion-button fill="clear" slot="end">
+        <ion-icon slot="start" src="assets/icons/close-outline.svg"style="color: white;" class="close-icon"></ion-icon>
+      </ion-button>
+    </div>
+  </ion-item>
+</ion-item-group>
+</ion-list>
+
+
+<div class="mic-button-container" [class.open-mic]="isMenuOpen">
+
+
+  <div class="button-menu" id="buttonMenu">
+    <ion-button class="menu-btn" >
+      <ion-icon src="assets/icons/trash-can.svg" class="menu-icon"></ion-icon> 
+    </ion-button>
+    <ion-button class="menu-btn">
+      <ion-icon src="assets/icons/edit.svg" class="menu-icon"></ion-icon> 
+    </ion-button>
+    <ion-button class="menu-btn"  >
+      <ion-icon src="assets/icons/play--filled--alt.svg" class="menu-icon"></ion-icon> 
+    </ion-button>
+    <ion-button class="menu-btn"  >
+      <ion-icon src="assets/icons/cloud--upload.svg" class="menu-icon"></ion-icon> 
+    </ion-button>
+   
+  </div>
+  
+  <ion-button class="mic-button" id="micButton" (click)="toggleMenu()">
+    <div class="mic-content">
+      <ion-icon src="assets/icons/microphone.svg" class="mic-icon"></ion-icon>
+      <span *ngIf="isMenuOpen" class="record-text">Grabando</span>
+    </div>
+    
+   
+  </ion-button>
+</div>
+
+  
+</ion-content>

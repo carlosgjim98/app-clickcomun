@@ -12,6 +12,8 @@ import { AppLoadingComponent } from './app-loading/app-loading.component';
 import { AppNotificationItemComponent } from './app-notification-item/app-notification-item.component';
 import { AppRatingComponent } from './app-rating/app-rating.component';
 import { ErrorViewComponent } from './error-view/error-view.component';
+import { ListUsersComponent } from './list-users/list-users.component'; 
+
 
 const COMPONENTS = [
   AppChatItemComponent,
@@ -22,6 +24,7 @@ const COMPONENTS = [
   AppRatingComponent,
   AppNotificationItemComponent,
   ErrorViewComponent,
+  ListUsersComponent,
 ];
 
 @NgModule({
@@ -30,8 +33,10 @@ const COMPONENTS = [
     IonicModule.forRoot(),
     RouterModule,
     FormsModule,
+    
   ],
-  declarations: [COMPONENTS],
-  exports: [COMPONENTS]
+  declarations: [COMPONENTS, ListUsersComponent],
+  exports: [COMPONENTS, ListUsersComponent]
+  
 })
 export class ComponentsModule { }

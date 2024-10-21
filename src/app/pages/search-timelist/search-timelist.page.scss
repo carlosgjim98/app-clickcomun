@@ -1,0 +1,42 @@
+.search-bar{
+
+    margin-top: 300px;
+    display: flex;
+    font-size: 14px;
+    font-weight: lighter;
+    
+    
+}
+
+ion-item{
+    --background: transparent !important;
+    
+    
+   
+}
+
+.play-button2 {
+    position: fixed;
+    right:-20px;
+    bottom: -25px;
+    background-color: #E33941; /* Color de fondo rojo */
+    border: none;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .search-icon{
+    height: 30px;
+    width: 30px;
+
+  }
+
+  .play-icon2{
+    font-size: 60px;
+    color: white; /* Color del ícono de play */
+  }
+  

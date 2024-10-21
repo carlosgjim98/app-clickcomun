@@ -1,0 +1,201 @@
+.time-list-page {
+    padding: 10px;
+    color: white;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: auto; /* Permite que el alto se ajuste automáticamente */
+    display: flex; /* Habilita Flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: flex-start; /* Alinea los elementos al principio (parte superior) */
+}
+
+.center-image {
+    width: 90%; /* Cambia este porcentaje según lo estrecha que quieras la imagen */
+    height: 420px; /* Mantiene la proporción de la imagen */
+    margin-top: -30px; /* Ajusta para mover la imagen hacia arriba */
+    z-index: -1; 
+}
+
+
+.overlay-icons {
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.profile-photo {
+    width: 90px;
+    height: 90px;
+    margin-top: -40px;
+    border: 0.1px solid red; 
+    border-radius: 50%; 
+}
+
+.shuffle-icon {
+    margin-left: 10px;
+    font-size: 30px;
+    color: white;
+}
+
+.shuffle-text {
+    margin-left: 8px;
+    font-size: 14px; 
+    font-weight: bold;
+}
+
+
+/* Estilos para el encabezado */
+ion-header {
+    position: absolute; /* Para que se superponga sobre la imagen */
+    background: transparent !important; /* Haz que el fondo del header sea transparente */
+    z-index: 1;
+}
+
+ion-toolbar {
+    --background: transparent !important; /* Toolbar también sin fondo */
+}
+
+
+ion-list {
+    background-color: transparent;
+    padding: 10px;
+  }
+  
+  ion-item {
+    --background: transparent;
+    color: white;
+    
+  }
+  
+  .avatar-list {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+  
+  ion-label h2 {
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  ion-label p {
+    font-size: 12px;
+    color: #ffffff;
+  }
+  
+ ion-buttons ion-button {
+    margin-left: 5px;
+    background-color: transparent !important; /* Elimina el color de fondo */
+    color: inherit !important; /* Hereda el color del ícono o texto */
+    border: none !important; /* Elimina cualquier borde */
+    box-shadow: none !important; /* Elimina cualquier sombra */
+    --background: transparent !important; /* Asegura que el fondo personalizado también sea transparente */
+    --ripple-color: transparent; /* Desactiva el color de la onda de clic si es necesario */
+}
+
+ion-list ion-buttons {
+ margin-right: -30px;
+
+ ion-icon {
+    font-size: 22px; /* Ajusta el tamaño del ícono */
+  }
+}
+
+.mic-button-container {
+    position: fixed;
+    bottom: -24px;
+    right: -25px;
+    display: flex;
+    border-radius: 65px;
+    
+    
+   
+  }
+
+.mic-icon{
+    
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+    margin-right: 8px;
+   
+  }
+  .mic-button {
+    width: 100px;
+    height: 100px;
+    
+   
+   
+  }
+  
+  .recording-text {
+    display: none;
+    color: white;
+    font-size: 12px;
+    
+    
+  }
+  
+  .button-menu {
+    display: none;
+    flex-direction: row;
+    border-radius: 45px; 
+    bottom: 24px;
+    right: 100px;
+    margin-top: 20px;
+    margin-left: 20px;
+    align-items: center; 
+    justify-content: center; 
+    background: transparent;
+   
+  }
+  
+  .mic-button-container.open-mic {
+  
+    background: #E33941;
+    width: 300px;
+    height: 100px;
+    
+   
+  }
+  
+  .menu-btn {
+    font-size: 20px; 
+    margin: -12px; 
+    color: #FFFFFF;
+    margin-bottom: 20px;
+  }
+  
+  .mic-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -15px;
+  }
+  
+  .record-text {
+    margin-top: -25px;
+    margin-right: 10px;
+    font-size: 10px;
+    color: white; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    
+  }
+  
+  .record-text::before {
+    content: '•'; 
+    color: white;
+    font-size: 40px; 
+    margin-right: 2px; 
+    vertical-align: middle;
+    
+  }
+  
+  
+  

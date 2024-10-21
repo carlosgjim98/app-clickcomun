@@ -51,7 +51,7 @@
 ion-toolbar{
     --border-width: 0;
     --border-color: transparent;
-    --background: transparent;
+    --background: var(--ion-background-color) !important;
     --padding-start: 16px;
     --padding-end: 16px;
     --padding-top: 16px;
@@ -59,15 +59,19 @@ ion-toolbar{
     --background: white;
 
     ion-buttons{
+        
         ion-icon{
             font-size: 32px;
+            
         }
     }
 
     ion-title{
-        font-size: 16px; 
         padding: 0;
         font-family: var(--ion-font-family-headers);
+        font-size: 18px; 
+        color: #ffffff; 
+        margin: 0;
     }
 }
 
@@ -78,6 +82,7 @@ ion-button{
     --border-radius: var(--app-border-radius);
     height: 48px;
     text-transform: none;
+    --background: var(--ion-color-primary);
 }
 
 // ESTILOS PARA ITEMS Y INPUTS
@@ -85,6 +90,8 @@ ion-button{
 ion-item{
     --padding-start: 8px;
     --padding-end: 8px;
+    --padding-bottom: 8px;
+    --padding-top:8px;
 }
 
 ion-input{
@@ -201,3 +208,5 @@ full-calendar{
 .fc-theme-standard .fc-list{
     border: none;
 }
+
+  

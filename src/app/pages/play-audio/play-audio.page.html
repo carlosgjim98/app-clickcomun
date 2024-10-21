@@ -1,0 +1,59 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar mode="md">
+    <ion-buttons slot="start">
+      <ion-icon src="assets/icons/arrow-back-outline.svg" class="arrow-icon" [routerLink]="['/my-audios']"></ion-icon>
+    </ion-buttons>
+    <ion-buttons class="header-icons" slot="end">
+      <ion-icon src="assets/icons/favorite--filled.svg" class="like-icon"  [ngClass]="{'favorite-active': isFavorite}" 
+      (click)="toggleFavorite()"></ion-icon>25
+      <ion-icon src="assets/icons/comentarios.svg" class="coments-icon" [routerLink]="['/play-audio-comments']"></ion-icon>12
+      <ion-icon src="assets/icons/alert-circle-outline.svg" class="alert-icon"></ion-icon>
+      <ion-icon src="assets/icons/share.svg" class="share-icon"></ion-icon>
+    </ion-buttons>
+    
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  
+  <div class="text-container">
+  <div class="profile-text">
+    <h2 [routerLink]="['/audios']">Jane Doe</h2>
+    <p>www.janedoe.com</p>
+  </div>
+</div>
+
+  <div class="profile-container">
+    <div class="profile-info">
+      <div class="avatar-border">
+        <img class="avatar"  [routerLink]="['/my-timelists']" src="assets/imgs/Elipse 47-2@3x.png" alt="Avatar" />
+        <div class="indicator-dot"></div> <!-- El punto añadido aquí -->
+        <div class="time-indicator">1:24</div> <!-- Indicador de tiempo -->
+      </div>
+      
+    </div>
+  
+
+    <div class="audio-info">
+      <img class="waveform" src="assets/imgs/wave02@3x.png" alt="Waveform" />
+    </div>
+  </div>
+
+  <div class="audio-details">
+    <h3>Audio_001</h3>
+    <p>520 Escuchas</p>
+  </div>
+
+  <div class="controls">
+    <ion-icon src="assets/icons/skip-forward-filled-2.svg" class="play-skip-icon"></ion-icon>
+    <ion-icon src="assets/icons/rewind-10.svg" class="foward-icon"></ion-icon>
+    <ion-button shape="round" class="pause-button" >
+      <ion-icon slot="icon-only" src="assets/icons/pause-outline.svg" class="pause-icon"></ion-icon>
+    </ion-button>
+    <ion-icon src="assets/icons/forward-10.svg" class="foward-icon"></ion-icon>
+    <ion-icon src="assets/icons/skip-forward-filled-1.svg" class="play-skip-icon"></ion-icon>
+  </div>
+ 
+
+</ion-content>

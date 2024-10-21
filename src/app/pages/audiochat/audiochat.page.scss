@@ -1,0 +1,459 @@
+.profile-photo{
+
+    width: 75px;
+    height: 75px;
+    margin-left: -10px;
+    
+    
+  
+  }
+  
+  .title-container{
+  
+    margin-top:20px;
+    display: flex;
+    
+    
+  }
+  .name-container{
+    display: flex;
+    align-items: center;
+  }
+  
+  
+    .operations-record{
+  
+      width: 28px;
+      height: 28px;
+    }
+  
+    .saludo{
+  
+      font-size: 14px;
+      font-family: 'Helvetica Neue', sans-serif;
+      font-weight: lighter;
+      color:#ADADAD ;
+      margin-left: -50px;
+      margin-top: -10px;
+    }
+    .name-container{
+  
+      display: flex;
+      
+    }
+    
+    .nombre{
+  
+      margin-top: 10px;
+      margin-left: -60px;
+      font-family: 'Helvetica Neue', sans-serif;
+      font-weight: lighter;
+      font-size: 14px;
+  
+    }
+  
+    .checkmark-icon {
+      width: 15px; /* Ajusta el tamaño según sea necesario */
+      height: 15px;
+      margin-left: 93px;
+      text-align: left;
+      color: #E33941;
+     
+    }
+    .info{
+      font-size: 14px;
+      font-family: 'Helvetica Neue', sans-serif;
+      font-weight: lighter;
+      margin-top: 30px;
+      margin-left: 25px;
+  
+    }
+  
+    .number {
+      font-weight: bold; 
+    }
+  
+    .custom-toggle {
+      --handle-background: red;
+      --background: #838383;
+      --background-checked: #838383;
+      --handle-background-checked: white;
+      --handle-width:20px;
+      margin-right: 10px;
+    
+    }
+  
+  
+  .day {
+    --handle-background: rgb(255, 255, 255);
+    --handle-icon: url('/assets/icons/sunny-outline.svg');
+    --track-background: #E33941;
+  }
+  
+  
+  .night {
+    --handle-background: #E33941;
+    --handle-icon: url('/assets/icons/moon-filled.svg');
+    --track-background: #838383;
+  }
+  
+  
+  .custom-toggle {
+    --handle-width: 20px;
+    margin-right: 10px;
+  }
+  
+  ion-toggle::part(track) {
+    height: 24px;
+    width: 47px;
+    overflow: visible;
+    background-color: var(--track-background); 
+  }
+  
+  ion-toggle::part(handle) {
+    background-color: var(--handle-background); 
+    background-image: var(--handle-icon); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90%;
+    border-radius: 50%;
+  }
+  
+  
+  
+  .button-container {
+      display: flex;
+      margin-top: 0px; 
+    }
+    
+  
+    .home-button {
+      --background: transparent; 
+      --border: none; 
+      --color: #fdfeff; 
+      margin-right: 10px; 
+      
+      
+    }
+    
+    .home-button ion-icon {
+      font-size: 30px !important; 
+      margin-top: -14px;
+  
+      
+      
+  
+  }
+    
+    .audiochat-button {
+      --background: #E33941; 
+      --color: #ffffff; 
+      width: 450px; 
+      height:20px;
+      font-size: 12px;
+      margin-top: 0px;
+    
+    }
+
+    ion-avatar {
+        width: 65px; 
+        height: 65px;
+      }
+
+      .avatar-1 {
+        padding: 3px; /* Grosor del borde degradado */
+        background: linear-gradient(137deg, #1999D1, #7D32E3); /* Degradado de azul a púrpura */
+        border-radius: 50%; /* Mantener la forma circular */
+        display: inline-block;
+        
+      }
+      
+      .avatar-1 img {
+        border-radius: 50%; /* Asegura que la imagen también sea circular */
+        width: 100%;
+        height: 100%;
+        background-color: white; /* Fondo blanco para la imagen */
+      }
+      .avatar-2 {
+        padding: 3px; /* Grosor del borde degradado */
+        background: linear-gradient(137deg, #CA19D1, #7D32E3); /* Degradado de azul a púrpura */
+        border-radius: 50%; /* Mantener la forma circular */
+        display: inline-block;
+      }
+      
+      .avatar-2 img {
+        border-radius: 50%; /* Asegura que la imagen también sea circular */
+        width: 100%;
+        height: 100%;
+        background-color: white; /* Fondo blanco para la imagen */
+      }
+      
+
+      .avatar-3 {
+        padding: 3px; /* Grosor del borde degradado */
+        background: linear-gradient(137deg, #19D16E, #7D32E3); /* Degradado de azul a púrpura */
+        border-radius: 50%; /* Mantener la forma circular */
+        display: inline-block;
+      }
+      
+      .avatar-3 img {
+        border-radius: 50%; /* Asegura que la imagen también sea circular */
+        width: 100%;
+        height: 100%;
+        background-color: white; /* Fondo blanco para la imagen */
+      }
+      
+      .avatar-4 {
+        padding: 3px; /* Grosor del borde degradado */
+        background: linear-gradient(137deg, #FFCE2B, #7229D6); /* Degradado de azul a púrpura */
+        border-radius: 50%; /* Mantener la forma circular */
+        display: inline-block;
+      }
+      
+      .avatar-4 img {
+        border-radius: 50%; /* Asegura que la imagen también sea circular */
+        width: 100%;
+        height: 100%;
+        background-color: white; /* Fondo blanco para la imagen */
+      }
+      
+
+      .avatar-5 {
+        padding: 3px; /* Grosor del borde degradado */
+        background: linear-gradient(137deg, #BDD9E5, #7D32E3); /* Degradado de azul a púrpura */
+        border-radius: 50%; /* Mantener la forma circular */
+        display: inline-block;
+      }
+      
+      .avatar-5 img {
+        border-radius: 50%; /* Asegura que la imagen también sea circular */
+        width: 100%;
+        height: 100%;
+        background-color: white; /* Fondo blanco para la imagen */
+      }
+
+      .avatar-6 {
+        padding: 3px; /* Grosor del borde degradado */
+        background: linear-gradient(137deg, #1999D1, #7D32E3); /* Degradado de azul a púrpura */
+        border-radius: 50%; /* Mantener la forma circular */
+        display: inline-block;
+      }
+      
+      .avatar-6 img {
+        border-radius: 50%; /* Asegura que la imagen también sea circular */
+        width: 100%;
+        height: 100%;
+        background-color: white; /* Fondo blanco para la imagen */
+      }
+
+      .avatar-7 {
+        padding: 3px; /* Grosor del borde degradado */
+        background: linear-gradient(137deg, #1999D1, #7D32E3); /* Degradado de azul a púrpura */
+        border-radius: 50%; /* Mantener la forma circular */
+        display: inline-block;
+      }
+      
+      .avatar-7 img {
+        border-radius: 50%; /* Asegura que la imagen también sea circular */
+        width: 100%;
+        height: 100%;
+        background-color: white; /* Fondo blanco para la imagen */
+      }
+
+   
+
+      ion-list {
+        
+        background:transparent;
+       
+      }
+
+      ion-item{
+
+        margin-top: 15px;
+        --background:transparent;
+        background-color: #43434B !important; 
+        border-radius: 20px;
+        height: 80px;
+        --min-height: 60px;
+      }
+
+        .play-icon {
+            width: 50px; 
+            height: 50px; 
+            margin-bottom: 50px;
+            color: #E33941;
+           
+          }
+        
+          .icon-container {
+            display: flex;
+            align-items: center; /* Centrar verticalmente los íconos */
+            gap: 0px; /* Espacio entre el botón de play y el icono de ellipsis */
+            margin-right: -20px;
+          }
+          .ellipsis-icon {
+            width: 19px; /* Tamaño más pequeño para el icono de ellipsis */
+            height: 19px;
+            margin-left: -5px;
+            transform: translateY(-5px);
+            
+          }
+
+          .sound-wave-icon {
+            width: 80px;
+            height: 80px;
+            transform: rotate(90deg); /* Voltea el icono verticalmente */
+            margin-top: -50px;
+
+          }
+        
+        ion-list ion-avatar {
+          width: 59px; 
+          height: 59px;
+          margin-bottom: 45px;
+        }
+
+       
+
+        .user-info{
+
+            margin-bottom: 40px;
+        }
+        
+       h2 {
+    font-size: 14px;
+    font-weight: bold;
+    
+       }
+  
+
+      p {
+    font-size: 12px;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-style: Regular;
+   
+      }
+  
+
+
+
+
+
+      .mic-button-container {
+        position: fixed;
+        bottom: -24px;
+        right: -25px;
+        display: flex;
+        border-radius: 65px;
+        
+        
+       
+      }
+      
+      .mic-icon{
+      
+        width: 50px;
+        height: 50px;
+        margin-bottom: 15px;
+        margin-right: 8px;
+       
+      }
+      .mic-button {
+        width: 100px;
+        height: 100px;
+        
+       
+       
+      }
+      
+      .recording-text {
+        display: none;
+        color: white;
+        font-size: 12px;
+        
+        
+      }
+      
+      .button-menu {
+        display: none;
+        flex-direction: row;
+        border-radius: 45px; 
+        bottom: 24px;
+        right: 100px;
+        margin-top: 20px;
+        margin-left: 20px;
+        align-items: center; 
+        justify-content: center; 
+        background: transparent;
+       
+      }
+      
+      .mic-button-container.open-mic {
+      
+        background: #E33941;
+        width: 300px;
+        height: 100px;
+        
+       
+      }
+      
+      .menu-btn {
+        font-size: 20px; 
+        margin: -12px; 
+        color: #FFFFFF;
+        margin-bottom: 20px;
+      }
+      
+      .mic-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: -15px;
+      }
+      
+      .record-text {
+        margin-top: -25px;
+        margin-right: 10px;
+        font-size: 10px;
+        color: white; 
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 300;
+        
+      }
+      
+      .record-text::before {
+        content: '•'; 
+        color: white;
+        font-size: 40px; 
+        margin-right: 2px; 
+        vertical-align: middle;
+        
+      }
+      
+
+      .search-title{
+
+      text-align: left;
+      font-size: 18px;
+      margin-left: 10px;
+
+      }
+      .search-bar{
+
+       width: 320px;
+       height: 58px;
+       border-radius: 30px;
+       margin-left: 10px;
+
+      }
+      .search-text{
+
+        margin-top:-15px ;
+        margin-left: 20px;
+        font-size: 14px;
+        font-weight: lighter;
+      }
+      
+      

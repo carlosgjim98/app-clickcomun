@@ -1,0 +1,33 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar mode="md">
+    <ion-buttons slot="end">
+      <ion-icon src="assets/icons/alert-circle-outline.svg" class="alert-icon"></ion-icon>
+    </ion-buttons>
+    <ion-buttons slot="start">
+      <ion-icon src="assets/icons/arrow-back-outline.svg" class="arrow-icon" (click)="goBack()"></ion-icon>
+    </ion-buttons>
+    <ion-title>Verificación estándar adulto</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="check-icon">
+    <ion-icon src="assets/icons/checkmark--filled.svg" class="checkmark-icon" ></ion-icon>
+  </div>
+  <h1>Disfruta de mayor visibilidad en los filtros de búsqueda. Además, dispondrás de 1 JPG imagen de audio para subir.</h1>
+
+  <div class="requisitos">
+    <h2>Requisitos</h2>
+    <div class="checkbox-container" (click)="toggleCheck()">
+      <div class="checkbox" [class.checked]="isChecked">
+        <ion-icon name="checkmark" class="checkmark-icon2" *ngIf="isChecked"></ion-icon>
+      </div>
+      <span>Aceptación de responsabilidad de información correcta.</span>
+    </div>
+  </div>
+
+  <ion-button class="continue-button" [routerLink]="['/dni-verification']">continuar</ion-button>
+</ion-content>
+
+

@@ -1,0 +1,42 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar mode="md">
+    <ion-buttons slot="start">
+      <ion-icon src="assets/icons/arrow-back-outline.svg" class="arrow-icon" (click)="goBack()"></ion-icon>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-icon src="assets/icons/close-outline.svg" class="alert-icon"  [routerLink]="['/my-profile']" ></ion-icon>
+    </ion-buttons>
+    <ion-title>Configuración de contenido</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <div class="content-list">
+    
+    <div class="content-item" >
+        <span>Cuentas bloqueadas</span>
+        <ion-icon src="assets/icons/play--filled--alt.svg" class="arrow-icon" style="color: red;"></ion-icon>
+    </div>
+    <div class="content-item">
+        <span>Quién puede conectarte</span>
+        <ion-icon src="assets/icons/play--filled--alt.svg" class="arrow-icon" style="color: red;"></ion-icon>
+    </div>
+    <div class="content-item">
+        <span>Uso de datos</span>
+        <ion-icon src="assets/icons/play--filled--alt.svg" class="arrow-icon" style="color: red;"></ion-icon>
+    </div>
+    <div class="content-item">
+        <span>Permisos de la app</span>
+        <ion-icon src="assets/icons/play--filled--alt.svg" class="arrow-icon" style="color: red;"></ion-icon>
+    </div>
+    <div class="content-item">
+      <span>Información sobre la cuenta</span>
+      <ion-icon src="assets/icons/play--filled--alt.svg" class="arrow-icon" style="color: red;"></ion-icon>
+  </div>
+  </div>
+    
+
+
+</ion-content>

@@ -1,0 +1,100 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar mode="md">
+    <ion-buttons slot="start">
+      <ion-icon src="assets/icons/arrow-back-outline.svg" class="arrow-icon" routerLink="/settings"></ion-icon>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-icon src="assets/icons/alert-circle-outline.svg" class="alert-icon"></ion-icon>
+    </ion-buttons>
+    <ion-title>Insignias</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content  [fullscreen]="true" class="ion-padding">
+
+  <div class="title-container">
+    <ion-avatar class="profile-photo">
+      <img alt="user avatar" src="assets/imgs/Elipse 47-2@3x.png" class="avatar" />
+    </ion-avatar>
+  
+    <div class="text-container">
+      <div class="name-container">
+        <div class="name-row">
+          <span class="nombre">Jane Doe</span>
+          <ion-icon src="assets/icons/checkmark--filled.svg" class="checkmark-icon1"></ion-icon>
+        </div>
+        <a href="http://www.janedoe.com" class="website">www.janedoe.com</a>
+      </div>
+  
+      <div class="info-container">
+        <span class="number">20</span> contactos /
+        <span class="number">625</span> fans /
+        <span class="number">35</span> insignias
+      </div>
+    </div>
+  
+    <div class="trophy-container">
+      <ion-icon src="assets/icons/estrellas.svg" class="stars-icon1"></ion-icon>
+      <ion-icon src="assets/icons/trophy.svg" class="trophy-icon"></ion-icon>
+    </div>
+  </div>
+  
+
+  <div class="insignia-container">
+    <!-- Primera tarjeta -->
+    <div class="insignia-box" [routerLink]="['/get-insignia']">
+      <div class="insignia-title">
+        <div class="icon-overlay-container">
+          <ion-icon src="assets/icons/microphone--filled.svg" class="icon microphone-icon"></ion-icon>
+          <ion-icon src="assets/icons/estrellas.svg" class="icon stars-icon"></ion-icon>
+        </div>
+        <h2>Consigue insignias</h2>
+      </div>
+      <p>Todas las insignias y ventajas aquí</p>
+    </div>
+  
+    <!-- Segunda tarjeta -->
+    <div class="insignia-box" [routerLink]="['/verification']">
+      <div class="insignia-title">
+        <ion-icon src="assets/icons/checkmark--filled.svg" class="icon checkmark-icon"></ion-icon>
+        <h3>Verificación estándar</h3>
+      </div>
+      <p>Puedes obtener más verificaciones aquí</p>
+    </div>
+  </div>
+  
+  <h4 class="section-title" style="font-size: 18px; margin-left: 15px;">Tus insignias</h4>
+  
+  <!-- Tarjetas individuales -->
+  <div class="insignia-container">
+    <!-- Tarjeta Fundador -->
+    <div class="insignia-box">
+      <div class="insignia-title">
+        <div class="icon-overlay-container">
+          <ion-icon src="assets/icons/microphone--filled.svg" class="icon microphone-icon"></ion-icon>
+          <ion-icon src="assets/icons/estrellas.svg" class="icon stars-icon"></ion-icon>
+        </div>
+        <h3>Fundador</h3>
+      </div>
+      <p>Texto explicativo. Disfruta de 2:00 extra de duración de audios</p>
+    </div>
+  
+    <!-- Tarjeta Docente -->
+    <div class="insignia-box">
+      <div class="insignia-title">
+        <div class="icon-overlay-container">
+          <ion-icon src="assets/icons/school-outline.svg" class="icon microphone-icon"></ion-icon>
+          <ion-icon src="assets/icons/estrellas.svg" class="icon stars-icon"></ion-icon>
+        </div>
+        <h3>Docente</h3>
+      </div>
+      <p>Texto explicativo. Disfruta de 2:00 extra de duración de audios</p>
+    </div>
+  </div>
+  
+
+
+
+
+
+</ion-content>

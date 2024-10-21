@@ -1,0 +1,42 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar mode="md">
+    <ion-buttons slot="start">
+      <ion-icon src="assets/icons/arrow-back-outline.svg" class="arrow-icon" (click)="goBack()"></ion-icon>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-icon src="assets/icons/close-outline.svg" class="alert-icon"  [routerLink]="['/my-profile']" ></ion-icon>
+    </ion-buttons>
+    <ion-title>Notificaciones</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <div class="notification-list">
+    <div class="notification-item">
+        <span>Pausar todas</span>
+        <ion-toggle [ngClass]="toggleState ? 'day' : 'night'" [(ngModel)]="toggleState" class="custom-toggle">
+        </ion-toggle>
+    </div>
+    <div class="notification-item"  [routerLink]="['/notifications']">
+        <span>Seguidores</span>
+        <ion-icon src="assets/icons/play--filled--alt.svg" class="arrow-icon" style="color: red;"></ion-icon>
+    </div>
+    <div class="notification-item">
+        <span>Mensajes</span>
+        <ion-icon src="assets/icons/play--filled--alt.svg" class="arrow-icon" style="color: red;"></ion-icon>
+    </div>
+    <div class="notification-item">
+        <span>TimeList y audios</span>
+        <ion-icon src="assets/icons/play--filled--alt.svg" class="arrow-icon" style="color: red;"></ion-icon>
+    </div>
+    <div class="notification-item">
+        <span>Notificaciones por correo</span>
+        <ion-icon src="assets/icons/play--filled--alt.svg" class="arrow-icon" style="color: red;"></ion-icon>
+    </div>
+  </div>
+    
+
+
+</ion-content>

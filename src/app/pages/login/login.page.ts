@@ -10,6 +10,8 @@ import { FacebookLogin, FacebookLoginResponse } from '@capacitor-community/faceb
 import { GoogleAuth } from '@codetrix-studio/capacitor-google-auth';
 import { TranslateService } from '@ngx-translate/core';
 import { PushNotifications } from '@capacitor/push-notifications';
+import { ModalController } from '@ionic/angular';
+import { Router, NavigationEnd } from '@angular/router';
 
 const FACEBOOK_PERMISSIONS = ['public_profile', 'email'];
 
@@ -37,10 +39,14 @@ export class LoginPage implements OnInit {
     public auth: AuthenticationService,
     public platform: Platform,
     public translate: TranslateService,
+    private modalController: ModalController, // Inyectamos el ModalController
+    private router: Router // Inyectamos el Router para escuchar cambios de navegación
   ) { }
 
   ngOnInit() {
 
+
+    
     this.form = new FormGroup({
       email: new FormControl('info@xerintel.es', 
         {validators: [Validators.required, Validators.email]}
@@ -50,6 +56,13 @@ export class LoginPage implements OnInit {
       ),
     });
 
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        this.closeModal();  // Cerrar el modal al finalizar la navegación
+      }
+    });
+    
+  
 
     PushNotifications.createChannel({
       id: 'hola',
@@ -190,6 +203,9 @@ export class LoginPage implements OnInit {
     } else {
       // Login failed
     }
+  }
+  async closeModal() {
+    await this.modalController.dismiss();
   }
 
   async getCurrentToken() {

@@ -1,0 +1,67 @@
+.check-icon{
+
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+.checkmark-icon{
+margin-top:30px;
+    color: #E33941;
+    height: 170px;
+    width: 170px;
+    
+}
+
+h1{
+margin-top: 0px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 25px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer; /* Cambia el cursor al pasar sobre la casilla */
+}
+
+.checkbox {
+    width: 30px; /* Ancho de la casilla */
+    height: 30px; /* Alto de la casilla */
+    background-color: white; /* Color de fondo */
+    border: 2px solid #ccc; /* Borde de la casilla */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Para posicionar el ícono */
+    margin-right: 10px; /* Espacio entre la casilla y el texto */
+}
+
+.checkbox.checked {
+    border-color: red; /* Cambia el color del borde cuando está seleccionado */
+}
+
+.checkmark-icon2 {
+    color: red; /* Color del ícono */
+    font-size: 16px; /* Ajusta el tamaño */
+    position: absolute; /* Posiciona el ícono sobre la casilla */
+    top: 80%; /* Centrado verticalmente */
+    left: 50%; /* Centrado horizontalmente */
+    transform: translate(-50%, -50%); /* Ajuste para centrar perfectamente */
+    width: 18px; /* Ajusta el ancho del ícono */
+    margin-top: -8px;
+}
+
+.continue-button{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    width: 320px;
+    margin-top: 150px;
+    margin-left:40px ;
+    font-size: 20px;
+    font-weight: bold;
+}

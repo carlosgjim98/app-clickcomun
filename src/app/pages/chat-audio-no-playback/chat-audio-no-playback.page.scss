@@ -1,0 +1,493 @@
+.alert-icon{
+
+    height: 22px;
+    width: 22px;
+}
+
+.user-avatar {
+    padding: 2px; /* Grosor del borde degradado */
+    background: linear-gradient(137deg, #1999D1, #7D32E3); /* Degradado de azul a púrpura */
+    border-radius: 50%; /* Mantener la forma circular */
+     height: 70px;
+    width: 70px;
+  }
+
+  ion-item{
+    --background: transparent ;
+    --border-color: transparent;
+  }
+
+
+  .user-info h2{
+
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .user-info p{
+    font-size: 14px;
+    font-weight:lighter;
+    margin-top: -5px;
+
+  }
+  
+  .insignia-icon{
+    height: 50px;
+    width: 50px;
+
+  }
+  .date {
+    width: 100px; 
+    height: 30px;
+    border-radius: 30px; /* Opcional: bordes redondeados */
+    background-color: #43434B; /* Color de fondo del cuadro */
+    text-align: center; /* Centra el texto dentro del cuadro */
+    margin-left:150px;
+    margin-top: 8px;
+    font-weight:lighter;
+    padding-top: 3px;
+
+  }
+  .date-text{
+
+    font-size: 12px;
+    font-weight: lighter;
+    margin-top: 25px;
+  }
+  
+  
+  .sound-wave-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 0;
+    margin-top: 50px;
+    
+  }
+
+  
+  .sound-wave {
+    width: 100px; 
+    height: 100px;
+    margin: -15px 0;
+    display: block;
+    padding: 0;
+    background-color: #43434B;
+    border-radius: 20px;
+    margin-left: -25px;
+   
+  }
+  
+  .sound-wave.top {
+    transform: rotate(90deg); 
+  }
+  .sound-wave.mid{
+    transform: rotate(90deg); 
+  }
+  
+  .sound-wave.bottom {
+    transform: rotate(-90deg); 
+  }
+  
+  .sound-wave-container-right {
+    display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Alinear al borde derecho */
+  padding: 0;
+  margin-top: -492px;
+  
+    
+  }
+
+  .sound-wave-container-right .sound-wave {
+    width: 100px; /* Ajusta el tamaño según tu necesidad */
+    height: 100px;
+    margin: -15px 0;
+    display: block;
+    padding: 0;
+    background-color: #43434B;
+    border-radius: 20px;
+    margin-right: -29px;
+
+  }
+
+
+
+.chat-container {
+    display: flex;
+    justify-content: center; /* Centra el contenido del contenedor principal si es necesario */
+    margin-top: -496px; /* Ajusta este valor según sea necesario */
+  }
+  
+  .chat-message {
+    display: flex;
+    align-items: center; /* Alinea verticalmente todos los elementos en el centro */
+    position: relative; /* Permite posicionar elementos relativos dentro del contenedor */
+  }
+  
+  .avatars-container {
+    display: flex;
+    flex-direction: column; /* Alinea los avatares en una columna */
+    align-items: center; /* Centra los avatares horizontalmente */
+    margin: 0 10px; /* Espacio a los lados del contenedor de avatares */
+  }
+  
+  .avatar-wrapper {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos dentro de cada avatar en una columna */
+    align-items: center; /* Centra los elementos dentro del envoltorio */
+    margin-bottom: 20px; /* Espacio entre los bloques de avatar */
+    position: relative; /* Permite que los iconos se posicionen relativos al avatar */
+  }
+  
+  .play-icon {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 15%; /* Ajusta la posición vertical para centrar el icono */
+    left: 5%; /* Centra horizontalmente respecto al avatar */
+    
+  }
+  .arrow-redo-icon{
+
+    color: #ffffff;
+  }
+  
+  .user-avatar-audio {
+    padding: 1px; /* Grosor del borde degradado */
+    background: white; /* Fondo blanco */
+    border-radius: 50%; /* Mantiene la forma circular */
+  }
+  
+  .message-info {
+    display: flex;
+    flex-direction: row; /* Alinea los textos en una fila horizontal */
+    margin-top: 5px; /* Espacio en la parte superior del contenedor de información */
+    font-size: 14px;
+    white-space: nowrap;
+  }
+  
+  .message-info span {
+    margin-right: 10px; /* Espacio entre los textos en la misma línea */
+  }
+  
+  .icon-heart {
+    font-size: 18px;
+    color: rgb(255, 255, 255); /* Color inicial del icono */
+    position: absolute;
+    margin-top: 10px;
+    right: 0; /* Ajusta la posición horizontal para alinear con el borde derecho del avatar */
+  }
+
+  .play-icon2 {
+    font-size: 18px;
+    position: absolute;
+    margin-top: 10px;
+    right: 0; /* Ajusta la posición horizontal para alinear con el borde derecho del avatar */
+  }
+  
+  .arrow-redo-icon{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 15%; /* Ajusta la posición vertical para centrar el icono */
+    left: 0%; /* Centra horizontalmente respecto al avatar */
+    transform: rotate(90deg); 
+
+  }
+  
+  .comment-item {
+    background-color: #43434B; 
+    border-radius: 20px;
+    
+  }
+  
+  .comment-label {
+    color: #ffffff; /* Color del texto */
+    font-size: 14px;
+  }
+  
+  .avatar-comment{
+
+    width: 50px;
+    height: 50px;
+  }
+  
+  ion-button {
+    --background: transparent;
+    --color: #ffffff; /* Color del icono */
+    
+  }
+  
+  .mic-icon{
+    width: 34px;
+    height: 34px;
+    margin-right: -10px;
+  }
+
+  ion-icon.recording {
+    color: #ff4d4d;
+  }
+  
+  .modal-content {
+    width: fill; 
+    height: fill; 
+    max-width: 450px; 
+    margin: auto;
+    padding: 20px;
+    border-radius: 15px; 
+    background-color: #43434B; 
+    position: relative; /* Permite el posicionamiento absoluto del ícono */
+    
+  }
+
+  ion-modal {
+    --height: 90%; /* Ajusta la altura al 90% */
+    
+  }
+
+  .form-header {
+    position: absolute; /* Posiciona el header de forma absoluta */
+    top: 10px; /* Espacio desde el borde superior */
+    right: 10px; /* Espacio desde el borde derecho */
+  }
+
+.close-icon{
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+}
+
+.upload-image {
+  display: flex;
+  align-items: center;
+  justify-content: left; 
+  margin-left: 30px;
+
+}
+
+.upload-image label {
+  display: flex;
+  align-items: center; 
+  cursor: pointer; 
+  font-size: 18px;
+  color: #ffffff;
+  font-family: 'Helvetica Neue', sans-serif; 
+  font-weight: bold; 
+  
+}
+
+.upload-image span {
+  display: block; /* Hace que el texto se ajuste en líneas separadas */
+  text-align: left; /* Alinea el texto a la izquierda */
+  margin-left: 12px;
+  margin-top: 20px;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px; /* Tamaño del círculo */
+  height: 150px; /* Debe ser igual al width para ser un círculo perfecto */
+  border-radius: 50%; /* Hace el contenedor circular */
+  background-color: #838383;
+  margin-right: 7px; /* Espacio entre el ícono y el texto */
+  margin-top: 35px; 
+}
+
+.icon-container ion-icon {
+  font-size: 60px; 
+  color: #ffffff; 
+  margin-left: 9px;
+}
+.form-container {
+  padding-top: 50px; /* Desplazar el contenido hacia abajo */
+}
+
+.upload-image span {
+  font-size: 18px; /* Ajusta el tamaño del texto */
+  line-height: 1.4; /* Ajusta el espacio entre líneas si es necesario */
+  font-weight: bold; /* Cambia el peso de la fuente si lo deseas */
+  
+}
+
+.wave-img {
+  position: absolute; 
+  right: 30px; 
+  top: 200px; 
+  height: 450px;
+  width: auto;
+  
+}
+
+ion-list{
+  background-color: transparent;
+  margin-top: 20px;
+  
+
+
+}
+ion-list ion-item{
+
+  
+}
+
+ion-list .checkmark-icon{
+
+  margin-right:120px;
+  height: 45px;
+  width: 45px;
+  
+  
+}
+
+ion-list ion-label{
+
+  font-size: 14;
+  font-weight:lighter;
+  color: #ADADAD;
+}
+
+ion-list ion-icon{
+
+height: 25px;
+width: 25px;
+
+}
+
+ion-item .estado{
+
+  margin-top: 40px;
+}
+
+ion-item.action-icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top:90px;
+}
+
+
+ion-item .action-icon {
+  --ionicon-width: 38px; /* Cambiar el tamaño de íconos de Ionic */
+  --ionicon-height: 38px;
+  width: 45px;
+  height: 45px;
+  margin-left: 10px; /* Espaciado entre los íconos */
+}
+
+ion-item .action-icon2 {
+  --ionicon-width: 48px; /* Cambiar el tamaño de íconos de Ionic */
+  --ionicon-height: 48px;
+  width: 45px;
+  height: 45px;
+  margin-left: 18px; /* Espaciado entre los íconos */
+}
+
+.save-button {
+  border-radius: 40px;
+  background-color: #E62F2C;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 40px;
+  width: 180px;
+  height: auto;
+
+}
+
+.share-button {
+  border-radius: 40px;
+  background-color: #E62F2C;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 40px;
+  width: 180px;
+  height: auto;
+
+}
+
+.button-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+
+}
+
+.header-container {
+  display: flex;              /* Usa flexbox para alinear elementos */
+  align-items: center; 
+        /* Alinea verticalmente al centro */
+}
+
+.header-container .mic-icon {
+  margin-right: 8px;        /* Espaciado entre el ícono y el texto */
+  
+  
+}
+
+.share-container {
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.search-bar {
+  
+  
+  background-color: #fff;
+  border-radius: 30px;
+ 
+  
+}
+
+.search-bar ion-icon {
+  margin-right: 10px;
+  --background-color:transparent;
+  height: 30px;
+  width: 30px;
+  
+}
+
+.search-bar ion-input {
+ color: #43434B;
+ font-size: 16px ;
+}
+
+.share-button2{
+  background-color:#E62F2C ;
+  height: 65px;
+  width: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  margin-top:320px;
+  font-size: 18px;
+  
+
+}
+.search-bar{
+
+  margin-left: -10px;
+}
+
+.share-options{
+
+  margin-top: 40px;
+}
+
+.option{
+
+  font-size: 18px ;
+  margin-top: 20px;
+  
+}
+
+.share-options span {
+
+ 
+  margin-left: 20px;
+  
+}

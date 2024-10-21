@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="38.149" height="44.757" viewBox="0 0 38.149 44.757">
+  <g id="comunicador-nivel-1" transform="translate(1.075 1.13)">
+    <g id="estrellas">
+      <g id="star-filled" transform="translate(0 3.514)">
+        <path id="Trazado_93" data-name="Trazado 93" d="M7.527,3.125,5.819,6.587,2,7.139l2.764,2.7-.653,3.8,3.417-1.795,3.417,1.795-.653-3.8,2.764-2.692L9.236,6.587Z" transform="translate(-2 -3.125)" fill="#e33941" stroke="#e33941" stroke-width="1"/>
+      </g>
+      <g id="star-filled-2" data-name="star-filled" transform="translate(12.973)">
+        <path id="Trazado_93-2" data-name="Trazado 93" d="M7.527,3.125,5.819,6.587,2,7.139l2.764,2.7-.653,3.8,3.417-1.795,3.417,1.795-.653-3.8,2.764-2.692L9.236,6.587Z" transform="translate(-2 -3.125)" fill="none" stroke="#e62f2c" stroke-width="1"/>
+      </g>
+      <g id="star-filled-3" data-name="star-filled" transform="translate(24.945 3.514)">
+        <path id="Trazado_93-3" data-name="Trazado 93" d="M7.527,3.125,5.819,6.587,2,7.139l2.764,2.7-.653,3.8,3.417-1.795,3.417,1.795-.653-3.8,2.764-2.692L9.236,6.587Z" transform="translate(-2 -3.125)" fill="none" stroke="#e33941" stroke-width="1"/>
+      </g>
+    </g>
+    <g id="megaphone" transform="translate(5.494 23.596) rotate(-17)">
+      <g id="Grupo_157" data-name="Grupo 157">
+        <path id="Trazado_246" data-name="Trazado 246" d="M19.312,4.416a2.228,2.228,0,1,1,4.457,0V20.757a2.228,2.228,0,1,1-4.457,0v-.318A25.259,25.259,0,0,0,9.044,17.345l.6,4.029a1.486,1.486,0,0,1-1.46,1.76H7.371a1.486,1.486,0,0,1-1.361-.89L3.262,17.059l-.3,0A2.992,2.992,0,0,1,0,14.072V11.1A3,3,0,0,1,2.959,8.11Q4.8,8.085,6.648,8A29.324,29.324,0,0,0,19.312,4.732Zm1.486,0V20.757a.743.743,0,0,0,1.486,0V4.416a.743.743,0,1,0-1.486,0ZM19.312,6.421A31.168,31.168,0,0,1,7.428,9.441V15.73q.4.022.8.053a27.778,27.778,0,0,1,11.087,2.961ZM5.942,15.654V9.519q-1.479.054-2.959.077a1.515,1.515,0,0,0-1.5,1.5v2.971a1.508,1.508,0,0,0,1.494,1.5q1.482.017,2.962.083ZM4.966,17.1l2.39,4.512.015.036h.814l0-.021-.658-4.406q-1.278-.077-2.558-.122Z" transform="translate(0 -2.188)" fill="#fcfcfc"/>
+      </g>
+    </g>
+  </g>
+</svg>

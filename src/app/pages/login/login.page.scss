@@ -1,4 +1,5 @@
 
+
 ion-content {
     //background-size: cover;
     //--background:url('/assets/imgs/base-background.jpg');
@@ -215,14 +216,14 @@ ion-icon {
   }
   
   .modal-content {
-    width: fill; /* Ajusta esto según lo necesites, puede ser 70vw o más */
-    height: fill; /* Ajusta esto también según la altura que prefieras */
-    max-width: 450px; /* Este valor es opcional para limitar el tamaño en pantallas más grandes */
+    width: fill; 
+    height: fill; 
+    max-width: 450px; 
     margin: auto;
     padding: 20px;
     border-radius: 15px; 
     background-color: #E33941; 
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    
   }
   
  
@@ -316,7 +317,7 @@ ion-icon {
   }
   .privacy-policy ion-checkbox[checked] .checkbox-inner {
     background-color: #ffffff; /* Color de fondo del interior del checkbox cuando está seleccionado */
-    border-radius: 8px; /* Bordes suavizados */
+    border-radius: 8px; 
   }
   .privacy-policy ion-checkbox[checked] .checkbox-inner::after {
     color: #FF2251; /* Color del ícono de check cuando está seleccionado */
@@ -381,17 +382,17 @@ ion-icon {
   }
   
   .continue-button {
-    --background: #3E3E3E; /* Color de fondo del botón */
-    color: white; /* Color del texto */
-    width: 100%; /* Ancho completo */
-    height: 60px; /* Ajusta la altura para que coincida con la altura de las celdas */
-    margin-top: 20px; /* Espacio superior */
-    --border-radius: 40px; /* Bordes redondeados para que coincida con las celdas */
-    font-size: 16px; /* Tamaño de fuente para que coincida con el texto de las celdas */
+    --background: #3E3E3E; 
+    color: white; 
+    width: 100%; 
+    height: 60px; 
+    margin-top: 20px; 
+    --border-radius: 40px; 
+    font-size: 16px; 
     display: flex; 
     align-items: center; 
     justify-content: center;
-    padding: 0; /* Quitar padding para que el tamaño sea consistente */
+    padding: 0; 
 }
 
   input[type="text"], input[type="email"], input[type="password"] {

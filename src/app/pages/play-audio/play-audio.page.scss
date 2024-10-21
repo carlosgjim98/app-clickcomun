@@ -1,0 +1,173 @@
+.like-icon{
+
+ 
+    cursor: pointer;
+    &.favorite-active {
+      color: #E33941; /* Color rojo */
+    }
+  
+}
+
+.header-icons{
+    display: flex;
+    align-items: center;
+    transform: scale(0.9);
+    gap: 10px; 
+
+}
+
+.text-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -60px;
+    margin-left: 20px;
+    
+    
+ 
+  }
+  
+  .profile-text {
+    margin-top: 60px;
+    
+   
+  
+    h2 {
+      font-size: 20px;
+      margin: 0;
+    }
+  
+    p {
+      font-size: 16px;
+      color: #ADADAD;
+      line-height: 0 ;
+    }
+  }
+  
+
+.profile-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px;
+   
+  }
+  
+  .profile-info {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .avatar-border {
+    width: 330px; /* Más grande que la imagen para crear el espacio */
+    height: 330px;
+    border-radius: 50%;
+    border: 3px solid #E33941; /* Borde separado de la imagen */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centra la imagen dentro */
+    position: relative;
+    left: -120px; /* Ajuste según lo necesario */
+    top: -10px;
+    
+   
+   
+  }
+  
+  .avatar {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .indicator-dot {
+    width: 14px; /* Tamaño del punto */
+    height: 14px; /* Tamaño del punto */
+    background-color: #F83E65; /* Color del punto */
+    border-radius: 50%; /* Hace el punto redondo */
+    position: absolute; /* Posiciona el punto absolutamente */
+    top: 50; /* Ajusta según la altura del borde */
+    right: -8px; /* Ajusta según donde quieras el punto; -4px para que quede justo en el borde */
+  }
+
+  .time-indicator {
+    position: absolute; /* Posiciona el texto absolutamente */
+    top: 50; /* Alinea verticalmente con el punto */
+    right: -40px; /* Espacio horizontal desde el punto */
+    color: white; /* Color del texto */
+    font-size: 14px; /* Tamaño de la fuente */
+    display: flex;
+    align-items: center; /* Centra verticalmente el texto */
+  }
+  
+  
+
+  .audio-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin-bottom: 30px;
+  
+    .waveform {
+      flex-grow: 4; /* Permite que el ícono de la forma de onda crezca y ocupe más espacio */
+      width: 500%; /* Asegura que el ancho se ajuste a su contenedor */
+      max-width: 700px; /* Puedes establecer un ancho máximo si es necesario */
+      height: 400px;
+      /* Otros estilos como borde, fondo, etc., según sea necesario */
+      margin-right: 60px;
+    }
+  }
+  
+  .audio-details {
+    text-align: center;
+   
+  
+    h3 {
+      font-size: 18px;
+      font-weight: bold;
+    }
+  
+    p {
+      font-size: 12px;
+      font-weight: lighter;
+      color: #FFFFFF;
+    }
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  
+    ion-icon {
+      font-size: 50px;
+      margin: 0 20px;
+      color: #fff;
+    }
+    .pause-button {
+    
+        height: 60px;
+        width: 60px;
+      }
+      
+      
+  }
+
+
+  .play-skip-icon{
+    
+    height: 30px;
+    width: 30px;
+  }
+
+  .foward-icon{
+
+    height: 50px;
+    width: 50px;
+
+  }
+  

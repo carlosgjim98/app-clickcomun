@@ -38,10 +38,14 @@ export class ForgotPasswordPage implements OnInit {
      * Cerrar el modal
      */
    public closeModal(): void {
+    
     this.modalCtrl.dismiss({
       'dismissed': true
+      
     });
-  }  
+    
+  }
+ 
   
   /**
      * Enviar la contraseña al servidor

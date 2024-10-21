@@ -1,0 +1,33 @@
+ion-item {
+    --background: transparent !important;
+    margin: 8px 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-style: normal;
+  }
+  
+  ion-avatar {
+    width: 59px;
+    height: 59px;
+  }
+  
+  .user-info {
+    h2 {
+      font-size: 14px;
+      font-weight: bold;
+    }
+  
+    p {
+      font-size: 12px;
+      font-family: 'Helvetica Neue', sans-serif;
+      font-style: normal;
+    }
+  }
+  
+  ion-button {
+    width: 42px;
+    height: 29px;
+    --background: #43434B;
+    --color: #fff;
+    --border-radius: 20px;
+  }
+  

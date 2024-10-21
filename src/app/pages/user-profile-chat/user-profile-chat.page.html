@@ -1,0 +1,49 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar mode="md">
+    <ion-buttons slot="start">
+      <ion-icon src="assets/icons/arrow-back-outline.svg" class="arrow-icon" [routerLink]="['/user-profile-contact']"></ion-icon>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-icon src="assets/icons/warning.svg" class="warning-icon" ></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" >
+  <div class="title-container">
+    <ion-avatar class="profile-photo" [routerLink]="['/my-timelists']">
+      <img alt="user avatar" src="assets/imgs/Elipse 47-4@3x.png" class="avatar" />
+    </ion-avatar>
+  
+    <div class="text-container">
+      <div class="name-container">
+        <div class="name-row" [routerLink]="['/my-timelists']">
+          <span class="nombre">Antirr84</span>
+          
+        </div>
+        <a  class="state">En linea...</a>
+      </div>
+    </div>
+  
+    
+    <div class="trophy-container" [routerLink]="['/insignia']">
+      <ion-icon src="assets/icons/insignia.svg" class="stars-icon"></ion-icon>
+      
+    </div>
+  </div>
+
+  <ion-button class="audio-button"> Envia un audio a Antirr84</ion-button>
+
+  <ion-item class="comment-item" [routerLink]="['/chat-audio-no-playback']" detail="false">
+    <ion-avatar slot="start" class="avatar-comment">
+      <img alt="user avatar 2" src="assets/imgs/Elipse 47-2@3x.png" />
+    </ion-avatar>
+    <ion-input placeholder="Comenta lo que quieras" clear-input="true" class="comment-label"></ion-input>
+    <ion-button fill="clear" slot="end" >
+      <ion-icon src="assets/icons/microphone--filled.svg" class="mic-icon"  ></ion-icon>
+    </ion-button>
+  </ion-item>
+
+
+
+</ion-content>

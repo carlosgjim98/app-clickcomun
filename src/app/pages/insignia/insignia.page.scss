@@ -1,0 +1,186 @@
+.title-container {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #ffffff; /* Texto blanco */
+    gap: 15px; /* Espacio entre el avatar y el contenedor de texto */
+  }
+  
+  .profile-photo {
+    flex-shrink: 0; /* Mantiene el tamaño constante del avatar */
+    width: 70px;
+    height: 70px;
+  }
+  .checkmark-icon1 {
+    color: #E33941;
+  }
+  
+  .avatar {
+    border-radius: 50%;
+    object-fit: cover; /* Ajusta la imagen dentro del avatar */
+    width: 100%;
+    height: 100%;
+  }
+  
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el texto verticalmente */
+  }
+
+  h2, h3 {
+    
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  p {
+    
+    font-size: 14px;
+    font-weight: lighter;
+    margin-left: 48px;
+    margin-top:-10px;
+    
+  }
+  h4{
+
+    font-size: 28px;
+    margin-left: 20px;
+  }
+  
+  .name-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2px; /* Espacio entre el nombre y la URL */
+  }
+  
+  .name-row {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Espacio entre el nombre y el icono de verificación */
+  }
+  
+  .nombre {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .checkmark-icon {
+    width: 30px !important;
+    height: 30px!important;
+    color: #E33941; /* Color rojo para el icono de verificación */
+    margin-left: 7px;
+  }
+  
+  .website {
+    font-size: 16px;
+    color: #ADADAD; /* Color gris claro para la URL */
+    text-decoration: none; /* Sin subrayado */
+  }
+  
+  .info-container {
+    display: block; /* Se asegura de que esté alineado debajo */
+    font-size: 12px;
+    color: #ffffff; /* Color blanco */
+    margin-top: 2px; /* Espacio entre la URL y la info */
+  }
+  
+  .number {
+    font-weight: bold;
+  }
+  
+  .trophy-container {
+    position: relative; /* Para permitir la posición absoluta de los íconos */
+    margin-right: -5px; /* Ajusta según sea necesario */
+  }
+  
+  .stars-icon1 {
+    position: absolute; /* Posiciona el ícono de estrellas */
+    top: -30px; /* Ajusta la posición vertical */
+    left: 50%; /* Centra horizontalmente */
+    transform: translateX(-50%); /* Ajusta el centrado */
+    width: 50px; /* Tamaño del ícono */
+    height: 50px; /* Tamaño del ícono */
+    color: #E33941; /* Color rojo */
+  }
+  
+  .trophy-icon {
+    width: 50px; /* Tamaño del ícono */
+    height: 50px; /* Tamaño del ícono */
+    color: #E33941;/* Color rojo */
+  }
+
+  .insignia-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacio entre tarjetas */
+    padding: 10px;
+  }
+  
+  .insignia-box {
+    background: #43434B; /* Fondo de cada tarjeta */
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    padding: 20px;
+  }
+  
+  .insignia-title {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre íconos y texto */
+    margin-bottom: 5px; /* Espacio entre título y descripción */
+  }
+  
+  .icon-overlay-container {
+    display: flex;
+    position: relative;
+    
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .microphone-icon,
+  .checkmark-icon {
+    position: relative;
+    width: 38px;
+    height: 38px;
+  }
+  
+  .stars-icon {
+    position: absolute;
+    top: -30px;
+    left: -5px;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .section-title {
+    font-size: 16px;
+    margin: 20px 0 10px;
+    font-weight: bold;
+  }
+
+    .stars-fundator {
+      position: absolute; /* Posiciona el ícono de estrellas */
+      top: -40px; /* Ajusta la posición vertical */
+      left: 50%; /* Centra horizontalmente */
+      transform: translateX(-50%); /* Ajusta el centrado */
+      width: 60px; /* Tamaño del ícono */
+      height: 60px; /* Tamaño del ícono */
+      color: #E33941; /* Color rojo */
+    }
+    
+    .microphone-fundator {
+      width: 40px; /* Tamaño del ícono */
+      height: 40px; /* Tamaño del ícono */
+     
+    }
+  

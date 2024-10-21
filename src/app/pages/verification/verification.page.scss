@@ -1,0 +1,55 @@
+.verification-container{
+background-color: #43434B;
+border-radius: 30px;
+height: 200px;
+width: auto;
+padding: 30px;
+margin-top: 25px;
+}
+
+.verification-box{
+
+    text-align:left;
+    margin-left: 30px;
+    
+
+}
+
+.verification-box h2 {
+    margin-top:0px;
+    font-size: 14px;
+    font-weight: bold;
+
+
+}
+
+.verification-box p {
+    font-size: 14px;
+    font-weight: lighter;
+
+
+}
+.checkmark-title{
+
+    display: flex;
+    gap: 10px;
+    
+}
+
+.checkmark-icon{
+
+   color: #E33941;
+   height: 30px;
+   width: 30px;
+   margin-left: -40px;
+   margin-top: -8px;
+    
+}
+h3{
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: bold;
+
+
+}

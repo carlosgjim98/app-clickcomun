@@ -1,0 +1,88 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar mode="md">
+    <ion-buttons slot="end">
+      <ion-icon src="assets/icons/alert-circle-outline.svg" class="alert-icon"></ion-icon>
+    </ion-buttons>
+    <ion-buttons slot="start">
+      <ion-icon src="assets/icons/arrow-back-outline.svg" class="arrow-icon" (click)="goBack()"></ion-icon>
+    </ion-buttons>
+    <ion-title>Verificación</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <div class="verification-container" [routerLink]="['/adult-verification']" >
+    <div class="verification-box" >
+      <div class="checkmark-title">
+        <ion-icon src="assets/icons/checkmark--filled.svg" class="checkmark-icon"></ion-icon>
+        <h2>Verificación estándar</h2>
+      </div>
+        <p>Requisitos: Aceptación de responsabilidad de información correcta. Verificación mediante escaneo de Documento de Identidad. Ventajas: Mayor visibilidad en los filtros de búsqueda. 1 JPG imagen de audio para subir.</p>
+    </div>
+</div>
+<h3>Otras verificaciones</h3>
+
+<div class="verification-container" [routerLink]="['/adult-verification']">
+  <div class="verification-box">
+    <div class="checkmark-title">
+      <ion-icon src="assets/icons/checkmark--filled.svg" class="checkmark-icon"></ion-icon>
+      <h2>Verificación estándar adulto</h2>
+    </div>
+      <p>Requisitos: Aceptación de responsabilidad de información correcta. Verificación de la mayoría de edad mediante escaneo de Documento de Identidad. Ventajas: Mayor visibilidad en los filtros de búsqueda. 1 JPG imagen de audio para subir.</p>
+  </div>
+</div>
+
+<div class="verification-container">
+  <div class="verification-box">
+    <div class="checkmark-title">
+      <ion-icon src="assets/icons/checkmark--filled.svg" class="checkmark-icon"></ion-icon>
+      <h2>Verificación sanidad</h2>
+    </div>
+      <p>Requisitos: Aceptación de responsabilidad de información correcta. Verificación de la mayoría de edad mediante escaneo de Documento de Identidad. Ventajas: Mayor visibilidad en los filtros de búsqueda. 1 JPG imagen de audio para subir.</p>
+  </div>
+</div>
+
+<div class="verification-container">
+  <div class="verification-box">
+    <div class="checkmark-title">
+      <ion-icon src="assets/icons/checkmark--filled.svg" class="checkmark-icon"></ion-icon>
+      <h2>Verificación derecho</h2>
+    </div>
+      <p>Requisitos: Aceptación de responsabilidad de información correcta. Verificación de la mayoría de edad mediante escaneo de Documento de Identidad. Ventajas: Mayor visibilidad en los filtros de búsqueda. 1 JPG imagen de audio para subir.</p>
+  </div>
+</div>
+
+<div class="verification-container">
+  <div class="verification-box">
+    <div class="checkmark-title">
+      <ion-icon src="assets/icons/checkmark--filled.svg" class="checkmark-icon"></ion-icon>
+      <h2>Verificación agraria</h2>
+    </div>
+      <p>Requisitos: Aceptación de responsabilidad de información correcta. Verificación mediante escaneo de titulación. Ventajas: Mayor visibilidad en los filtros de búsqueda. 1 JPG / 1GIF imagen de audio para subir.</p>
+  </div>
+</div>
+
+<div class="verification-container">
+  <div class="verification-box">
+    <div class="checkmark-title">
+      <ion-icon src="assets/icons/checkmark--filled.svg" class="checkmark-icon"></ion-icon>
+      <h2>Verificación tecnología</h2>
+    </div>
+      <p>Requisitos: Aceptación de responsabilidad de información correcta. Verificación de la mayoría de edad mediante escaneo de Documento de Identidad. Ventajas: Mayor visibilidad en los filtros de búsqueda. 1 JPG imagen de audio para subir.</p>
+  </div>
+</div>
+
+<div class="verification-container">
+  <div class="verification-box">
+    <div class="checkmark-title">
+      <ion-icon src="assets/icons/checkmark--filled.svg" class="checkmark-icon"></ion-icon>
+      <h2>Verificación educación</h2>
+    </div>
+      <p>Requisitos: Aceptación de responsabilidad de información correcta. Verificación mediante escaneo de titulación. Ventajas: Mayor visibilidad en los filtros de búsqueda. 1 JPG / 1GIF imagen de audio para subir.</p>
+  </div>
+</div>
+  
+
+</ion-content>

@@ -1,0 +1,102 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar mode="md">
+    <ion-buttons slot="start">
+      <ion-icon src="assets/icons/arrow-back-outline.svg" class="arrow-icon" [routerLink]="['/my-audios']"></ion-icon>
+    </ion-buttons>
+    <ion-buttons class="header-icons" slot="end">
+      <ion-icon src="assets/icons/alert-circle-outline.svg" class="alert-icon"></ion-icon>
+      <ion-icon src="assets/icons/share.svg" class="share-icon"></ion-icon>
+    </ion-buttons>
+    
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  
+  <div class="text-container">
+  <div class="profile-text">
+    <h2 [routerLink]="['/audios']">Jane Doe</h2>
+    <p>www.janedoe.com</p>
+  </div>
+</div>
+
+<div class="comments-section">
+  <h3>Comentarios</h3>
+  <div class="comment-item">
+    <img class="avatar-comment" src="assets/imgs/Elipse 47-5.png" alt="Avatar" />
+    <div class="comment-details">
+      <div class="comment-header">
+        <h4>User0034</h4>
+       
+      </div>
+      <div class="comment-info">
+        <p>2h</p>
+        <ion-icon src="assets/icons/favorite.svg" ></ion-icon>
+        <ion-icon src="assets/icons/warning.svg" ></ion-icon>
+        <button class="reply-button">Responder</button>
+        <ion-icon src="assets/icons/pause-outline.svg" class="pause-icon" ></ion-icon>
+      </div>
+    </div>
+  </div>
+<!-- Repetir para otros comentarios -->
+
+  <div class="comment-item2">
+    <img class="avatar-comment" src="assets/imgs/Elipse 47-3.png" alt="Avatar" />
+    <div class="comment-details">
+      
+      <div class="comment-header">
+        <h4>User0034</h4>
+      </div>
+      
+      <div class="comment-info">
+        <p>2h</p>
+        <ion-icon src="assets/icons/favorite.svg" ></ion-icon>
+        <ion-icon src="assets/icons/warning.svg" ></ion-icon>
+        <button class="reply-button">Responder</button>
+        <ion-icon src="assets/icons/play--filled--alt.svg" class="play-icon2" ></ion-icon>
+      </div>
+    </div>
+  </div>
+
+  <!-- Repetir para otros comentarios -->
+
+  <div class="comment-item">
+    <img class="avatar-comment" src="assets/imgs/Elipse 47-9.png" alt="Avatar" />
+    <div class="comment-details">
+      <div class="comment-header">
+        <h4>User0034</h4>
+      </div>
+      <div class="comment-info">
+        <p>2h</p>
+        <ion-icon src="assets/icons/favorite.svg" ></ion-icon>
+        <ion-icon src="assets/icons/warning.svg" ></ion-icon>
+        <button class="reply-button">Responder</button>
+        <ion-icon src="assets/icons/play--filled--alt.svg"   class="pause-icon"  ></ion-icon>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+<div class="wave-container">
+  <img src="assets/imgs/wave02@3x.png" class="wave-img">
+  <ion-icon src="assets/icons/close-outline.svg" class="close-icon"></ion-icon>
+</div>
+  <ion-icon src="assets/icons/play--filled.svg" class="play-icon"></ion-icon>
+  
+
+  <div class="comment-input-container">
+    <img src="assets/imgs/Elipse 47-2@3x.png" alt="Avatar" class="avatar-comment" />
+    <input type="text" class="comment-input" placeholder="Comenta lo que quieras" />
+    <ion-icon src="assets/icons/microphone--filled.svg" class="mic-icon" ></ion-icon>
+  </div>
+  
+
+
+
+
+  
+
+</ion-content>

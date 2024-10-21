@@ -1,0 +1,100 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar mode="md">
+    <ion-buttons slot="start">
+      <ion-icon src="assets/icons/user.svg" class="user-icon"></ion-icon>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-icon src="assets/icons/close-outline.svg" class="alert-icon"  [routerLink]="['/tabs/social']" ></ion-icon>
+    </ion-buttons>
+    <ion-title>Configuración</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content  [fullscreen]="true" class="ion-padding">
+
+  <div class="title-container">
+    <ion-avatar class="profile-photo">
+      <img alt="user avatar" src="assets/imgs/Elipse 47-2@3x.png" class="avatar" />
+    </ion-avatar>
+  
+    <div class="text-container">
+      <div class="name-container">
+        <div class="name-row">
+          <span class="nombre">Jane Doe</span>
+          <ion-icon src="assets/icons/checkmark--filled.svg" class="checkmark-icon"></ion-icon>
+        </div>
+        <a href="http://www.janedoe.com" class="website">www.janedoe.com</a>
+      </div>
+  
+      <div class="info-container">
+        <span class="number">20</span> contactos /
+        <span class="number">625</span> fans /
+        <span class="number">35</span> insignias
+      </div>
+    </div>
+  
+    <div class="trophy-container">
+      <ion-icon src="assets/icons/estrellas.svg" class="stars-icon"></ion-icon>
+      <ion-icon src="assets/icons/trophy.svg" class="trophy-icon"></ion-icon>
+    </div>
+  </div>
+
+  <div class="center-container" [routerLink]="['/insignia']">
+    <div class="subscription-box">
+        <h2>Suscríbete</h2>
+        <p>Disfruta todas las ventajas de ser Premium hoy</p>
+        <button class="premium-btn">Hazte Premium</button>
+    </div>
+</div>
+
+<div class="settings-list">
+  <div class="setting-item" [routerLink]="['/edit-profile']">
+    <ion-icon src="assets/icons/user.svg" class="icon-left"></ion-icon>
+      <span>Editar perfil</span>
+      <ion-icon src="assets/icons/play--filled--alt.svg" class="arrow-icon" ></ion-icon>
+  </div>
+  <div class="setting-item"  [routerLink]="['/notifications']">
+    <ion-icon src="assets/icons/notification.svg" class="icon-left"></ion-icon>
+      <span>Notificaciones</span>
+      <ion-icon src="assets/icons/play--filled--alt.svg" class="arrow-icon"></ion-icon>
+  </div>
+  <div class="setting-item"  [routerLink]="['/favourite-audios']">
+    <ion-icon src="assets/icons/favorite.svg" class="icon-left"></ion-icon>
+      <span>Audios favoritos</span>
+      <ion-icon src="assets/icons/play--filled--alt.svg" class="arrow-icon"></ion-icon>
+  </div>
+  <div class="setting-item" [routerLink]="['/content-config']">
+    <ion-icon src="assets/icons/content-delivery-network.svg" class="icon-left"></ion-icon>
+      <span>Configuración de contenido</span>
+      <ion-icon src="assets/icons/play--filled--alt.svg" class="arrow-icon"></ion-icon>
+  </div>
+  <div class="setting-item"  [routerLink]="['/huella']">
+    <ion-icon src="assets/icons/seguridad.svg" class="icon-left"></ion-icon>
+      <span>Seguridad</span>
+      <ion-icon src="assets/icons/play--filled--alt.svg" class="arrow-icon"></ion-icon>
+  </div>
+  <div class="setting-item">
+    <ion-icon src="assets/icons/moon.svg" class="icon-left"></ion-icon>
+      <span>Modo oscuro</span>
+      <ion-icon src="assets/icons/play--filled--alt.svg" class="arrow-icon"></ion-icon>
+  </div>
+  <div class="setting-item"[routerLink]="['/verification']">
+    <ion-icon src="assets/icons/checkmark--filled.svg" class="icon-left"></ion-icon>
+      <span>Verificación</span>
+      <ion-icon src="assets/icons/play--filled--alt.svg" class="arrow-icon"></ion-icon>
+  </div>
+  <div class="setting-item"  [routerLink]="['/help-center']">
+    <ion-icon src="assets/icons/help.svg" class="icon-left"></ion-icon>
+      <span>Centro de ayuda</span>
+      <ion-icon src="assets/icons/play--filled--alt.svg" class="arrow-icon"></ion-icon>
+  </div>
+ 
+</div>
+
+
+  
+  
+  
+  
+
+  </ion-content> 

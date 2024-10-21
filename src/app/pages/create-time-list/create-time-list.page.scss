@@ -1,0 +1,82 @@
+    .title {
+    font-family: 'Bellota', sans-serif;
+    font-weight: bold;
+    font-size:6svh;
+    margin-top: -5px;
+    text-align: center;
+  }
+  
+  .subtitle {
+    font-family: 'Bellota', sans-serif;
+    font-weight: light;
+    color: #e4e4e4;
+     text-align: center; 
+     line-height: 0.5;
+     font-size:2.5svh;
+}
+    
+   .header-container {
+        text-align: center; 
+        margin-top: 60px;
+    }
+  
+  
+  .form-container {
+    padding: 20px;
+    margin-bottom: 474px;
+  }
+  
+  .input-item {
+    --background: transparent; 
+    --border-color: transparent; 
+    --border-style: none; 
+    --border-width: 0px; 
+    --inner-border-width: 0px; 
+    padding: 0; 
+   
+}
+
+.input-item ion-input {
+    --background: transparent; 
+    --border-color: transparent; 
+    --placeholder-color: #e4e4e4; 
+    color: #ADADAD; 
+    padding: 10px; 
+    font-size: 14px;
+}
+.horizontal-line {
+    border: none; 
+    border-top: 1px solid #ADADAD; 
+    margin: 18px 0; 
+    margin-bottom: 100px;
+    
+    
+    
+}
+
+  .check-icon {
+    color: #E62F2C;
+    font-size: 30px;
+  }
+  
+  .create-button {
+    background-color: #E62F2C; /* Color de fondo del botón */
+    color: #ffffff; /* Color del texto del botón */
+    border-radius: 25px; /* Bordes redondeados */
+    margin-top: 347px; /* Espaciado superior */
+    height: 57px;
+    
+}
+
+.svg-background {
+  width: 500px; /* Ajusta el tamaño según sea necesario */
+  height: 500px;
+  background-image: url('/assets/icons/background.svg'); /* Ruta al archivo background.svg */
+  background-size: cover; /* Asegura que el SVG cubra todo el área del div */
+  background-position: center; /* Centra la imagen */
+  position: absolute;
+  top: -280px; /* Ajusta la posición según lo necesites */
+  left: 50%; /* Centra horizontalmente */
+  transform: translateX(-50%);
+  z-index: -1; /* Asegúrate de que esté detrás del contenido */
+}

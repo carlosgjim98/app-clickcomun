@@ -1,1 +1,22 @@
+ion-tab-bar {
+ --ion-tab-bar-background: #43434B !important;
+ --color-selected: #ADADAD;
+ border-radius: 10px; /* Cambia el valor para ajustar el redondeo */
+ overflow: hidden;
+ height: 70px;
+ margin-bottom: -10px;
+  }
+  
+  ion-tab-button {
+    --color: #ADADAD; /* Cambia el color del texto a blanco */
+    border-radius: 10px;
+  }
+  ion-icon {
+    color: #C9C9C9;
+    font-size: 27px;
+}
+ion-label {
 
+    font-size: 10px;
+    margin-bottom: 10px;
+}

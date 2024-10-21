@@ -1,0 +1,12 @@
+<ion-item>
+  <ion-avatar slot="start">
+    <img [src]="user.avatar" alt="user avatar"/>
+  </ion-avatar>
+  <div class="user-info">
+    <h2>{{ user.name }}</h2>
+    <p>{{ user.audios }} audios | {{ user.followers }} seguidores</p>
+  </div>
+  <ion-button slot="end">
+    <ion-icon name="user-follow" src="assets/icons/user-follow.svg" class="collapse-icon"></ion-icon>
+  </ion-button>
+</ion-item>

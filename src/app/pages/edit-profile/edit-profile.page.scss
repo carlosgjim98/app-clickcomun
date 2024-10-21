@@ -1,0 +1,109 @@
+.profile-photo-container {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+
+.profile-photo{
+
+    height: 150px;
+    width: 150px;
+    backdrop-filter: blur(300px); /* Efecto de desenfoque */
+    filter: brightness(1.5);
+    
+}
+
+.icon-overlay {
+    position: absolute;
+    top: 40px; /* Ajusta la posición vertical */
+    right: 40px; /* Ajusta la posición horizontal */
+    height: 55px;
+    width: 55px;
+    fill: white;
+    filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.5));
+    
+   
+    
+    
+}
+
+.edit-info{
+
+    margin-top:-10px;
+    text-align: left;
+    margin-left:25px;
+    font-size:18px ;
+    font-weight: bold;
+}
+.edit-info p {
+    line-height: 0.5; /* Un valor más bajo hará que las líneas estén más juntas */
+}
+
+.edit-photo {
+    display: flex; 
+    align-items: center; 
+}
+ion-list{
+    margin-top: 30px;
+
+    background: transparent;
+}
+
+ion-item {
+    --background:transparent;
+    border-color: transparent;
+
+    
+
+    h2 {
+      font-size: 14px;
+      color: #ADADAD;
+      margin-bottom: 4px;
+    }
+  
+    p {
+      font-size: 16px;
+      color: #ffffff;
+    }
+  
+   
+  }
+  
+  ion-icon {
+    font-size: 20px;
+   --color: transparent;
+  }
+  
+  .icon-wrapper {
+    display: inline-block;
+    margin-left: 8px; 
+    font-size: 24px;  
+    cursor: pointer;  
+  }
+  
+  ion-icon {
+   
+    font-size: 35px;
+  }
+
+  .edit-text{
+
+    font-weight: lighter;
+  }
+
+  .save-button{
+
+   
+    height: 60px;
+    width: 330px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    align-items: center;
+    display: flex;
+    margin-left: 30px;
+    margin-top: 20px;
+  }

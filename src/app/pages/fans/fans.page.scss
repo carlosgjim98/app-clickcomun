@@ -1,0 +1,243 @@
+.title-container {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #ffffff; /* Texto blanco */
+    gap: 15px; /* Espacio entre el avatar y el contenedor de texto */
+  }
+  
+  .profile-photo {
+    flex-shrink: 0; /* Mantiene el tamaño constante del avatar */
+    width: 70px;
+    height: 70px;
+     position: relative;
+  }
+  
+  ion-avatar {
+    width: 40px; /* Establece un tamaño estándar */
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+
+  
+  .text-container {
+    display: flex;
+    flex-direction: column; /* Alinea todos los elementos verticalmente */
+    gap: 4px; /* Espacio entre cada sección */
+    flex: 1; /* Ocupa el espacio restante */
+  }
+  
+  .name-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2px; /* Espacio entre el nombre y la URL */
+  }
+  
+  .name-row {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Espacio entre el nombre y el icono de verificación */
+  }
+  
+  .nombre {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .checkmark-icon {
+    width: 16px;
+    height: 16px;
+    color: #E33941; /* Color rojo para el icono de verificación */
+  }
+  
+  .website {
+    font-size: 16px;
+    color: #ADADAD; /* Color gris claro para la URL */
+    text-decoration: none; /* Sin subrayado */
+  }
+  
+  .info-container {
+    display: block; /* Se asegura de que esté alineado debajo */
+    font-size: 12px;
+    color: #ffffff; /* Color blanco */
+    margin-top: 2px; /* Espacio entre la URL y la info */
+  }
+  
+  .number {
+    font-weight: bold;
+  }
+  
+  .trophy-container {
+    position: relative; /* Para permitir la posición absoluta de los íconos */
+    margin-right: -5px; /* Ajusta según sea necesario */
+  }
+  
+  .stars-icon {
+    position: absolute; /* Posiciona el ícono de estrellas */
+    top: -30px; /* Ajusta la posición vertical */
+    left: 50%; /* Centra horizontalmente */
+    transform: translateX(-50%); /* Ajusta el centrado */
+    width: 50px; /* Tamaño del ícono */
+    height: 50px; /* Tamaño del ícono */
+    color: #E33941; /* Color rojo */
+  }
+  
+  .trophy-icon {
+    width: 50px; /* Tamaño del ícono */
+    height: 50px; /* Tamaño del ícono */
+    color: #E33941; /* Color rojo */
+  }
+
+  .options-container {
+ 
+    margin-top: 20px;
+    display: flex;
+    gap: 5px;
+    overflow-y: auto;  
+}
+
+.option-button {
+    border: none;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    cursor: pointer;
+    font-size: 12px;
+    background-color: #43434B;
+    min-width: 100px;
+    height: 30px;
+    pointer-events: auto;
+  }
+
+  .mic-button-container {
+    position: fixed;
+    bottom: -24px;
+    right: -25px;
+    display: flex;
+    border-radius: 65px;
+    
+    
+   
+  }
+  
+  .mic-icon{
+  
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+    margin-right: 8px;
+   
+  }
+  .mic-button {
+    width: 100px;
+    height: 100px;
+    
+   
+   
+  }
+  
+  .recording-text {
+    display: none;
+    color: white;
+    font-size: 12px;
+    
+    
+  }
+  
+  .button-menu {
+    display: none;
+    flex-direction: row;
+    border-radius: 45px; 
+    bottom: 24px;
+    right: 100px;
+    margin-top: 20px;
+    margin-left: 20px;
+    align-items: center; 
+    justify-content: center; 
+    background: transparent;
+   
+  }
+  
+  .mic-button-container.open-mic {
+  
+    background: #E33941;
+    width: 300px;
+    height: 100px;
+    
+   
+  }
+  
+  .menu-btn {
+    font-size: 20px; 
+    margin: -12px; 
+    color: #FFFFFF;
+    margin-bottom: 20px;
+  }
+  
+  .mic-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -15px;
+  }
+  
+  .record-text {
+    margin-top: -25px;
+    margin-right: 10px;
+    font-size: 10px;
+    color: white; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    
+  }
+  
+  .record-text::before {
+    content: '•'; 
+    color: white;
+    font-size: 40px; 
+    margin-right: 2px; 
+    vertical-align: middle;
+    
+  }
+  
+  h1{
+
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 25px;
+  }
+  
+  ion-avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  
+  .avatar-name {
+    text-align: center;
+    margin-top: 5px;
+    color: #fff; /* Ajusta el color según tu fondo */
+    font-size: 14px;
+  }
+  
+  ion-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+

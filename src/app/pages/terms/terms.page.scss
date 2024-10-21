@@ -1,8 +1,25 @@
-ion-header{
-    ion-toolbar{
-        ion-title{
-            font-size: 16px; 
-            padding: 0;
-        }
-    }
-}
+ion-header {
+   
+  }
+  
+  ion-toolbar {
+   
+  }
+  
+  ion-title {
+    font-size: 16px; 
+  }
+  
+  .introduction{
+
+    margin-bottom: 40px;
+  }
+  .section-title {
+   
+    margin-bottom: -10px; /* Espacio debajo del título */
+  }
+  
+  .section-content {
+    margin-bottom: 30px; /* Espacio debajo del contenido del párrafo */
+  }
+  

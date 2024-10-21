@@ -1,0 +1,208 @@
+<ion-content [fullscreen]="true" class="ion-padding ion-text-center">
+  <ion-header collapse="condense" style="border-radius: var(--app-border-radius);">
+    <ion-toolbar>
+
+      <!-- Container for Titles -->
+      
+      <div class="title-container">
+        <ion-avatar class="profile-photo">
+        <img alt="user avatar" src="assets/imgs/Elipse 47-2@3x.png" class="avatar" />
+      </ion-avatar>
+        <ion-title class="saludo">¡Buenos días!</ion-title>
+        <div class="name-container">
+          <ion-title class="nombre" >Jane Doe</ion-title>
+          <ion-icon src="assets/icons/checkmark--filled.svg" class="checkmark-icon"></ion-icon>
+        </div>
+        <ion-title class="info">
+          <span class="number">20</span> contactos / 
+          <span class="number">625</span> fans / 
+          <span class="number">35</span> insignias
+        </ion-title>
+      </div>
+      
+
+      <!-- Action Buttons -->
+      <ion-buttons slot="end">
+        <ion-toggle [ngClass]="toggleState ? 'day' : 'night'" [(ngModel)]="toggleState" class="custom-toggle">
+        </ion-toggle>
+        
+        <ion-icon [routerLink]="['/settings']"src="assets/icons/operations-record.svg" class="operations-record"></ion-icon> <!-- Configuración -->
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  
+  <!-- Custom Buttons -->
+  <div class="button-container">
+    <ion-button [routerLink]="['/tabs/social']" class="home-button"  >
+      <ion-icon src="assets/icons/home.svg"></ion-icon> 
+    </ion-button>
+    
+    <ion-button class="audiochat-button" >
+      Audiochat
+    </ion-button>
+
+  </div>
+
+  <div class="search-user-section">
+    <h2 class="search-title">Buscar por teléfono o email</h2>
+    <ion-item class="search-bar">
+      <ion-input  placeholder="Teléfono / Email" class="search-text"> 
+      </ion-input>
+    </ion-item>
+  </div>
+
+<!-- Lista de usuarios -->
+<ion-list>
+  
+  <ion-item [routerLink]="['/chat-audio-no-playback']" detail="false">
+    <ion-avatar aria-hidden="true" slot="start"  class="avatar-1">
+      <img alt="user avatar" src="assets/imgs/Elipse 47@3x.png" />
+    </ion-avatar>
+    
+    <div class="user-info">
+      <h2>A_ramon</h2>
+      <p>4:22 p.m</p>
+    </div>
+    <div class="icon-container" slot="end">
+      <ion-icon name="sound-wave" src="assets/icons/sound-wave.svg" class="sound-wave-icon" style="color: #32B5FA;"></ion-icon>
+      <ion-icon name="play" src="assets/icons/play--filled-red.svg" class="play-icon"></ion-icon>
+      <ion-icon name="ellipsis-vertical" src="assets/icons/ellipsis-vertical.svg" class="ellipsis-icon"></ion-icon>
+    </div>
+ 
+   </ion-item>
+  
+  <ion-item>
+    <ion-avatar aria-hidden="true" slot="start"  class="avatar-2">
+      <img alt="user avatar" src="assets/imgs/Elipse 47-1@3x.png" />
+    </ion-avatar>
+    <div class="user-info">
+      <h2>Antirr84</h2>
+      <p>2:34 p.m</p>
+    </div>
+    <div class="icon-container" slot="end">
+      <ion-icon name="sound-wave" src="assets/icons/sound-wave.svg" class="sound-wave-icon" style="color: #E358E8;"></ion-icon>
+      <ion-icon name="play" src="assets/icons/play--filled-red.svg" class="play-icon"></ion-icon>
+      <ion-icon name="ellipsis-vertical" src="assets/icons/ellipsis-vertical.svg" class="ellipsis-icon"></ion-icon>
+    </div>
+  
+  </ion-item>
+
+  <ion-item>
+    <ion-avatar aria-hidden="true" slot="start"  class="avatar-3">
+      <img alt="user avatar" src="assets/imgs/Elipse 47-4@3x.png" />
+    </ion-avatar>
+    <div class="user-info">
+      <h2>Ppedr_ff</h2>
+      <p>1:21 p. m.</p>
+    </div>
+    <div class="icon-container" slot="end">
+      <ion-icon name="sound-wave" src="assets/icons/sound-wave.svg" class="sound-wave-icon" style="color: #19D16E;"></ion-icon>
+      <ion-icon name="play" src="assets/icons/play--filled-red.svg" class="play-icon"></ion-icon>
+      <ion-icon name="ellipsis-vertical" src="assets/icons/ellipsis-vertical.svg" class="ellipsis-icon"></ion-icon>
+    </div>
+  
+  </ion-item>
+
+  <ion-item>
+    <ion-avatar aria-hidden="true" slot="start"  class="avatar-4">
+      <img alt="user avatar" src="assets/imgs/Elipse 47-5@3x.png" />
+    </ion-avatar>
+    <div class="user-info">
+      <h2>Lucia_15</h2>
+      <p>12:20 a. m.</p>
+    </div>
+    <div class="icon-container" slot="end">
+      <ion-icon name="sound-wave" src="assets/icons/sound-wave.svg" class="sound-wave-icon" style="color: #FFCE2B;"></ion-icon>
+      <ion-icon name="play" src="assets/icons/play--filled-red.svg" class="play-icon"></ion-icon>
+      <ion-icon name="ellipsis-vertical" src="assets/icons/ellipsis-vertical.svg" class="ellipsis-icon"></ion-icon>
+    </div>
+  
+  </ion-item>
+
+  <ion-item>
+    <ion-avatar aria-hidden="true" slot="start"  class="avatar-5">
+      <img alt="user avatar" src="assets/imgs/Elipse 47-8@3x.png" />
+    </ion-avatar>
+    <div class="user-info">
+      <h2>Ana_L</h2>
+      <p>11:14 a. m.</p>
+    </div>
+    <div class="icon-container" slot="end">
+      <ion-icon name="sound-wave" src="assets/icons/sound-wave.svg" class="sound-wave-icon" style="color: #bbc1c4;"></ion-icon>
+      <ion-icon name="play" src="assets/icons/play--filled-red.svg" class="play-icon"></ion-icon>
+      <ion-icon name="ellipsis-vertical" src="assets/icons/ellipsis-vertical.svg" class="ellipsis-icon"></ion-icon>
+    </div>
+  
+  </ion-item>
+
+  <ion-item>
+    <ion-avatar aria-hidden="true" slot="start"  class="avatar-6">
+      <img alt="user avatar" src="assets/imgs/Elipse 47-9@3x.png" />
+    </ion-avatar>
+    <div class="user-info">
+      <h2>Rbobe.33</h2>
+      <p>10/07/23</p>
+    </div>
+    <div class="icon-container" slot="end">
+      <ion-icon name="sound-wave" src="assets/icons/sound-wave.svg" class="sound-wave-icon" style="color: #BDD9E5;"></ion-icon>
+      <ion-icon name="play" src="assets/icons/play--filled-red.svg" class="play-icon"></ion-icon>
+      <ion-icon name="ellipsis-vertical" src="assets/icons/ellipsis-vertical.svg" class="ellipsis-icon"></ion-icon>
+    </div>
+  
+  </ion-item>
+
+  <ion-item>
+    <ion-avatar aria-hidden="true" slot="start"  class="avatar-7">
+      <img alt="user avatar" src="assets/imgs/Elipse 47-7@3x.png" />
+    </ion-avatar>
+    <div class="user-info">
+      <h2>TomaSSS</h2>
+      <p>04/09/23</p>
+    </div>
+    <div class="icon-container" slot="end">
+      <ion-icon name="sound-wave" src="assets/icons/sound-wave.svg" class="sound-wave-icon" style="color: #9e5a5a;"></ion-icon>
+      <ion-icon name="play" src="assets/icons/play--filled-red.svg" class="play-icon"></ion-icon>
+      <ion-icon name="ellipsis-vertical" src="assets/icons/ellipsis-vertical.svg" class="ellipsis-icon"></ion-icon>
+    </div>
+    
+  
+  </ion-item>
+</ion-list>
+
+
+<!-- Desplegable micro -->
+<div class="mic-button-container" [class.open-mic]="isMenuOpen">
+  
+  
+  <div class="button-menu" id="buttonMenu">
+    <ion-button class="menu-btn" >
+      <ion-icon src="assets/icons/trash-can.svg" class="menu-icon"></ion-icon> 
+    </ion-button>
+    <ion-button class="menu-btn">
+      <ion-icon src="assets/icons/edit.svg" class="menu-icon"></ion-icon> 
+    </ion-button>
+    <ion-button class="menu-btn"  >
+      <ion-icon src="assets/icons/play--filled--alt.svg" class="menu-icon"></ion-icon> 
+    </ion-button>
+    <ion-button class="menu-btn"  >
+      <ion-icon src="assets/icons/cloud--upload.svg" class="menu-icon"></ion-icon> 
+    </ion-button>
+   
+  </div>
+  
+  <ion-button class="mic-button" id="micButton" (click)="toggleMenu()">
+    <div class="mic-content">
+      <ion-icon src="assets/icons/microphone.svg" class="mic-icon"></ion-icon>
+      <span *ngIf="isMenuOpen" class="record-text">Grabando</span>
+    </div>
+    
+   
+  </ion-button>
+
+ 
+</div>
+  
+
+
+
+  </ion-content>

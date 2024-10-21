@@ -1,0 +1,36 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar mode="md">
+    <ion-buttons slot="start">
+      <ion-back-button text="" icon="arrow-back-outline"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Crear nuevo pin</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding ion-text-center">
+  
+  
+  <div class="pin-instructions">
+    <p>Añade un número Pin</p>
+    <p>para que tu cuenta sea más segura</p>
+  </div>
+
+  <!-- Input de PIN con 4 dígitos -->
+  <div class="pin-inputs">
+    <ion-item class="pin-item">
+      <ion-input type="password" maxlength="1" class="pin-digit"></ion-input>
+    </ion-item>
+    <ion-item class="pin-item">
+      <ion-input type="password" maxlength="1" class="pin-digit"></ion-input>
+    </ion-item>
+    <ion-item class="pin-item">
+      <ion-input type="password" maxlength="1" class="pin-digit"></ion-input>
+    </ion-item>
+    <ion-item class="pin-item">
+      <ion-input type="password" maxlength="1" class="pin-digit"></ion-input>
+    </ion-item>
+  </div>
+
+  <!-- Botón Continuar -->
+  <ion-button class="continue-button" expand="block" routerLink="/huella">Continuar</ion-button>
+</ion-content>

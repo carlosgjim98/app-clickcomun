@@ -1,0 +1,175 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar mode="md">
+    <ion-buttons slot="start">
+      <ion-icon src="assets/icons/arrow-back-outline.svg" class="arrow-icon" [routerLink]="['/tabs/social']"></ion-icon>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-icon src="assets/icons/search-outline.svg"  [routerLink]="['/search-timelist']" class="search-icon" style="margin-right: 8px;" ></ion-icon>
+      <ion-icon src="assets/icons/operations-record.svg" class="settings-icon" ></ion-icon>
+
+    </ion-buttons>
+    <ion-title>Time-Lists</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <div class="title-container">
+    <ion-avatar class="profile-photo" [routerLink]="['/my-timelists']">
+      <img alt="user avatar" src="assets/imgs/Elipse 47-2@3x.png" class="avatar" />
+    </ion-avatar>
+  
+    <div class="text-container">
+      <div class="name-container">
+        <div class="name-row" [routerLink]="['/my-timelists']">
+          <span class="nombre">Jane Doe</span>
+          <ion-icon src="assets/icons/checkmark--filled.svg" class="checkmark-icon"></ion-icon>
+        </div>
+        <a href="http://www.janedoe.com" class="website">www.janedoe.com</a>
+      </div>
+  
+      <div class="info-container">
+        <span class="number">20</span> contactos /
+        <span class="number">625</span> fans /
+        <span class="number">35</span> insignias
+      </div>
+    </div>
+  
+    <div class="trophy-container">
+      <ion-icon src="assets/icons/estrellas.svg" class="stars-icon"></ion-icon>
+      <ion-icon src="assets/icons/trophy.svg" class="trophy-icon"></ion-icon>
+    </div>
+  </div>
+
+  <div class="time-list-header">
+    <div class="header-title">
+        <h1>1. Selecciona o crea Time-List</h1>
+        <button class="add-button">+</button>
+    </div>
+    <div class="options-container">
+        <ion-icon src="assets/icons/edit00.svg" class="edit-icon" ></ion-icon>
+        <button class="option-button" [routerLink]="['/timelist-selection']">Time-List 01</button>
+        <button class="option-button">Favoritos</button>
+        <button class="option-button">Suscripciones</button>
+    </div>
+</div>
+ 
+<div class="time-list-header">
+  <div class="header-title">
+    <h1>2. Cronología</h1>
+  </div>
+  <p>Selecciona el período de tiempo de la Time-List</p>
+  <div class="timeline-container">
+    <div class="indicator-bar">
+      <span class="progress"></span> <!-- Barra roja hasta "Semanal" -->
+      <span class="indicator"></span> <!-- Indicador circular rojo -->
+    </div>
+    <div class="time-options">
+      <button class="time-button">Diario</button>
+      <button class="time-button active">Semanal</button>
+      <button class="time-button">Mensual</button>
+      <button class="time-button">Anual</button>
+    </div>
+  </div>
+</div>
+
+<div class="location-header">
+  <div class="header-title">
+    <h1>2. Localización</h1>
+  </div>
+  <p>Selecciona el nivel de localización de la Time-List</p>
+  <div class="timeline-container">
+    <div class="indicator-bar">
+      <span class="location-progress"></span> <!-- Barra roja hasta "Nacional" -->
+      <ion-icon src="assets/icons/location--filled.svg" class="location-indicator"></ion-icon> <!-- Indicador con el ícono de localización -->
+    </div>
+    <div class="location-options">
+      <button class="location-button">Local</button>
+      <button class="location-button">Regional</button>
+      <button class="location-button active">Nacional</button>
+      <button class="location-button">Internacional</button>
+    </div>
+  </div>
+</div>
+
+<div class="time-list-audio">
+  <div class="audio-header">
+    <h1>4. Escucha tu Time-List</h1>
+  </div>
+  <div class="audio-controls">
+    <button class="play-button" [routerLink]="['/timelist-selection']">
+      <ion-icon src="assets/icons/play--filled--alt.svg" class="play-icon"></ion-icon> 
+    </button>
+    <div class="control-icons">
+      <ion-icon src="assets/icons/repeat.svg" class="control-icon"></ion-icon>
+      <ion-icon src="assets/icons/favorite--filled.svg" class="control-icon"  [ngClass]="{'favorite-active': isFavorite}" 
+      (click)="toggleFavorite()"></ion-icon>
+      <ion-icon src="assets/icons/share.svg" class="control-icon"></ion-icon>
+      <ion-icon src="assets/icons/alert-circle-outline.svg" class="control-icon"></ion-icon>
+    </div>
+  </div>
+</div>
+
+<div class="destacamos-header">
+  <h1>Destacamos</h1>
+</div>
+<div class="destacamos">
+  <div class="image-container">
+    <img alt="rectangulo" src="assets/imgs/destacamos.png" class="img" />
+    <ion-icon src="assets/icons/list--checked.svg" class="overlay-icon"></ion-icon>
+  </div>
+  
+  <div class="info-section">
+    <h2>Lo mejor del día</h2>
+    <p>21 Audios</p>
+
+    <div class="icons-info">
+      <ion-icon src="assets/icons/play--filled--alt.svg" class="info-icon"></ion-icon>
+      <ion-icon src="assets/icons/close-outline.svg" class="info-icon"></ion-icon>
+      <ion-icon src="assets/icons/ellipsis-vertical.svg" class="end-icon" slot="end"></ion-icon>
+    </div>
+  </div>
+</div>
+
+<ion-button class="play-button2" >
+  <ion-icon src="assets/icons/play--filled--alt.svg" class="play-icon2"></ion-icon> 
+</ion-button>
+
+<div class="destacamos">
+  <div class="image-container">
+    <img alt="rectangulo" src="assets/imgs/destacamos-2.png" class="img" />
+    <ion-icon src="assets/icons/list--checked.svg" class="overlay-icon"></ion-icon>
+  </div>
+  
+  <div class="info-section">
+    <h2>Lo mejor de la semana</h2>
+    <p>20 Audios</p>
+
+    <div class="icons-info">
+      <ion-icon src="assets/icons/play--filled--alt.svg" class="info-icon"></ion-icon>
+      <ion-icon src="assets/icons/close-outline.svg" class="info-icon"></ion-icon>
+      <ion-icon src="assets/icons/ellipsis-vertical.svg" class="end-icon" slot="end"></ion-icon>
+    </div>
+  </div>
+</div>
+
+<div class="destacamos">
+  <div class="image-container">
+    <img alt="rectangulo" src="assets/imgs/destacamos-3.png" class="img" />
+    <ion-icon src="assets/icons/list--checked.svg" class="overlay-icon"></ion-icon>
+  </div>
+  
+  <div class="info-section">
+    <h2>Lo mejor del mes</h2>
+    <p>3 Audios</p>
+
+    <div class="icons-info">
+      <ion-icon src="assets/icons/play--filled--alt.svg" class="info-icon"></ion-icon>
+      <ion-icon src="assets/icons/close-outline.svg" class="info-icon"></ion-icon>
+      <ion-icon src="assets/icons/ellipsis-vertical.svg" class="end-icon" slot="end"></ion-icon>
+    </div>
+  </div>
+</div>
+
+
+</ion-content>
