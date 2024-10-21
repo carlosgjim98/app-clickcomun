@@ -33,7 +33,19 @@
     font-weight: bold;
     font-style: normal;
   }
-  
+
+  @font-face {
+    font-family: 'HelveticaNeuerBold.otf';
+    font-style: normal;
+    font-weight: normal;
+    src: url('/assets/fonts/HelveticaNeuerBold.otf');
+  }
+
+  body {
+    font-family: "Helvetica Neue", sans-serif;
+ 
+}
+
 /**
  * Ionic Dark Mode
  * -----------------------------------------------------
@@ -72,6 +84,7 @@ ion-toolbar{
         font-size: 18px; 
         color: #ffffff; 
         margin: 0;
+        font-weight: bold;
     }
 }
 

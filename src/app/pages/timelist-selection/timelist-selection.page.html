@@ -13,7 +13,7 @@
 <ion-content [fullscreen]="true" class="ion-padding">
   <div class="time-list-page">
     <div class="image-container">
-      <div class="swiper mySwiper">
+      <div class="swiper mySwiper" (ionSlideDidChange)="onSlideChange()">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <img src="assets/imgs/ciudad@3x.png" alt="Imagen ciudad" class="left-image" />
@@ -34,7 +34,7 @@
     </div>
 
     <div class="time-list-info">
-      <h2>{{ currentTimeList.title }}</h2>
+      <h2>{{ timeListName }}</h2> <!-- Cambiado de currentTimeList.title a timeListName -->
       <div class="action-buttons">
         <button class="btn-seguir">Seguir</button>
         <ion-icon src="assets/icons/share.svg" class="info-icon"></ion-icon>
@@ -48,43 +48,33 @@
     </div>
 
     <!-- Iteración sobre los audio items -->
-    <!-- Iteración sobre los audio items -->
     <div *ngFor="let audioItem of currentTimeList.audioItems" class="audio-item">
       <div class="left-section">
-          <button class="play-button" >
-            <ion-icon  src="{{ audioItem.icon }}"  class="audio-icon"></ion-icon>
-          </button>
+        <button class="play-button">
+          <ion-icon src="{{ audioItem.icon }}" class="audio-icon"></ion-icon>
+        </button>
       </div>
       <div class="info-section">
-        <h3>{{ audioItem.title }}</h3> <!-- Título del audio -->
-        <p>{{ audioItem.author }} | {{ audioItem.listens }} Escuchas</p> <!-- Autor y número de escuchas -->
+        <h3>{{ audioItem.title }}</h3>
+        <p>{{ audioItem.author }} | {{ audioItem.listens }} Escuchas</p>
         <div class="audio-stats">
-          <span>{{ audioItem.duration }}</span> <!-- Duración -->
+          <span>{{ audioItem.duration }}</span>
           <ion-icon src="assets/icons/favorite--filled.svg" class="stat-icon" 
-          [ngClass]="{'favorite-active': audioItem.isFavorite}" 
-          (click)="toggleFavorite(audioItem)"></ion-icon>
-          <span>{{ audioItem.favorites }}</span> <!-- Favoritos -->
+            [ngClass]="{'favorite-active': audioItem.isFavorite}" 
+            (click)="toggleFavorite(audioItem)"></ion-icon>
+          <span>{{ audioItem.favorites }}</span>
           <ion-icon src="assets/icons/comentarios.svg" class="stat-icon"></ion-icon>
-          <span>{{ audioItem.comments }}</span> <!-- Comentarios -->
+          <span>{{ audioItem.comments }}</span>
           <div class="share-icons">
             <ion-icon src="assets/icons/share.svg" class="share-icon"></ion-icon>
             <ion-icon src="assets/icons/alert-circle-outline.svg" class="share-icon"></ion-icon>
           </div>
         </div>
         <div class="indicator-bar">
-          <span class="progress"></span> <!-- Barra de progreso -->
+          <span class="progress"></span>
         </div>
       </div>
-      
     </div>
-
-    
-
-  
-
-
-
-
 
     <div class="mic-button-container" [class.open-mic]="isMenuOpen">
       <div class="button-menu" id="buttonMenu">

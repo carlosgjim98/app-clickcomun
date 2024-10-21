@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { TimeListService } from 'src/app/services/time-list.service'; 
+import { NavController } from '@ionic/angular';
 @Component({
   selector: 'app-create-time-list2',
   templateUrl: './create-time-list2.page.html',
@@ -7,11 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateTimeList2Page implements OnInit {
  
+  timeListName: string = '';
+
   verMas: boolean = false; // Variable booleana para controlar la visibilidad de las categorías
 
-  constructor() { }
+  constructor(private timeListService: TimeListService, private navController: NavController) { }
 
   ngOnInit() {
+    // Obtener el nombre de la Time-List desde el servicio
+    this.timeListName = this.timeListService.getTimeListName();
   }
 
   toggleCategorias() {

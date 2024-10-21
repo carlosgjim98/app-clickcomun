@@ -1,16 +1,11 @@
-
-
 <ion-content [fullscreen]="true" class="ion-padding ion-text-center">
-  
-
   <div class="header-container">
     <h1 class="title">WoWeLike</h1>
     <div class="subtitle">
       <p>Añadir contacto</p>
-       <p>escuchar y crea</p>
-        <p>tu primera Time-Lists</p>
+      <p>escuchar y crea</p>
+      <p>tu primera Time-Lists</p>
     </div>
-    
   </div>
 
   <!-- Círculo de fondo SVG -->
@@ -18,10 +13,10 @@
 
   <div class="form-container">
     <ion-item lines="none" class="input-item">
-      <ion-input placeholder="Da nombre a tu primera Time-List"></ion-input>
+      <ion-input placeholder="Da nombre a tu primera Time-List" [(ngModel)]="timeListName"></ion-input>
       <ion-icon name="checkmark-circle" slot="end" class="check-icon"></ion-icon>
     </ion-item>
     <hr class="horizontal-line">
-    <ion-button class="continue-button" expand="block" routerLink="/create-time-list2">Crear</ion-button>
+    <ion-button class="continue-button" expand="block" (click)="saveTimeListName()">Crear</ion-button>
   </div>
 </ion-content>
