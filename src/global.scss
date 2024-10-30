@@ -96,6 +96,7 @@ ion-button{
     height: 48px;
     text-transform: none;
     --background: var(--ion-color-primary);
+    font-weight: bold;
 }
 
 // ESTILOS PARA ITEMS Y INPUTS
@@ -109,8 +110,11 @@ ion-item{
 
 ion-input{
     
+    font-family: "Helvetica Neue", sans-serif;
     ion-input-password-toggle{
         margin: 0 !important;
+       
+
     }
 }
 

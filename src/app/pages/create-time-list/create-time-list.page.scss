@@ -22,8 +22,12 @@
   
   
   .form-container {
-    padding: 20px;
-    margin-bottom: 474px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    flex: 1;
+   
+    
   }
   
   .input-item {
@@ -58,13 +62,22 @@
     color: #E62F2C;
     font-size: 30px;
   }
+
+  .continue{
+
+    align-items: center; 
+    display: flex;
+    justify-content: center; 
+  }
+
   
-  .create-button {
-    background-color: #E62F2C; /* Color de fondo del botón */
+  .continue-button {
+   
     color: #ffffff; /* Color del texto del botón */
     border-radius: 25px; /* Bordes redondeados */
-    margin-top: 347px; /* Espaciado superior */
+    margin-top: 317px; /* Espaciado superior */
     height: 57px;
+    width: 315px;
     
 }
 
@@ -80,3 +93,4 @@
   transform: translateX(-50%);
   z-index: -1; /* Asegúrate de que esté detrás del contenido */
 }
+

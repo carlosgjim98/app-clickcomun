@@ -127,6 +127,7 @@ ion-toggle::part(handle) {
 
 .button-container {
     display: flex;
+    align-items: center;
     margin-top: 0px; 
   }
   
@@ -142,9 +143,6 @@ ion-toggle::part(handle) {
   
   .home-button ion-icon {
     font-size: 30px !important; 
-    margin-top: -14px;
-
-    
     
 
 }

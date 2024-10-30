@@ -43,13 +43,13 @@
 
 
 <div class="sound-wave-container-right">
-  <ion-icon name="sound-wave" src="assets/icons/sound-wave.svg" class="sound-wave top" style="color:#E33941"> </ion-icon>
-  <ion-icon name="sound-wave" src="assets/icons/sound-wave.svg" class="sound-wave mid" style="color:#E33941"> </ion-icon>
-  <ion-icon name="sound-wave" src="assets/icons/sound-wave.svg" class="sound-wave mid" style="color:#E33941"> </ion-icon>
-  <ion-icon name="sound-wave" src="assets/icons/sound-wave.svg" class="sound-wave mid" style="color:#E33941"> </ion-icon>
-  <ion-icon name="sound-wave" src="assets/icons/sound-wave.svg" class="sound-wave mid" > </ion-icon>
-  <ion-icon name="sound-wave" src="assets/icons/sound-wave.svg" class="sound-wave mid" > </ion-icon>  
-  <ion-icon name="sound-wave" src="assets/icons/sound-wave.svg" class="sound-wave top" > </ion-icon>
+  <ion-icon name="sound-wave" src="assets/icons/sound-wave.svg" class="sound-wave top" style="color:#ffffff"> </ion-icon>
+  <ion-icon name="sound-wave" src="assets/icons/sound-wave.svg" class="sound-wave mid" style="color:#ffffff"> </ion-icon>
+  <ion-icon name="sound-wave" src="assets/icons/sound-wave.svg" class="sound-wave mid" style="color:#ffffff"> </ion-icon>
+  <ion-icon name="sound-wave" src="assets/icons/sound-wave.svg" class="sound-wave mid" style="color:#ffffff"> </ion-icon>
+  <ion-icon name="sound-wave" src="assets/icons/sound-wave.svg" class="sound-wave mid" style="color:#ffffff"> </ion-icon>
+  <ion-icon name="sound-wave" src="assets/icons/sound-wave.svg" class="sound-wave mid" style="color:#ffffff"> </ion-icon>  
+  <ion-icon name="sound-wave" src="assets/icons/sound-wave.svg" class="sound-wave top" style="color:#ffffff"> </ion-icon>
 </div>
 
 
@@ -60,7 +60,12 @@
     <div class="avatars-container">
       <!-- Avatar 1 -->
       <div class="avatar-wrapper">
-        <ion-icon src="assets/icons/play--filled--alt.svg" class="play-icon"></ion-icon>
+        <ion-icon 
+        (click)="togglePlay()" 
+        [src]="isPlaying ? 'assets/icons/pause--outline.svg' : 'assets/icons/play--filled--alt.svg'" 
+        [ngClass]="isPlaying ? 'icon-playing' : 'icon-paused'" 
+        class="play-icon">
+      </ion-icon>
         <ion-avatar class="user-avatar-audio">
           <img alt="user avatar 1" src="assets/imgs/Elipse 47@3x.png" />
         </ion-avatar>
@@ -107,7 +112,7 @@
         <ion-icon name="heart" class="icon-heart"></ion-icon>
       </div>
       <!-- Avatar 5 -->
-      <div class="avatar-wrapper">
+      <div class="avatar-wrapper" *ngIf="!isPlaying">
         <ion-icon src="assets/icons/arrow-undo-circle-outline.svg" class="arrow-redo-icon"></ion-icon>
         <ion-avatar class="user-avatar-audio">
           <img alt="user avatar 5" src="assets/imgs/Elipse 47-2@3x.png" />
@@ -119,7 +124,7 @@
         <ion-icon src="assets/icons/play--filled--alt.svg" class="play-icon2"></ion-icon>
       </div>
       <!-- Avatar 6 -->
-      <div class="avatar-wrapper">
+      <div class="avatar-wrapper" *ngIf="!isPlaying">
         <ion-icon src="assets/icons/play--filled--alt.svg" class="play-icon"></ion-icon>
         <ion-avatar class="user-avatar-audio">
           <img alt="user avatar 6" src="assets/imgs/Elipse 47@3x.png" />
@@ -130,11 +135,12 @@
         </div>
         <ion-icon name="heart" class="icon-heart"></ion-icon>
       </div>
+      
     </div>
   </div>
 </div>
 
-<ion-item class="comment-item">
+<ion-item class="comment-item" style="position: fixed; ">
   <ion-avatar slot="start" class="avatar-comment">
     <img alt="user avatar 2" src="assets/imgs/Elipse 47-2@3x.png" />
   </ion-avatar>

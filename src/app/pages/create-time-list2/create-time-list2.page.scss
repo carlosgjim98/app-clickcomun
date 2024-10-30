@@ -33,13 +33,24 @@
 
 
 }
+
+.selection-text.title {
+  margin-bottom: 0px; /* Ajusta este valor para reducir la distancia entre el título y el ion-item */
+}
 .input-item {
     --background: transparent;
     --border-color: transparent;
     --border-style: none;
     --border-width: 0px;
     --inner-border-width: 0px;
+    --color: #ADADAD;
+    display: flex; /* Flexbox ayuda a alinear los elementos */
+    align-items: center; /* Alinea verticalmente el contenido del item */
     
+  }
+  .check-icon {
+    vertical-align: middle;
+    margin-top: 0px;
   }
   
   .input-item ion-label {
@@ -50,10 +61,11 @@
     --background: transparent;
     --border-color: transparent;
     --placeholder-color: #e4e4e4;
-    color: #ffffff;
+    color: #FCFCFC;
     font-size: 16px;
     margin-left: 15px;
-    margin-top: -30px;
+  
+    
   }
   
     
@@ -93,11 +105,23 @@
 
   
 
-  .continue-button{
+  .continue{
 
-    margin-top: 100px;
+    align-items: center; 
+    display: flex;
+    justify-content: center; 
   }
 
+  
+  .continue-button {
+   
+    color: #ffffff; /* Color del texto del botón */
+    border-radius: 25px; /* Bordes redondeados */
+    margin-top: 130px; /* Espaciado superior */
+    height: 57px;
+    width: 315px;
+    
+}
   
   .ver-mas-container {
     display: flex;
@@ -111,7 +135,7 @@
   .ver-mas-text {
     font-family: 'Helvetica Neue', sans-serif;
     font-size: 14px; /* Tamaño del texto */
-    color: #ffffff; /* Color del texto */
+    color: #C9C9C9; /* Color del texto */
     margin-right: 5px; /* Espacio entre el texto y el ícono */
   }
   

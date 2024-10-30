@@ -35,24 +35,25 @@
     width: 50px;
 
   }
-  .date {
-    width: 100px; 
-    height: 30px;
-    border-radius: 30px; /* Opcional: bordes redondeados */
-    background-color: #43434B; /* Color de fondo del cuadro */
-    text-align: center; /* Centra el texto dentro del cuadro */
-    margin-left:150px;
-    margin-top: 8px;
-    font-weight:lighter;
-    padding-top: 3px;
-
+ 
+    .date {
+      display: flex;                   
+      justify-content: center;         
+      align-items: center;             
+      width: 100px;                   
+      height: 30px;                    
+      background-color: #43434B;      
+      border-radius: 40px;              
+      margin: 0 auto;                 
   }
+
+  
   .date-text{
 
-    font-size: 12px;
-    font-weight: lighter;
-    margin-top: 25px;
-  }
+    font-size: 12px;                 
+    color: #FCFCFC;                     
+}
+  
   
   
   .sound-wave-container {
@@ -105,7 +106,7 @@
     margin: -15px 0;
     display: block;
     padding: 0;
-    background-color: #43434B;
+    background-color: rgb(227, 57, 65);
     border-radius: 20px;
     margin-right: -29px;
 
@@ -165,6 +166,7 @@
     margin-top: 5px; /* Espacio en la parte superior del contenedor de información */
     font-size: 14px;
     white-space: nowrap;
+    margin-left: 15px;
   }
   
   .message-info span {
@@ -198,13 +200,22 @@
   
   .comment-item {
     background-color: #43434B; 
-    border-radius: 20px;
+    border-radius: 10px;
+    height: 80px;
+    bottom: 25px; 
+    left: 10px; 
+    right: 10px; 
+    
+    
+    
     
   }
   
   .comment-label {
     color: #ffffff; /* Color del texto */
     font-size: 14px;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: normal;
   }
   
   .avatar-comment{
@@ -490,4 +501,12 @@ ion-item .action-icon2 {
  
   margin-left: 20px;
   
+}
+
+.icon-playing {
+  color: #E33941; /* Color para el icono en reproducción */
+}
+
+.icon-paused {
+  color: #FCFCFC; /* Color para el icono en pausa */
 }

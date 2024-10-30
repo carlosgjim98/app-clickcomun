@@ -10,6 +10,7 @@ export class ChatAudioNoPlaybackPage implements OnInit {
   isRecording: boolean = false;
   isModalOpen = false;
   isShareModalOpen = false;
+  isPlaying: boolean = false; 
 
  
 
@@ -33,5 +34,17 @@ export class ChatAudioNoPlaybackPage implements OnInit {
 
   toggleRecording() {
     this.isRecording = !this.isRecording;
+  }
+
+  togglePlay() {
+    this.isPlaying = !this.isPlaying;  // Cambia el estado de reproducción
+    // Aquí puedes agregar lógica adicional para reproducir o pausar el audio
+    if (this.isPlaying) {
+      console.log("Reproduciendo audio...");
+      // Aquí va tu lógica para iniciar la reproducción
+    } else {
+      console.log("Audio pausado.");
+      // Aquí va tu lógica para pausar la reproducción
+    }
   }
 }

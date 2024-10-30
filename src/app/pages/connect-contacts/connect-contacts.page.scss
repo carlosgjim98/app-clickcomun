@@ -81,7 +81,7 @@ ion-list {
     flex: 1; 
     margin: 0; 
     height: auto; 
-    
+    --border-radius:25px;
     font-size: 16px; 
     padding: 0 12px; 
     font-family: 'Helvetica', 'Arial', sans-serif; 
@@ -91,7 +91,7 @@ ion-list {
     justify-content: center;
     --color: #ffffff; 
     min-width: 100px; 
-    max-width: 200px; 
+   
     
 }
 

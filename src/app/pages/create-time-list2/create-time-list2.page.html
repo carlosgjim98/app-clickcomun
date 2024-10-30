@@ -6,8 +6,8 @@
     <h1 class="title">WoWeLike</h1>
     <div class="subtitle">
       <p>Elige los temas que prefieres</p>
-      <p>escuchar y crea</p>
-      <p>tu primera Time-Lists</p>
+      <p>escuchar y crea tus Time-Lists</p>
+      
     </div>
   </div>
 
@@ -19,7 +19,9 @@
     <div class="input-group">
       <p class="selection-text title">Nombre de la Time List</p>
       <ion-item lines="none" class="input-item">
+        
         <ion-input [value]="timeListName" readonly="true"></ion-input>
+        <ion-icon name="checkmark-circle" slot="end" style="color: #E62F2C;" class="check-icon"></ion-icon>
       </ion-item>
  
       <ion-icon name="collapse-all" src="assets/icons/collapse-all.svg" class="collapse-icon"></ion-icon>
@@ -28,7 +30,7 @@
 
     <!-- Categorías iniciales -->
     <div class="categories">
-      <ion-chip color="danger">
+      <ion-chip style="background: #E62F2C;">
         <ion-label>+ Arte</ion-label>
       </ion-chip>
       <ion-chip>
@@ -90,9 +92,11 @@
     </div>
 
     <!-- Botón Continuar -->
-    <ion-button expand="block" color="danger" class="continue-button" style="border-radius: var(--app-border-radius); padding: var(--ion-padding);" routerLink="/connect-contacts">
      
-      Continuar
-    </ion-button>
+    <div class="continue">
+      <ion-button class="continue-button" routerLink="/connect-contacts" expand="block" >Continuar</ion-button >
+    </div>
+     
+      
   </div>
 </ion-content>
